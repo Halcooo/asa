@@ -9,12 +9,12 @@
             class="logo-back"
             alt=""
             style="" /> -->
-          <img alt="Forspace Solutions" src="@/assets/svg/logo_white.svg"
+          <img alt="Forspace Solutions" src="@/assets/images/asa-sped-logo.png"
         /></router-link>
       </div>
       <div class="logo" v-if="white_wrapper" :class="{ mobile: white_wrapper }">
         <router-link to="/">
-          <img alt="Forspace Solutions" src="@/assets/svg/logo.svg"
+          <img alt="Forspace Solutions" src="@/assets/images/asa-sped-logo.png"
         /></router-link>
       </div>
       <div class="navigation">

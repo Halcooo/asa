@@ -6,7 +6,7 @@
     >
       <div>
         <div class="img">
-          <img alt="Forspace Solutions" src="@/assets/svg/logo.svg" />
+          <img alt="Forspace Solutions" src="@/assets/images/asa-sped-logo.png"/>
         </div>
 
         <ul class="nav-links-vertical">
