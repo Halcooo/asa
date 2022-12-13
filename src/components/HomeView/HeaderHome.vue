@@ -6,17 +6,18 @@
     <div class="div">
       <div>
         <div class="head-1">
-          <h1>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h1>
+          <h1>
+            Mi nudimo usluge međunarodne i unutarnje špedicije, transport i
+            skladištenje roba
+          </h1>
         </div>
         <div class="head-2">
-          <p class="text-warning">Forspace ERP & Računovodstvo</p>
+          <p class="text-warning">ASA Šped</p>
 
           <small
-            >Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom
-            njemačke tehnologije koji omogućava smanjenje korištenja pisane
-            dokumentacije, uštedu vremena i novca, te predstavlja potpuno
-            prilagođeno i razumljivo softversko rješenje za krajnjeg
-            korisnika</small
+            >Svim našim klijentima pružamo usluge međunarodnog i domaćeg
+            transporta, a specijalizirali smo se i u hitnoj distribuciji robe do
+            kupaca unutar BiH.</small
           >
         </div>
 
@@ -83,12 +84,12 @@ export default {
     text-align: left;
   }
   background: linear-gradient(
-      to right,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
+      to top,
+      rgba(43, 75, 101, 0.6),
+      rgba(66, 96, 120, 0.6),
+      rgba(51, 90, 117, 0.6),
     ),
-    url("@/assets/images/office.jpg") no-repeat center center/cover;
+    url("@/assets/images/asa-head-cover.jpg") no-repeat center center/cover;
 
   animation: backgroundFade 0.5s ease-in;
   .background {

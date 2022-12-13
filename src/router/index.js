@@ -10,7 +10,6 @@ import ServicesView from "../views/ServicesView.vue";
 import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-import Appointment from "../views/Appointment.vue";
 import TheSales from "../components/ProductsViews/TheSales.vue";
 import ThePurchase from "../components/ProductsViews/ThePurchase.vue";
 import TheProduction from "../components/ProductsViews/TheProduction.vue";
@@ -146,11 +145,6 @@ const routes = [
     component: ServicesView,
   },
   {
-    path: "/appointment",
-    name: "appointment",
-    component: Appointment,
-  },
-  {
     path: "/forspace-preview",
     name: "forspace-preview",
     component: ForspacePreview,
@@ -160,12 +154,6 @@ const routes = [
     name: "contact",
     component: ContactView,
   },
-  {
-    path: "/promo",
-    name: "promo",
-    component: Appointment,
-  },
-
   {
     path: "/wms",
     name: "wms",

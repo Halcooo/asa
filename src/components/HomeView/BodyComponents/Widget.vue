@@ -5,8 +5,8 @@
       <div class="widget-pic"></div>
     </div>
     <div class="text">
-      <small class="">{{ $t("widget_heading") }}</small>
-      <h1 class="mb-5 text-secondary">{{ $t("widget_company") }}</h1>
+      <small class="">{{ $t("widget_heading") }}</small> 
+      <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
         {{ $t("widget_text") }}
       </p>
@@ -75,7 +75,7 @@ export default {
       left: 22%;
       width: 78%;
       height: 70%;
-      background: url("@/assets/images/forspace_info.jpg") no-repeat center
+      background: url("@/assets/images/widget-cover.jpg") no-repeat center
         center/cover;
     }
   }

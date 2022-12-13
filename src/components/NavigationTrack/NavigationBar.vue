@@ -83,15 +83,6 @@ export default {
           classname: "nav",
         },
         {
-          to: "/appointment",
-          name: "appointment",
-          isActive: false,
-          id: 4,
-
-          classname: "nav",
-        },
-
-        {
           to: "/contact",
           name: "contact",
           isActive: false,
@@ -155,7 +146,6 @@ export default {
       left: -5%;
       z-index: -1;
     }
-    width: 20%;
     &:hover {
       cursor: pointer;
     }
