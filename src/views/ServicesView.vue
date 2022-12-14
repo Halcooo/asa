@@ -57,19 +57,19 @@ export default {
     return {
       icons: [
         {
-          text: "services_icon_1",
-          p: "services-_icon_text_1",
-          icon_text: "fa-solid fa-desktop",
+          text: "Prevoz",
+          p: "Brz i siguran prevoz robe",
+          icon_text: "fa-solid fa-truck",
         },
         {
-          text: "services_icon_2",
-          p: "services-_icon_text_2",
-          icon_text: "fa-solid fa-mobile",
+          text: "Skladištenje",
+          p: "Skladištenje robe",
+          icon_text: "fa-solid fa-warehouse",
         },
         {
-          text: "services_icon_3",
-          p: "services-_icon_text_3",
-          icon_text: "fa-solid fa-server",
+          text: "Carina",
+          p: "Proužamo usluge posredovanje kod carinjenja roba.",
+          icon_text: "fa-solid fa-cash-register",
         },
       ],
       divs: [
@@ -81,27 +81,21 @@ export default {
         },
         {
           class: "dms",
-          text: "services_grid_div2_header",
+          text: "Warehouse",
           p: "services_grid_div2_text",
           to: "/why-companies-need-dms",
         },
         {
           class: "wms",
-          text: "services_grid_div3_header",
+          text: "Carina",
           p: "services_grid_div3_text",
           to: "/why-web-based",
         },
         {
           class: "systemp",
-          text: "services_grid_div4_header",
+          text: "Dodatne Usluge",
           p: "services_grid_div4_text",
           to: "/payment-provider",
-        },
-        {
-          class: "solution",
-          text: "services_grid_div5_header",
-          p: "services_grid_div5_text",
-          to: "signs-your-business-needs-advanced-software-solution",
         },
       ],
       images: [
@@ -273,6 +267,7 @@ export default {
     width: 95%;
     .grid {
       grid-template-columns: repeat(1, 1fr);
+      box-sizing: border-box;
 
       .first {
         height: 100%;

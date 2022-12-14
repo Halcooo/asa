@@ -10,6 +10,7 @@ import YouTube from "vue3-youtube";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"; //!!!!!!!!!!! important import only icons that will be used !!!!!!!!!!!!!!!!
 import {
+  faTruck,
   faUserSecret,
   faPhone,
   faEnvelope,
@@ -28,6 +29,8 @@ import {
   faPlay,
   faSearch,
   faChevronLeft,
+  faWarehouse,
+  faCashRegister,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -40,6 +43,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
+  faCashRegister,
+  faWarehouse,
+  faTruck,
   faUserSecret,
   faLinkedin,
   faFacebook,

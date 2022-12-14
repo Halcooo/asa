@@ -16,7 +16,7 @@
           <div class="d-flex mt-3">
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/">
-                <img src="../assets/svg/logo_white.svg" alt="" />
+                <img src="../assets/images/asa-sped-logo.png" alt="" />
               </RouterLink>
 
               <h6 class="text-uppercase fw-bold mb-4"></h6>
@@ -53,15 +53,15 @@
               </RouterLink>
               <p>
                 <font-awesome-icon icon="fa-solid fa-home" />
-                Bulevar Meše Selimovića 16, 71000 Sarajevo, Bosna i Hercegovina
+                Adresa: Rajlovačka bb, Sarajevo 71000
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-envelope" />
-                info@forspace.ba
+               asa@nekimail.com
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-phone" />
-                +387 33 774 873
+                +387 33 407-352
               </p>
             </div>
 

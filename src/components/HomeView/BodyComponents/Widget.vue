@@ -20,9 +20,9 @@
       </p>
 
       <small></small> {{ $t("widget_small_text") }}
-      <p>{{ $t("widget_phone_number") }}</p>
+      <p>+387 33 407-352</p>
 
-      <div class="d-flex gap-2 mt-5">
+      <!-- <div class="d-flex gap-2 mt-5">
         <div
           v-for="(widget, index) in widgets"
           class="w-100 bg-light text-center p-3"
@@ -35,7 +35,7 @@
           </small>
           <p>{{ $t(widget.p) }}</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

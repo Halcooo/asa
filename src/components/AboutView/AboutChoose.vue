@@ -146,7 +146,7 @@ export default {
       }
     }
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 800px) {
     height: 100%;
     padding: 10px;
 
@@ -154,6 +154,7 @@ export default {
       width: 100%;
       flex-direction: column;
       gap: 100px;
+      text-align: left;
       .choose-widget-frame {
         width: 100%;
         height: 50vh;

@@ -279,7 +279,7 @@ export default {
         url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
     }
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     width: 100%;
     height: 100%;
