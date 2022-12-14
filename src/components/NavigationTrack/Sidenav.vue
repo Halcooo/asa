@@ -63,14 +63,14 @@ export default {
 
           classname: "sidenav",
         },
-        {
-          to: "/",
-          name: "products",
-          isActive: false,
-          id: 2,
+        // {
+        //   to: "/",
+        //   name: "products",
+        //   isActive: false,
+        //   id: 2,
 
-          classname: "sidenav",
-        },
+        //   classname: "sidenav",
+        // },
         {
           to: "/",
           name: "services",
@@ -177,30 +177,36 @@ export default {
   @media screen and (max-width: 1450px) {
     .sidenav_content_visible {
       width: 22.5%;
+      right: 0%;
     }
   }
   @media screen and (max-width: 1400px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 27.5%;
     }
   }
   @media screen and (max-width: 1024px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 32.5%;
     }
   }
   @media screen and (max-width: 900px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 35.5%;
     }
   }
   @media screen and (max-width: 768px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 40.5%;
     }
   }
   @media screen and (max-width: 600px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 50.5%;
     }
   }

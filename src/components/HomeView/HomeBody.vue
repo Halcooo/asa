@@ -1,9 +1,9 @@
 @author Halid Lihovac
 <template>
   <Widget />
-  <CompanyIcons />
-  <Cube />
-  <Recension />
+  <!-- <CompanyIcons /> -->
+  <!-- <Cube /> -->
+  <!-- <Recension /> -->
   <HomeSlider />
 </template>
 <script>

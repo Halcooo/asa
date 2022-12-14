@@ -75,7 +75,7 @@ export default {
       divs: [
         {
           class: "erp",
-          text: "services_grid_div1_header",
+          text: "Fast and secure",
           p: "services_grid_div1_text",
           to: "/erp-all-in-one",
         },
@@ -106,19 +106,19 @@ export default {
       ],
       images: [
         {
-          name: "services_slider_heading_1",
-          url: require("@/assets/images/purchase-cover-image.png"),
-          text: "services_slider_text_1",
+          name: "Fast and secure Logistics",
+          url: require("@/assets/images/speed-truck.jpeg"),
+          text: "",
         },
         {
-          name: "services_slider_heading_2",
-          url: require("@/assets/images/product_item_1.jpg"),
-          text: "services_slider_heading_2",
+          name: "Skladištenje",
+          url: require("@/assets/images/wms-header.jpg"),
+          text: "ASA ŠPED  raspolaže sa više od 20.000 m² zatvorenog skladišnog prostora",
         },
         {
-          name: "services_slider_heading_3",
+          name: "Carinjenje",
           url: require("@/assets/images/product_item_2.jpg"),
-          text: "services_slider_text_3",
+          text: "Proužamo usluge posredovanje kod carinjenja roba.",
         },
       ],
     };

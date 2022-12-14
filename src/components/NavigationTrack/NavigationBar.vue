@@ -67,14 +67,6 @@ export default {
           classname: "nav",
         },
         {
-          to: "/products/purchase",
-          name: "products",
-          isActive: false,
-          id: 2,
-
-          classname: "nav",
-        },
-        {
           to: "/services",
           name: "services",
           isActive: false,
@@ -139,7 +131,7 @@ export default {
 
   width: 100%;
   .logo {
-    // position: absolute;
+
     .logo-back {
       position: absolute;
       top: 0%;
@@ -148,6 +140,7 @@ export default {
     }
     &:hover {
       cursor: pointer;
+
     }
   }
   .nav-wrapper-flex {
@@ -158,7 +151,7 @@ export default {
     align-items: center;
     padding: 20px 20px 20px 20px;
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 1050px) {
     .nav-wrapper {
       background-color: rgba(255, 255, 255, 0.349);
     }
@@ -289,7 +282,7 @@ export default {
   }
   .group {
     display: none;
-    @media screen and (max-width: 567px) {
+    @media screen and (max-width: 1050px) {
       display: block;
     }
   }

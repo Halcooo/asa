@@ -8,10 +8,18 @@
       <small class="">{{ $t("widget_heading") }}</small> 
       <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
-        {{ $t("widget_text") }}
+        U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je
+        preko 100 međunarodnih i domaćih klijenata (ASA Prevent grupacija,
+        Prevent Halog Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs
+        d.o.o. i dr ). Jedna od naših referenci je i dugogodišnja, na obostrano
+        zadovoljstvo, kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina
+        za koje obavljamo usluge skladištenja, transportne usluge, selidbe,
+        pakovanje, manipulaciju utovara i istovara, organizovanje prodajne
+        aukcije u našim skladišnim prostorima, a po veoma povoljnim finansijskim
+        uslovima.
       </p>
 
-      <small>{{ $t("widget_small_text") }}</small>
+      <small></small> {{ $t("widget_small_text") }}
       <p>{{ $t("widget_phone_number") }}</p>
 
       <div class="d-flex gap-2 mt-5">
@@ -54,6 +62,7 @@ export default {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-bottom:350px;
 
   .widget-box {
     width: 100%;
