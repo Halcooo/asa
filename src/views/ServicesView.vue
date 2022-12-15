@@ -6,7 +6,7 @@
     <div class="services-container mt-5">
       <div class="heading">
         <h1 class="mb-5 text-center text-secondary">
-          {{ $t("services_container_header") }}
+          Logistics and warehouse
         </h1>
         <Line />
         <div
@@ -76,26 +76,26 @@ export default {
         {
           class: "erp",
           text: "Fast and secure",
-          p: "services_grid_div1_text",
-          to: "/erp-all-in-one",
+          p: "services_grid_div1_text", // todo
+          to: "/erp-all-in-one",// todo
         },
         {
           class: "dms",
           text: "Warehouse",
-          p: "services_grid_div2_text",
-          to: "/why-companies-need-dms",
+          p: "services_grid_div2_text",// todo
+          to: "/why-companies-need-dms",// todo
         },
         {
           class: "wms",
           text: "Carina",
-          p: "services_grid_div3_text",
-          to: "/why-web-based",
+          p: "services_grid_div3_text",// todo
+          to: "/why-web-based",// todo
         },
         {
           class: "systemp",
           text: "Dodatne Usluge",
-          p: "services_grid_div4_text",
-          to: "/payment-provider",
+          p: "services_grid_div4_text",// todo
+          to: "/payment-provider",// todo
         },
       ],
       images: [
@@ -215,7 +215,7 @@ export default {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/mockup2-1.png") no-repeat center center/cover;
+        url("@/assets/images/mockup1.jpg") no-repeat center center/cover;
     }
     .dms {
       background: linear-gradient(
@@ -224,7 +224,7 @@ export default {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/mockup3-1.png") no-repeat center center/cover;
+        url("@/assets/images/asa-warehouse.png") no-repeat center center/cover;
     }
     .wms {
       background: linear-gradient(

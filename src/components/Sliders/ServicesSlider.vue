@@ -90,7 +90,7 @@ h1 {
   cursor: grabbing !important;
 }
 .carousel__item {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   color: white;
   // font-size: 20px;

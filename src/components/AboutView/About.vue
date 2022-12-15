@@ -5,7 +5,7 @@
         <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
 
         <p class="text-light">
-          {{ $t("about_us_additional_paragraph") }}
+          <!-- {{ $t("about_us_additional_paragraph") }} -->
         </p>
       </div>
     </div>
