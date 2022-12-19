@@ -77,17 +77,17 @@ export default {
 
 .landing-page {
   width: 100%;
-  height: 80vh;
+  height: 89vh;
   @media screen and (max-width: 567px) {
     padding-top: 5%;
     height: 85vh;
     text-align: left;
   }
   background: linear-gradient(
-      to top,
-      rgba(43, 75, 101, 0.6),
-      rgba(66, 96, 120, 0.6),
-      rgba(51, 90, 117, 0.6),
+      315deg,
+      rgba(43, 67, 101, 0.669),
+      rgba(66, 70, 120, 0.645),
+      rgba(225, 173, 1, 0.59)
     ),
     url("@/assets/images/asa-head-cover.jpg") no-repeat center center/cover;
 

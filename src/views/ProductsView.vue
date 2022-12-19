@@ -36,10 +36,10 @@ export default {};
 @import "@/styles/variables.scss";
 .wrapper {
   background: linear-gradient(
-      to right,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
+      315deg,
+      rgba(43, 67, 101, 0.669),
+      rgba(66, 70, 120, 0.645),
+      rgba(225, 173, 1, 0.59)
     ),
     url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
   // background-color: rgb(182, 182, 169);
