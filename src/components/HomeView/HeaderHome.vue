@@ -85,8 +85,8 @@ export default {
   }
   background: linear-gradient(
       315deg,
-      rgba(43, 67, 101, 0.669),
-      rgba(66, 70, 120, 0.645),
+      rgba(80, 99, 134, 0.368),
+      rgba(66, 70, 120, 0.316),
       rgba(225, 173, 1, 0.59)
     ),
     url("@/assets/images/asa-head-cover.jpg") no-repeat center center/cover;
