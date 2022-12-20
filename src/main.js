@@ -18,7 +18,6 @@ import {
   faGem,
   faChevronDown,
   faArrowUp,
-  faArrowDown,
   faDesktop,
   faMobile,
   faServer,
@@ -68,7 +67,6 @@ library.add(
   faMailBulk,
   faQuoteLeft,
   faPlay,
-
   faSearch,
   faChevronLeft
 );
