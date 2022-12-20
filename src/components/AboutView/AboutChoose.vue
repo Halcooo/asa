@@ -81,10 +81,8 @@ export default {
     .choose-widget-frame {
       width: 100%;
       height: 100%;
-
       // border: 1px solid black;
       position: relative;
-
       .widget-frame {
         position: absolute;
         width: 52%;
@@ -94,7 +92,6 @@ export default {
         top: 0;
         right: 5%;
       }
-
       .widget-photo {
         width: 70%;
         height: 60%;
