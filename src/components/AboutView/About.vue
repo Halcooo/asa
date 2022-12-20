@@ -248,7 +248,7 @@ export default {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
+        url("@/assets/images/asa-truck.jpg") no-repeat center center/cover;
     }
     .card-2 {
       background: linear-gradient(

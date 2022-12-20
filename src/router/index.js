@@ -45,54 +45,6 @@ const routes = [
     component: AboutView,
   },
   {
-    path: "/news",
-    name: "news",
-    component: NewsView,
-  },
-  {
-    path: "/products",
-    name: "products",
-    component: ProductsView,
-    children: [
-      {
-        path: "/products/sales",
-        name: "sales",
-        component: TheSales,
-        meta: { transition: "slide-left" },
-      },
-      {
-        path: "/products/purchase",
-        name: "purchase",
-        component: ThePurchase,
-      },
-      {
-        path: "/products/production",
-        name: "production",
-        component: TheProduction,
-      },
-      {
-        path: "/products/warehouse",
-        name: "pwarehouse",
-        component: TheWarehouse,
-      },
-      {
-        path: "/products/dms",
-        name: "dms",
-        component: TheDms,
-      },
-      {
-        path: "/products/finance",
-        name: "finance",
-        component: TheFinance,
-      },
-      {
-        path: "/products/human-resources",
-        name: "human-rescources",
-        component: TheHumanRescources,
-      },
-    ],
-  },
-  {
     path: "/erp-all-in-one",
     name: "ErpAllInOne",
     component: ErpAllInOne,
