@@ -29,7 +29,7 @@
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/products">
                 <h6 class="text-uppercase fw-bold text-light mb-4">
-                  {{ $t("footer_forspace_products") }}
+                 ASA ŠPED Services
                 </h6>
               </RouterLink>
               <p class="text-reset">
@@ -102,12 +102,10 @@ export default {
       ],
     };
   },
-  methods: {
+  methods: { 
     translatePage(lang) {
       this.selected = lang.abr;
-      console.log(this.selected);
       this.language = lang.language;
-
       return (this.$i18n.locale = this.selected);
     },
   },
