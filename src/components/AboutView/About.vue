@@ -13,7 +13,7 @@
   <div class="about-flex-grid">
     <div class="flex-first">
       <div class="div-1">
-        <h1>{{ $t("about_us_news_heading") }}</h1>
+        <h1>About</h1>
       </div>
 
       <div v-for="(card, index) in grid_1">
@@ -52,47 +52,47 @@ export default {
   data() {
     return {
       grid_1: [
-        { src: "/erp-all-in-one", class: "div-2", p: "about_us_news_link_one" },
+        { src: "/erp-all-in-one", class: "div-2", p: "Transport" },
         {
           src: "/why-companies-need-dms",
           class: "div-3",
 
-          p: "about_us_news_link_heading_two",
-          p2: "about_us_news_link_one",
+          p: "Warehouse",
+          p2: "Warehouse",
         },
         {
           src: "/why-web-based",
           class: "div-4",
-          p: "about_us_news_link_heading_three",
+          p: "Carina",
         },
       ],
       grid_2: [
         {
           src: "/what-type-of-entrepreneur-are-you",
-          h1: "about_us_news_right_flex_one_heading",
-          h4: "about_us_news_right_flex_one",
-          p: "about_us_news_right_flex_one_text",
+          h1: "Transport",
+          h4: "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
+          p: "",
           class: "card-1",
         },
         {
           src: "/signs-your-business-needs-advanced-software-solution",
-          h1: "about_us_news_right_flex_two_heading",
-          h4: "about_us_news_right_flex_two",
-          p: "about_us_news_right_flex_two_text",
+          h1: "Warehouse",
+          h4: "Warehouse",
+          p: "Warehouse",
           class: "card-2",
         },
         {
           src: "/how-erp-can-help-small-business-to-grow",
-          h1: "about_us_news_right_flex_three_heading",
-          h4: "about_us_news_right_flex_three",
-          p: "about_us_news_right_flex_three_text",
+          h1: "Carina",
+          h4: "Carina",
+          p: "Carina",
           class: "card-3",
         },
         {
           src: "/how-digital-transformation-helps-accounting",
-          h1: "about_us_news_right_flex_four_heading",
-          h4: "about_us_news_right_flex_four",
-          p: "about_us_news_right_flex_four_text",
+          h1: "Ostale usluge",
+          h4: "Ostale Usluge",
+          p: "Ostale Usluge",
           class: "card-4",
         },
       ],
@@ -107,12 +107,12 @@ export default {
   width: 100%;
   height: 50vh;
   background: linear-gradient(
-      to right,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
+      315deg,
+      rgba(43, 67, 101, 0.669),
+      rgba(66, 70, 120, 0.645),
+      rgba(225, 173, 1, 0.59)
     ),
-    url("@/assets/images/purchase-cover-image.png") no-repeat center
+    url("@/assets/images/asa-about.jpg") no-repeat center
       center/cover;
 
   position: relative;
@@ -257,7 +257,7 @@ export default {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/sistemi-placanja.jpg") no-repeat center
+        url("@/assets/images/wms-header.jpg") no-repeat center
           center/cover;
     }
     .card-3 {

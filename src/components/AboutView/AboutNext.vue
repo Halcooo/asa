@@ -4,7 +4,7 @@
       <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
       <Line />
       <h3 class="text-secondary mt-2">
-        {{ $t("about_us_next_additional_paragraph") }}
+       ASA Šped
       </h3>
     </div>
 

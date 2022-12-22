@@ -9,7 +9,10 @@
             class="logo-back"
             alt=""
             style="" /> -->
-          <img alt="Forspace Solutions" src="@/assets/images/asa-sped-logo.png"
+          <img
+            alt="Forspace Solutions"
+            :class="{ white_image :!white_wrapper  }"
+            src="@/assets/images/asa-sped-logo.png"
         /></router-link>
       </div>
       <div class="logo" v-if="white_wrapper" :class="{ mobile: white_wrapper }">
@@ -121,6 +124,9 @@ export default {
 </script>
 <style lang="scss">
 @import "../../styles/variables.scss";
+.white_image {
+  filter: brightness(0) invert(1);
+}
 
 .nav-wrapper {
   position: fixed;
@@ -131,7 +137,6 @@ export default {
 
   width: 100%;
   .logo {
-
     .logo-back {
       position: absolute;
       top: 0%;
@@ -140,7 +145,6 @@ export default {
     }
     &:hover {
       cursor: pointer;
-
     }
   }
   .nav-wrapper-flex {
@@ -334,7 +338,7 @@ export default {
 
 .white_wrapper {
   background-color: rgba(255, 255, 255, 0.924);
-  
+
   top: 0%;
 }
 </style>

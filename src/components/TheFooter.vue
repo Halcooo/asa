@@ -127,12 +127,13 @@ export default {
 
 img {
   width: 170px;
+  filter: brightness(0) invert(1);
 }
 .footer {
   // height: 30vh;
   // padding-top: 2%;
   padding: 10px 5px;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(5, 2, 36);
   position: relative;
   bottom: 0;
   @media screen and (max-width: 567px) {

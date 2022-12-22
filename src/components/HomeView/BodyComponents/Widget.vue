@@ -5,18 +5,14 @@
       <div class="widget-pic"></div>
     </div>
     <div class="text">
-      <small class="">{{ $t("widget_heading") }}</small> 
+      <small class="">{{ $t("widget_heading") }}</small>
       <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
-        U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je
-        preko 100 međunarodnih i domaćih klijenata (ASA Prevent grupacija,
-        Prevent Halog Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs
-        d.o.o. i dr ). Jedna od naših referenci je i dugogodišnja, na obostrano
-        zadovoljstvo, kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina
-        za koje obavljamo usluge skladištenja, transportne usluge, selidbe,
-        pakovanje, manipulaciju utovara i istovara, organizovanje prodajne
-        aukcije u našim skladišnim prostorima, a po veoma povoljnim finansijskim
-        uslovima.
+        Društvo ASA ŠPED d.o.o. Sarajevo je društvo čija je osnovna djelatnost
+        međunarodna i unutarnja špedicija, transport i skladištenje roba.
+        Društvo je organizovano u dvije poslovne jedinice (carinski terminal
+        Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim
+        graničnim prelazima u BiH.
       </p>
 
       <small></small> {{ $t("widget_small_text") }}
@@ -62,7 +58,7 @@ export default {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom:350px;
+  margin-bottom: 350px;
 
   .widget-box {
     width: 100%;

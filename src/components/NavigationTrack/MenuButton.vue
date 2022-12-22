@@ -21,7 +21,7 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 30) {
         this.navy = true;
       } else {
         this.navy = false;

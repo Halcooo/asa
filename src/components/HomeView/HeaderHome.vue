@@ -6,10 +6,10 @@
     <div class="div">
       <div>
         <div class="head-1">
-          <h1>
+          <h2>
             Mi nudimo usluge međunarodne i unutarnje špedicije, transport i
             skladištenje roba
-          </h1>
+          </h2>
         </div>
         <div class="head-2">
           <p class="text-warning">ASA Šped</p>
@@ -83,12 +83,13 @@ export default {
     height: 85vh;
     text-align: left;
   }
-  background: linear-gradient(
-      315deg,
-      rgba(80, 99, 134, 0.368),
-      rgba(66, 70, 120, 0.316),
-      rgba(225, 173, 1, 0.59)
-    ),
+  background: 
+  //linear-gradient(
+  //     315deg,
+  //     rgba(80, 99, 134, 0.368),
+  //     rgba(66, 70, 120, 0.316),
+  //     rgba(225, 173, 1, 0.59)
+  //   ),
     url("@/assets/images/asa-head-cover.jpg") no-repeat center center/cover;
 
   animation: backgroundFade 0.5s ease-in;
@@ -108,7 +109,7 @@ export default {
     margin: auto;
     padding-top: 15%;
 
-    h1 {
+    h2 {
       font-size: 60px;
       color: white;
       margin: 0;
