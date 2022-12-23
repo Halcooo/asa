@@ -11,7 +11,7 @@
             style="" /> -->
           <img
             alt="Forspace Solutions"
-            :class="{ white_image :!white_wrapper  }"
+            :class="{ white_image: !white_wrapper }"
             src="@/assets/images/asa-sped-logo.png"
         /></router-link>
       </div>
@@ -22,7 +22,7 @@
       </div>
       <div class="navigation">
         <ul class="nav-links">
-          <Links :routes="routes" @index="currentEmit" />
+          <Links :routes="routes" />
         </ul>
         <div class="group">
           <MenuButton :showSideNav="showSideNav" />
@@ -98,11 +98,6 @@ export default {
       } else {
         this.setSideNav(true);
       }
-    },
-    currentEmit(index) {
-      this.routes.forEach((item) => {
-        item.isActive = item.id == index ? true : false;
-      });
     },
   },
   mounted() {
@@ -335,10 +330,17 @@ export default {
 .mobile {
   display: block;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .white_wrapper {
   background-color: rgba(255, 255, 255, 0.924);
-
   top: 0%;
 }
+
 </style>

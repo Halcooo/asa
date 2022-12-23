@@ -4,7 +4,7 @@
   <AboutChoose />
   <AboutVideo />
   <!-- <AboutNums /> -->
-  <AboutReserv />
+  <!-- <AboutReserv /> -->
 </template>
 <script>
 import AboutVue from "@/components/AboutView/About.vue";

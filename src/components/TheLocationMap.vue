@@ -9,13 +9,14 @@
         width="1080"
         height="480"
         id="gmap_canvas"
-        src="https://maps.google.com/maps?q=ForspaceSolutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
         scrolling="yes"
         marginheight="0"
         marginwidth="0"
       ></iframe>
     </div>
+    
     <div
       style="position: absolute; top: 3%; right: 3%; width: 40px; height: 40px"
     >

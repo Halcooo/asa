@@ -47,7 +47,6 @@ export default {
     },
     translatePage(lang) {
       this.selected = lang.abr;
-      console.log(this.selected);
       this.language = lang.language;
 
       return (this.$i18n.locale = this.selected);
@@ -77,7 +76,6 @@ export default {
     },
   },
   mounted() {
-    console.log(this.translatePage);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 40) {
         this.navy = true;

@@ -77,15 +77,15 @@ export default {
         {
           src: "/signs-your-business-needs-advanced-software-solution",
           h1: "Warehouse",
-          h4: "Warehouse",
-          p: "Warehouse",
+          h4: "ASA ŠPED  raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora pogodnog za skladištenje svih vrsta roba.",
+          p: "",
           class: "card-2",
         },
         {
           src: "/how-erp-can-help-small-business-to-grow",
           h1: "Carina",
-          h4: "Carina",
-          p: "Carina",
+          h4: "Društvo se sastoji od stručnog i obrazovnog kadra u oblasti posredovanja kod carinjenja roba",
+          p: "",
           class: "card-3",
         },
         {
