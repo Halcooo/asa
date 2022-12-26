@@ -23,7 +23,9 @@
       <div class="navigation">
         <ul class="nav-links">
           <Links :routes="routes" />
+          <li class="language"><LanguageBar></LanguageBar></li>
         </ul>
+
         <div class="group">
           <MenuButton :showSideNav="showSideNav" />
           <Sidenav :showSideNav="showSideNav" :routes="routes" />
@@ -38,12 +40,13 @@ import { mapMutations, mapGetters } from "vuex";
 
 import Sidenav from "../../components/NavigationTrack/Sidenav.vue";
 import BaseButton from "../Forms/buttons/BaseButton.vue";
+import LanguageBar from "../LanguageBar.vue";
 import MenuButton from "./MenuButton.vue";
 import NavLink from "./NavLinks/NavLink.vue";
 export default {
   name: "Nav",
 
-  components: { Links, Sidenav, BaseButton, MenuButton, NavLink },
+  components: { Links, Sidenav, BaseButton, MenuButton, NavLink, LanguageBar },
   data() {
     return {
       route: { route: "/contact", name: "about_presentation" },
@@ -342,5 +345,4 @@ export default {
   background-color: rgba(255, 255, 255, 0.924);
   top: 0%;
 }
-
 </style>

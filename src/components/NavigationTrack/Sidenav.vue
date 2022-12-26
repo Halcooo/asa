@@ -15,6 +15,7 @@
             :sidenav_class="true"
             :showSideNav="showSideNav"
           />
+          <li><LanguageBar></LanguageBar></li>
         </ul>
         <div class="sidenav_times">
           <ClosingButton @click="showSideNav" />
@@ -29,6 +30,7 @@ import { mapGetters, mapMutations } from "vuex";
 import Links from "./NavigationLinks.vue";
 
 import ClosingButton from "../Forms/buttons/ClosingButton.vue";
+import LanguageBar from "../LanguageBar.vue";
 
 export default {
   name: "Sidenav",
@@ -36,7 +38,8 @@ export default {
   components: {
     Links,
     ClosingButton,
-  },
+    LanguageBar
+},
   props: {
     routes: { type: Array },
 
@@ -101,6 +104,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+
 .sidenav {
   .sidenav-content {
     position: fixed;

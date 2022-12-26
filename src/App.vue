@@ -187,7 +187,6 @@ h1 {
   background-color: #21d4fd;
   background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
     url("@/assets/images/image-1.png") no-repeat center center/cover;
-
   height: 50vh;
   display: flex;
   justify-content: center;
