@@ -89,6 +89,11 @@ h1 {
 .grabbed {
   cursor: grabbing !important;
 }
+@media screen and (max-width: 850px) {
+  .carousel__item {
+    height: 50vh !important;
+  }
+}
 .carousel__item {
   height: 80vh;
   width: 100%;

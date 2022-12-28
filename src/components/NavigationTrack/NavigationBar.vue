@@ -4,11 +4,6 @@
     <div class="nav-wrapper-flex" style="position: relative">
       <div class="logo" :class="{ none: none }">
         <router-link to="/">
-          <!-- <img
-            src="../../assets/images/logo-background.png"
-            class="logo-back"
-            alt=""
-            style="" /> -->
           <img
             alt="Forspace Solutions"
             :class="{ white_image: !white_wrapper }"
@@ -25,7 +20,6 @@
           <Links :routes="routes" />
           <li class="language"><LanguageBar></LanguageBar></li>
         </ul>
-
         <div class="group">
           <MenuButton :showSideNav="showSideNav" />
           <Sidenav :showSideNav="showSideNav" :routes="routes" />
@@ -189,7 +183,6 @@ export default {
   background: url("@/assets/images/product_item_2.jpg") no-repeat center
     center/cover;
 }
-
 .navigation {
   display: flex;
   justify-content: center;
@@ -202,7 +195,6 @@ export default {
       position: absolute;
       bottom: -30;
       display: none;
-
       a {
         padding: 10px 20px;
         color: black;
@@ -210,7 +202,6 @@ export default {
     }
     .first {
       display: flex;
-      // grid-template-columns: repeat(1, 1fr);
       width: 500px;
       height: 400px;
       transform: translate(-20%, 10%);

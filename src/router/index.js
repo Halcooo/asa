@@ -4,20 +4,10 @@ import {
   createWebHistory,
 } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import NewsView from "../views/NewsView.vue";
-import ProductsView from "../views/ProductsView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-import TheSales from "../components/ProductsViews/TheSales.vue";
-import ThePurchase from "../components/ProductsViews/ThePurchase.vue";
-import TheProduction from "../components/ProductsViews/TheProduction.vue";
-import TheWarehouse from "../components/ProductsViews/TheWarehouse.vue";
-import TheFinance from "../components/ProductsViews/TheFinance.vue";
-import TheHumanRescources from "../components/ProductsViews/TheHumanRescources.vue";
-import TheDms from "../components/ProductsViews/TheDms.vue";
-
 import Wms from "../components/ServicesView/Wms.vue";
 import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
 
@@ -95,11 +85,6 @@ const routes = [
     path: "/services",
     name: "services",
     component: ServicesView,
-  },
-  {
-    path: "/forspace-preview",
-    name: "forspace-preview",
-    component: ForspacePreview,
   },
   {
     path: "/contact",

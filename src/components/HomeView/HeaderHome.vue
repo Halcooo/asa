@@ -84,17 +84,17 @@ export default {
     text-align: left;
   }
   background: 
-  //linear-gradient(
-  //     315deg,
-  //     rgba(80, 99, 134, 0.368),
-  //     rgba(66, 70, 120, 0.316),
-  //     rgba(225, 173, 1, 0.59)
-  //   ),
+  linear-gradient(
+      315deg,
+      rgba(80, 99, 134, 0.103),
+      rgba(42, 46, 103, 0.552),
+      rgba(225, 173, 1, 0.59)
+    ),
     url("@/assets/images/asa-head-cover.jpg") no-repeat center center/cover;
 
   animation: backgroundFade 0.5s ease-in;
   .background {
-    width: 700px;
+ 
     height: 500px;
     margin-top: 0%;
     border-radius: 2px;

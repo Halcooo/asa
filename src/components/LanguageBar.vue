@@ -43,16 +43,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
-    width: 35px;
-    cursor: pointer;
+img {
+  width: 35px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  margin-right: 7px;
 }
 .display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
 </style>
