@@ -7,32 +7,19 @@
       <div>
         <div class="head-1">
           <h2>
-            Mi nudimo usluge međunarodne i unutarnje špedicije, transport i
-            skladištenje roba
+            {{ $t("header_text") }}
           </h2>
         </div>
         <div class="head-2">
           <p class="text-warning">ASA Šped</p>
 
-          <small
-            >Svim našim klijentima pružamo usluge međunarodnog i domaćeg
-            transporta, a specijalizirali smo se i u hitnoj distribuciji robe do
-            kupaca unutar BiH.</small
-          >
+          <small>
+            {{ $t("header_secondary_text") }}
+          </small>
         </div>
 
         <div
-          class="d-inline-flex justify-content-center align-items-center"
-          style="
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0);
-            border: 1px solid white;
-            /* border-radius: 50%; */
-            transform: translate(0%, 150%);
-            cursor: pointer;
-            font-size: 30px;
-            color: white;
-          "
+          class="d-inline-flex justify-content-center align-items-center down-button"
           @click="scrollDown()"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
@@ -74,7 +61,16 @@ export default {
     opacity: 1;
   }
 }
-
+.down-button {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  /* border-radius: 50%; */
+  transform: translate(0%, 150%);
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
 .landing-page {
   width: 100%;
   height: 89vh;
@@ -83,8 +79,7 @@ export default {
     height: 85vh;
     text-align: left;
   }
-  background: 
-  linear-gradient(
+  background: linear-gradient(
       315deg,
       rgba(80, 99, 134, 0.103),
       rgba(42, 46, 103, 0.552),
@@ -94,7 +89,6 @@ export default {
 
   animation: backgroundFade 0.5s ease-in;
   .background {
- 
     height: 500px;
     margin-top: 0%;
     border-radius: 2px;
@@ -110,7 +104,7 @@ export default {
     padding-top: 15%;
 
     h2 {
-      font-size: 60px;
+      font-size: 30px;
       color: white;
       margin: 0;
       padding: 0;
@@ -260,7 +254,7 @@ export default {
   top: 20%;
   left: 23%;
   @media screen and (max-width: 567px) {
-    width: 480px;
+    width: 90vw;
     left: 0%;
     // border: none;
   }

@@ -15,7 +15,7 @@
             :sidenav_class="true"
             :showSideNav="showSideNav"
           />
-          <li><LanguageBar></LanguageBar></li>
+          <li><LanguageBar @click="showSideNav"></LanguageBar></li>
         </ul>
         <div class="sidenav_times">
           <ClosingButton @click="showSideNav" />

@@ -89,10 +89,11 @@ export default {
     width: 100%;
     padding: 30px 60px;
     text-align: right;
-    @media screen and (max-width: 567px) {
+    @media screen and (max-width: 900px) {
       width: 95%;
       margin: auto;
       padding: 30px 0px;
+      text-align: left;
     }
     .d-flex {
       svg {
@@ -126,7 +127,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 900px) {
   .widget-container {
     width: 100%;
     flex-direction: column;
@@ -141,8 +142,8 @@ export default {
       }
       .widget-pic {
         width: 74%;
-        height: 300px;
       }
+ 
     }
   }
 }

@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="grid mb-5">
+      <div class="grid mb-5 main-grid">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
           <div>
             <h1 class="text-center">{{ $t(div.text) }}</h1>
@@ -131,6 +131,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.main-grid{
+  overflow: hidden;
+}
 
 .nav-text {
   position: absolute;

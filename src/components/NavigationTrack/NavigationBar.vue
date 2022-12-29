@@ -220,13 +220,11 @@ export default {
 
         width: 100%;
       }
-
       .nav_btn {
         display: flex;
         justify-content: right;
         align-items: center;
         width: 100%;
-
         a {
           color: gray;
         }
@@ -236,7 +234,6 @@ export default {
       display: flex;
       justify-content: center;
       width: 900px;
-      // height: 400px;
       transform: translate(-20%, 10%);
       background-color: rgb(255, 255, 255);
       border-radius: 2px;
@@ -255,7 +252,6 @@ export default {
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-out;
-        // padding: 5px;
         small {
           display: block;
           width: 100%;
@@ -313,7 +309,6 @@ export default {
 
   @media screen and (max-width: 567px) {
     font-size: 12px;
-    // padding: 0px 5px;
     height: 50px;
   }
 }

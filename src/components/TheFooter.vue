@@ -12,8 +12,8 @@
         <TheSocialIcons></TheSocialIcons>
       </section>
       <section class="">
-        <div class="container text-md-start pb-5 mt-5">
-          <div class="d-flex mt-3">
+        <div class="container text-md-start pb-5 mt-5 ">
+          <div class="d-flex mt-3 main">
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/">
                 <img src="../assets/images/asa-sped-logo.png" alt="" />
@@ -128,6 +128,12 @@ export default {
 img {
   width: 170px;
   filter: brightness(0) invert(1);
+}
+@media screen and (max-width: 700px) {
+  .main{
+    flex-direction: column;
+  }
+
 }
 .footer {
   // height: 30vh;
