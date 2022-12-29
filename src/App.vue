@@ -34,6 +34,7 @@ import Sidenav from "@/components/NavigationTrack/Sidenav.vue";
 import BaseScrollToTop from "./components/BaseScrollToTop.vue";
 import TheSocialIcons from "./components/TheSocialIcons.vue";
 
+
 export default {
   components: {
     NavigationBar,
@@ -50,7 +51,9 @@ export default {
       this.$router.push({ path: "/" });
     },
   },
-  mounted() {},
+  mounted() {
+
+  },
 };
 </script>
 <style lang="scss">

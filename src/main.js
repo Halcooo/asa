@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'aos/dist/aos.css'
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -6,6 +7,7 @@ import store from "./store";
 import i18n from "./i18n";
 import "bootstrap/dist/js/bootstrap.js";
 import YouTube from "vue3-youtube";
+import AOS from "aos";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"; //!!!!!!!!!!! important import only icons that will be used !!!!!!!!!!!!!!!!
@@ -75,6 +77,7 @@ createApp(App)
   .use(i18n)
   .use(store)
   .use(router)
+  .use(AOS.init())
   .component("YouTube", YouTube)
   .component("font-awesome-icon", FontAwesomeIcon)
 

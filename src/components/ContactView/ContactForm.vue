@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="form-group d-flex gap-3">
-        <button type="submit"  @click.prevent="submitForm">{{ $t('submit')}}</button>
+        <button type="submit"  @click.prevent="submitForm">{{ $t("submit")}}</button>
         <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
         <button type="button" @click="showMap()">
           {{ $t("contact_form_google_map") }}

@@ -102,6 +102,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+h1 {
+  color: white;
+}
 
 .about-nav {
   width: 100%;
@@ -112,8 +115,7 @@ export default {
       rgba(66, 70, 120, 0.645),
       rgba(225, 173, 1, 0.59)
     ),
-    url("@/assets/images/asa-about.jpg") no-repeat center
-      center/cover;
+    url("@/assets/images/asa-about.jpg") no-repeat center center/cover;
 
   position: relative;
   p {
@@ -257,8 +259,7 @@ export default {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/wms-header.jpg") no-repeat center
-          center/cover;
+        url("@/assets/images/wms-header.jpg") no-repeat center center/cover;
     }
     .card-3 {
       background: linear-gradient(

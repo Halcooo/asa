@@ -45,6 +45,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
 .choose {
   width: 100%;
 
@@ -146,7 +147,9 @@ export default {
   @media screen and (max-width: 800px) {
     height: 100%;
     padding: 10px;
-
+    .choose-text{
+      text-align: left !important;;
+    }
     .choose-flex {
       width: 100%;
       flex-direction: column;

@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-container mt-5">
+  <div class="widget-container mt-5" data-aos="fade-up"  data-aos-anchor-placement="top-center"   data-aos-duration="1300">
     <div class="widget-box">
       <div class="widget-frame"></div>
       <div class="widget-pic"></div>

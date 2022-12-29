@@ -1,6 +1,11 @@
 @author Halid Lihovac
 <template>
-  <div class="footer">
+  <div
+    class="footer"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1300"
+  >
     <!-- <div class="square"></div>
     <div class="circle"></div>
     <div class="round"></div> -->
@@ -12,7 +17,7 @@
         <TheSocialIcons></TheSocialIcons>
       </section>
       <section class="">
-        <div class="container text-md-start pb-5 mt-5 ">
+        <div class="container text-md-start pb-5 mt-5">
           <div class="d-flex mt-3 main">
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/">
@@ -29,7 +34,7 @@
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/products">
                 <h6 class="text-uppercase fw-bold text-light mb-4">
-                 ASA ŠPED Services
+                  ASA ŠPED Services
                 </h6>
               </RouterLink>
               <p class="text-reset">
@@ -57,27 +62,12 @@
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-envelope" />
-               asa@nekimail.com
+                asa@nekimail.com
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-phone" />
                 +387 33 407-352
               </p>
-            </div>
-
-            <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">
-              <h6 class="text-uppercase fw-bold text-light mb-4">Prevedi</h6>
-
-              <div class="">
-                <p
-                  class="cursor-pointer"
-                  v-for="lang in languages"
-                  :key="lang"
-                  @click="translatePage(lang)"
-                >
-                  {{ lang.language }}
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -102,7 +92,7 @@ export default {
       ],
     };
   },
-  methods: { 
+  methods: {
     translatePage(lang) {
       this.selected = lang.abr;
       this.language = lang.language;
@@ -130,10 +120,9 @@ img {
   filter: brightness(0) invert(1);
 }
 @media screen and (max-width: 700px) {
-  .main{
+  .main {
     flex-direction: column;
   }
-
 }
 .footer {
   // height: 30vh;

@@ -1,15 +1,15 @@
 import {
   createRouter,
-  createWebHashHistory,
   createWebHistory,
 } from "vue-router";
+
 import HomeView from "../views/HomeView.vue";
 import ServicesView from "../views/ServicesView.vue";
-import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
 import Wms from "../components/ServicesView/Wms.vue";
 import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
+
 
 import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";

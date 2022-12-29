@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="">
     <div class="container language display">
       <img
         class=""
