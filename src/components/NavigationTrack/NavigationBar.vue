@@ -118,6 +118,13 @@ export default {
 @import "../../styles/variables.scss";
 .white_image {
   filter: brightness(0) invert(1);
+  -webkit-transition: filter .5s ease-out;
+  -moz-transition: filter .5s ease-out;
+  -o-transition: filter .5s ease-out;
+  transition: filter .5s ease-out;
+  &:hover{
+    filter: none;
+  }
 }
 
 .nav-wrapper {

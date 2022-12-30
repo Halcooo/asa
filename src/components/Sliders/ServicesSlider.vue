@@ -42,7 +42,6 @@ export default {
   },
   data() {
     return {
-      routes: { route: "/products/sales", name: "mobile" },
       pressedMouse: false,
       currentSlide: 0,
     };
@@ -92,6 +91,11 @@ h1 {
 @media screen and (max-width: 850px) {
   .carousel__item {
     height: 50vh !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel__item {
+    height: 40vh !important;
   }
 }
 .carousel__item {

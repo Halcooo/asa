@@ -32,22 +32,19 @@
               </p>
             </div>
             <div class="col-md-3 mx-auto mb-4 text-center">
-              <RouterLink to="/products">
+              <RouterLink to="/services">
                 <h6 class="text-uppercase fw-bold text-light mb-4">
                   ASA ŠPED Services
                 </h6>
               </RouterLink>
               <p class="text-reset">
-                {{ $t("footer_accounting") }}
+                {{ $t("transport") }}
               </p>
               <p class="text-reset">
-                {{ $t("footer_controlling") }}
+                {{ $t("warehouse") }}
               </p>
               <p class="text-reset">
-                {{ $t("footer_all_in_one") }}
-              </p>
-              <p class="text-reset">
-                {{ $t("footer_mobile_app") }}
+                {{ $t("carina") }}
               </p>
             </div>
             <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">

@@ -8,14 +8,10 @@
       <small class="">{{ $t("widget_heading") }}</small>
       <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
-        Društvo ASA ŠPED d.o.o. Sarajevo je društvo čija je osnovna djelatnost
-        međunarodna i unutarnja špedicija, transport i skladištenje roba.
-        Društvo je organizovano u dvije poslovne jedinice (carinski terminal
-        Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim
-        graničnim prelazima u BiH.
+       {{ $t("widget_main_text") }}
       </p>
 
-      <small></small> {{ $t("widget_small_text") }}
+      <small>{{ $t("widget_small_text") }}</small> 
       <p>+387 33 407-352</p>
 
       <!-- <div class="d-flex gap-2 mt-5">
