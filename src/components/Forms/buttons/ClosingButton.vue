@@ -16,12 +16,14 @@ export default {
 
 <style lang="scss" scoped>
 .button_device {
+  margin-right: 5px;
   position: absolute;
   width: 100%;
   height: 100%;
   display: block;
   &:hover {
     cursor: pointer;
+    opacity: .7;
   }
   div {
     position: relative;
@@ -32,7 +34,7 @@ export default {
     width: 100%;
     padding: 1px;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: #25435b;
     transform: rotate(45deg);
     position: absolute;
     top: 50%;
@@ -42,7 +44,7 @@ export default {
     width: 100%;
     padding: 1px;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: #25435b;
     transform: rotate(-45deg);
     position: absolute;
     top: 50%;
@@ -51,7 +53,7 @@ export default {
   @media screen and (max-width: 560px) {
     .sidenav-content {
       .button_device {
-        left: 88%;
+        left: 50%!important;
       }
     }
   }

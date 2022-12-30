@@ -3,7 +3,7 @@
   <div
     class="footer"
     data-aos="fade-up"
-    data-aos-anchor-placement="top-center"
+    data-aos-anchor-placement="center-bottom"
     data-aos-duration="1300"
   >
     <!-- <div class="square"></div>

@@ -15,7 +15,7 @@
             :sidenav_class="true"
             :showSideNav="showSideNav"
           />
-          <li><LanguageBar @click="showSideNav"></LanguageBar></li>
+          <li><LanguageBar class="mt-4" @click="showSideNav"></LanguageBar></li>
         </ul>
         <div class="sidenav_times">
           <ClosingButton @click="showSideNav" />
@@ -232,7 +232,7 @@ export default {
     z-index: 3;
     .sidenav-content {
       .button_device {
-        left: 88%;
+        left: 50%;
       }
     }
   }

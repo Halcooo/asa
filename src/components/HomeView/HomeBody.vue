@@ -4,7 +4,7 @@
   <!-- <CompanyIcons /> -->
   <!-- <Cube /> -->
   <!-- <Recension /> -->
-  <HomeSlider />
+  <HomeSlider data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
 </template>
 <script>
 import Widget from "./BodyComponents/Widget.vue";
