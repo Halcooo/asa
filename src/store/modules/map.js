@@ -9,7 +9,6 @@ export default {
   },
   mutations: {
     setMapState(state, payload) {
-      console.log("muta", payload);
       state.map = payload;
     },
   },

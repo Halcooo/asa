@@ -149,7 +149,6 @@ export default {
   },
   methods: {
     submitForm(event) {
-    console.log(this.$refs.form);  
       this.validateMessage();
       this.validateName();
       this.validateEmail();
@@ -157,7 +156,6 @@ export default {
         this.sendEmail();
        }
        else{
-        console.log('Email data not ok');
        }
     },
     sendEmail() {
@@ -170,11 +168,9 @@ export default {
         )
         .then(
           (result) => {
-            console.log("SUCCESS!", result.text);
             alert('poslali smo mail');
           },
           (error) => {
-            console.log("FAILED...", error.text);
           }
         );
     },
