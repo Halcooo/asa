@@ -3,13 +3,14 @@
     <div class="about-heading text-center">
       <div>
         <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
-        <p class="text-light">
-        </p>
+        <p class="text-light"></p>
       </div>
     </div>
   </div>
+  <div class="container">  <h1 class="about mt-4 mb-4">About</h1></div>
+
   <div class="about-flex-grid">
-    <div class="flex-first">
+    <!-- <div class="flex-first">
       <div class="div-1">
         <h1>About</h1>
       </div>
@@ -29,7 +30,8 @@
           </div>
         </router-link>
       </div>
-    </div>
+    </div> -->
+
     <div class="flex-second">
       <router-link v-for="card in grid_2" :to="card.src">
         <div :class="card.class">
@@ -104,6 +106,12 @@ h1 {
   color: white;
 }
 
+.about {
+  border-bottom: 2px solid rgba(16, 99, 114, 0.6);
+  color: $primary-color;
+  text-align: center;
+}
+
 .about-nav {
   width: 100%;
   height: 50vh;
@@ -152,6 +160,7 @@ h1 {
   margin-top: 2%;
   margin-bottom: 5%;
   border-radius: 5px;
+  justify-content: center;
 
   .flex-first {
     width: 45%;
@@ -196,7 +205,7 @@ h1 {
   }
 
   .flex-second {
-    width: 60%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // gap: 10px;

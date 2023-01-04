@@ -15,9 +15,9 @@
     </div>
     <div class="frame-video"></div>
     <div class="overlay-video" :class="{ video: video }">
-      <YouTube src="https://www.youtube.com/embed/Yngh1X63Nyo" ref="youtube" />
+      <YouTube src="https://www.youtube.com/watch?v=VXMslOYKces&ab_channel=DSVGlobalTransportandLogistics" ref="youtube" />
       <div class="closing">
-        <ClosingButton @click="closeVideo" />
+        <ClosingButton @click="closeVideo" :isMap="true" />
       </div>
     </div>
   </div>
@@ -86,6 +86,9 @@ export default {
       svg {
         margin-left: 5px;
       }
+      &:hover{
+        color:orange;
+      }
     }
   }
   .frame-text {
@@ -116,7 +119,7 @@ export default {
         rgba(0, 0, 0, 0.212),
         rgba(0, 0, 0, 0.233)
       ),
-      url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
+      url("@/assets/images/logistics.webp") no-repeat center center/cover;
   }
   .overlay-video {
     position: fixed;
