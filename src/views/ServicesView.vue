@@ -34,11 +34,12 @@
                 background-color: tomato;
                 margin: auto;
                 margin-top: 10%;
+                margin-bottom:10%;
               "
             ></p>
-            <p class="text-center">
+            <!-- <p class="text-center">
               {{ $t(div.p) }}
-            </p>
+            </p> -->
             <div class="flex">
               <router-link :to="div.to">Read More</router-link>
             </div>
@@ -76,25 +77,25 @@ export default {
         {
           class: "erp",
           text: "Fast and secure",
-          p: "services_grid_div1_text", // todo
-          to: "/erp-all-in-one",// todo
+          // p: "Transport", // todo
+          to: "/transport",// todo
         },
         {
           class: "dms",
           text: "Warehouse",
-          p: "services_grid_div2_text",// todo
+          // p: "services_grid_div2_text",// todo
           to: "/why-companies-need-dms",// todo
         },
         {
           class: "wms",
           text: "Carina",
-          p: "services_grid_div3_text",// todo
+          // p: "services_grid_div3_text",// todo
           to: "/why-web-based",// todo
         },
         {
           class: "systemp",
           text: "Dodatne Usluge",
-          p: "services_grid_div4_text",// todo
+          // p: "services_grid_div4_text",// todo
           to: "/payment-provider",// todo
         },
       ],

@@ -13,19 +13,19 @@
         <h2>{{ $t("about_us_nums_established") }}</h2>
       </div>
       <div class="year">
-        <div>{{ roundedValyear }} y</div>
+        <div>{{ roundedValyear }}y</div>
       </div>
       <div class="label">
         <h2>{{ $t("about_us_nums_clients") }}</h2>
       </div>
       <div class="client">
-        <div>{{ roundedValcli }} +</div>
+        <div>{{ roundedValcli }}+</div>
       </div>
       <div class="label">
         <h2>{{ $t("about_us_nums_employed") }}</h2>
       </div>
       <div class="emp">
-        <div>{{ roundedValEmp }} +</div>
+        <div>{{ roundedValEmp }}+</div>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ export default {
     const roundedValcli = ref(0);
     const roundedValEmp = ref(0);
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 3000) {
+      if (window.scrollY > 2100) {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;
@@ -114,7 +114,7 @@ export default {
   .label {
     display: none;
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 800px) {
     .num-flex {
       width: 90%;
       margin-top: 10%;

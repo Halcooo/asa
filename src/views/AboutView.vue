@@ -1,7 +1,7 @@
 <template>
   <AboutVue />
   <AboutNext />
-  <AboutChoose />
+  <!-- <AboutChoose /> -->
   <AboutVideo />
    <AboutNums /> 
   <!-- <AboutReserv /> -->

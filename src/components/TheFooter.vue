@@ -21,9 +21,7 @@
 
               <h6 class="text-uppercase fw-bold mb-4"></h6>
               <p class="ms-2">
-                Mi ne radimo sa vama!
-                <br />
-                Mi radimo za vas!
+                {{ $t("fast_and_secure") }}
               </p>
             </div>
             <div class="col-md-3 mx-auto mb-4 text-center">

@@ -5,14 +5,7 @@
       <BaseSlider :images="images" />
     </div>
     <p class="mt-5 mb-5 pt-5 container">
-      U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je preko
-      100 međunarodnih i domaćih klijenata (ASA Prevent grupacija, Prevent Halog
-      Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs d.o.o. i dr ). Jedna
-      od naših referenci je i dugogodišnja, na obostrano zadovoljstvo,
-      kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina za koje
-      obavljamo usluge skladištenja, transportne usluge, selidbe, pakovanje,
-      manipulaciju utovara i istovara, organizovanje prodajne aukcije u našim
-      skladišnim prostorima, a po veoma povoljnim finansijskim uslovima.
+      {{ $t("reference") }}
     </p>
   </div>
 </template>
