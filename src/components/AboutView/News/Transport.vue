@@ -1,14 +1,13 @@
 <template>
   <div class="header">
     <div>
-      <h1>{{ $t("about_us_news_right_flex_one") }}</h1>
+      <h1>Transport</h1>
     </div>
   </div>
   <div class="content-news">
-    <div v-for="chip in chips" class="chip">
+    <!-- <div v-for="chip in chips" class="chip">
       {{ chip.chip }}
-    </div>
-
+    </div> -->
     <div v-for="(c, index) in content" :key="c">
       <div v-if="index == 5">
         <p>
@@ -26,7 +25,7 @@
 </template>
 <script>
 export default {
-  name: "Entreprenuor",
+  name: "Transport",
   data() {
     return {
       chips: [{ chip: "#preduzetnistvo" }],
@@ -43,4 +42,8 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  color: white;
+}
+</style>

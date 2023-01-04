@@ -14,7 +14,7 @@ import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
 import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
 import WhyWebBased from "../components/AboutView/News/WhyWebBased";
-import Entrepreneur from "../components/AboutView/News/Entrepreneur";
+import Transport from "../components/AboutView/News/Transport";
 import SoftwareSolutions from "../components/AboutView/News/SoftwareSolutions";
 import HowErp from "../components/AboutView/News/HowErp";
 import DigitalTransformation from "../components/AboutView/News/DigitalTransformation";
@@ -50,9 +50,9 @@ const routes = [
     component: WhyWebBased,
   },
   {
-    path: "/what-type-of-entrepreneur-are-you",
-    name: "Entrepreneur",
-    component: Entrepreneur,
+    path: "/transport",
+    name: "Transport",
+    component: Transport,
   },
   {
     path: "/signs-your-business-needs-advanced-software-solution",

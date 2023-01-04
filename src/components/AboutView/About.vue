@@ -66,7 +66,7 @@ export default {
       ],
       grid_2: [
         {
-          src: "/what-type-of-entrepreneur-are-you",
+          src: "/transport",
           h1: "Transport",
           h4: "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
           p: "",
@@ -275,7 +275,7 @@ h1 {
           rgba(8, 40, 67, 0.6),
           rgba(8, 40, 67, 0.6)
         ),
-        url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
+        url("@/assets/images/services.jpg") no-repeat center center/cover;
     }
   }
   @media screen and (max-width: 800px) {
