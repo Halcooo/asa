@@ -11,7 +11,7 @@
        {{ $t("widget_main_text") }}
       </p>
 
-      <small>{{ $t("widget_small_text") }}</small> 
+     <small>{{ $t("widget_small_text") }}</small> 
       <p>+387 33 407-352</p>
 
       <!-- <div class="d-flex gap-2 mt-5">

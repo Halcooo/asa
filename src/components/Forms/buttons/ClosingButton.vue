@@ -1,8 +1,8 @@
 <template>
   <div class="button_device">
     <div>
-      <p class="x-one" :class="{ btn: btn }"></p>
-      <p class="x-two" :class="{ btn: btn }"></p>
+      <p class="x-one" :class="{ btn: btn, white: isMap }"></p>
+      <p class="x-two" :class="{ btn: btn, white: isMap }"></p>
     </div>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 export default {
   name: "ClosingButton",
-  props: ["btn", "map"],
+  props: ["btn", "map", "isMap"],
 };
 </script>
 
@@ -23,7 +23,7 @@ export default {
   display: block;
   &:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: 0.7;
   }
   div {
     position: relative;
@@ -53,9 +53,12 @@ export default {
   @media screen and (max-width: 560px) {
     .sidenav-content {
       .button_device {
-        left: 50%!important;
+        left: 50% !important;
       }
     }
+  }
+  .white {
+    background-color: white !important;
   }
 
   .btn {

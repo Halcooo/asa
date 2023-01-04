@@ -3,7 +3,7 @@
   <AboutNext />
   <AboutChoose />
   <AboutVideo />
-  <!-- <AboutNums /> -->
+   <AboutNums /> 
   <!-- <AboutReserv /> -->
 </template>
 <script>

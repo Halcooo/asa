@@ -65,11 +65,13 @@ export default {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid white;
-  /* border-radius: 50%; */
   transform: translate(0%, 150%);
   cursor: pointer;
   font-size: 30px;
   color: white;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .landing-page {
   width: 100%;

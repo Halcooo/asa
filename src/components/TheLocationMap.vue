@@ -20,7 +20,7 @@
     <div
       style="position: absolute; top: 3%; right: 3%; width: 40px; height: 40px"
     >
-      <ClosingButton @click="showMap" />
+      <ClosingButton @click="showMap" :isMap="this.$store.getters.getMapState"/>
     </div>
   </div>
 </template>

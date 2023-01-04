@@ -44,6 +44,7 @@ export default {
     return {
       pressedMouse: false,
       currentSlide: 0,
+      imena:"",
     };
   },
   watch: {

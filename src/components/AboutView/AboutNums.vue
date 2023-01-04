@@ -1,28 +1,28 @@
 <template>
   <div class="nums">
-    <h1 class="mb-4">{{ $t("about_us_nums_heading") }}</h1>
+    <h2 class="mb-4">{{ $t("about_us_nums_heading") }}</h2>
     <Line />
     <div class="heading-flex">
-      <h1>Osnovano</h1>
-      <h1>Klijenti</h1>
-      <h1>Zaposlenih</h1>
+      <h2>Osnovano</h2>
+      <h2>Klijenti</h2>
+      <h2>Zaposlenih</h2>
     </div>
 
     <div class="num-flex">
       <div class="label">
-        <h1>{{ $t("about_us_nums_established") }}</h1>
+        <h2>{{ $t("about_us_nums_established") }}</h2>
       </div>
       <div class="year">
         <div>{{ roundedValyear }} y</div>
       </div>
       <div class="label">
-        <h1>{{ $t("about_us_nums_clients") }}</h1>
+        <h2>{{ $t("about_us_nums_clients") }}</h2>
       </div>
       <div class="client">
         <div>{{ roundedValcli }} +</div>
       </div>
       <div class="label">
-        <h1>{{ $t("about_us_nums_employed") }}</h1>
+        <h2>{{ $t("about_us_nums_employed") }}</h2>
       </div>
       <div class="emp">
         <div>{{ roundedValEmp }} +</div>
@@ -74,9 +74,8 @@ export default {
 <style lang="scss" scoped>
 .nums {
   padding-top: 5%;
-  h1 {
+  h2 {
     text-align: center;
-    color: gray;
   }
 
   .num-flex {
@@ -86,7 +85,7 @@ export default {
     width: 70%;
     margin: 0% auto 10% auto;
     gap: 20px;
-    font-size: 100px;
+    font-size: 70px;
 
     .year,
     .client,
@@ -106,7 +105,7 @@ export default {
     width: 60%;
     margin: 5% auto;
 
-    > h1 {
+    > h2 {
       width: 100%;
       display: block;
       color: gray;
@@ -120,6 +119,7 @@ export default {
       width: 90%;
       margin-top: 10%;
       flex-direction: column;
+      font-size: 35px;
     }
     .heading-flex {
       display: none;
@@ -127,6 +127,11 @@ export default {
     .label {
       display: block;
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .num-flex {
+    font-size: 75px;
   }
 }
 </style>

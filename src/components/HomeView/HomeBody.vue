@@ -13,6 +13,7 @@ import Cube from "./BodyComponents/Cube.vue";
 import Recension from "./BodyComponents/Recension.vue";
 import HomeSlider from "./BodyComponents/HomeSlider.vue";
 
+
 export default {
   name: "HomeBody",
   components: {
