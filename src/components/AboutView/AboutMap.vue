@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="about_map">
+    <div class="about_map"
+    data-aos="fade-up">
       <div class="inner">
         <div style="position: relative; z-index: 1">
           <h1>Pronadjite nas na karti</h1>

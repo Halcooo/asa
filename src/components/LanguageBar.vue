@@ -10,6 +10,7 @@
         @click="translatePage(lang)"
       />
     </div>
+    
   </div>
 </template>
 <script>

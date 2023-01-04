@@ -1,5 +1,6 @@
 <template lang="">
-  <div class="wrapper">
+  <div class="wrapper"
+  data-aos="fade-in">
     <ServicesSlider :images="images"></ServicesSlider>
   </div>
   <div class="content">

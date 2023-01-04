@@ -1,5 +1,6 @@
 <template>
-  <div class="choose">
+  <div class="choose"
+  data-aos="fade-left">
     <div class="choose-flex">
       <div class="choose-text">
         <small>{{ $t("about_us_choose_small_heading") }}</small>

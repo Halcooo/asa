@@ -1,5 +1,6 @@
 <template>
-  <div class="about-nav d-flex justify-content-center align-items-center">
+  <div class="about-nav d-flex justify-content-center align-items-center"
+  data-aos="fade-in">
     <div class="about-heading text-center">
       <div>
         <h1 class="text-light">{{ $t("about_us_heading") }}</h1>

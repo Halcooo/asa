@@ -1,32 +1,19 @@
 <template>
-  <div class="the_next">
+  <div class="the_next"
+  data-aos="fade-right"
+  data-aos-anchor-placement="top-center">
     <div class="the_next_heading">
       <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
       <Line />
-      <h3 class="text-secondary mt-2">
-       ASA Šped
-      </h3>
+      <h3 class="text-secondary mt-2">ASA Šped Contact personel:</h3>
     </div>
-
-    <div class="the_next_content">
-      <div
-        v-for="next in for_next"
-        :class="next.class"
-        class="text-light d-flex justify-content-center align-items-center text-center"
-      >
-        <div>
-          <h3>{{ $t(next.h3) }}</h3>
-          <p>
-            {{ $t(next.p) }}
-          </p>
-          <div class="read-more d-inline-flex justify-content-center">
-            <router-link
-              :to="next.src"
-              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
-              >{{ $t(next.read_more) }}</router-link
-            >
-          </div>
-        </div>
+    <div class="container next-view">
+      <div v-for="contact in contacts" class="card">
+        <img src="@/assets/images/avatar.jpg" alt="John" style="width: 100%" />
+        <h2>{{ contact.name }}</h2>
+        <p class="title">{{ contact.position }}</p>
+        <p>{{ contact.mail }}</p>
+        <p>{{ contact.phone }}</p>
       </div>
     </div>
   </div>
@@ -38,20 +25,24 @@ export default {
   components: { Line },
   data() {
     return {
-      for_next: [
+      contacts: [
         {
-          src: "/digital-transformation-advantages",
-          class: "item_one",
-          h3: "about_us_next_overlay_left_heading",
-          p: "about_us_next_overlay_left_paragraph",
-          read_more: "read_more",
+          name: "Haris Sarajlić",
+          position: "Rukovodilac carinskog sektora",
+          phone: "061 109 066",
+          mail: "haris.sarajlic@asa.ba",
         },
         {
-          src: "/whats-an-api",
-          class: "item_two",
-          h3: "about_us_next_overlay_right_heading",
-          p: "about_us_next_overlay_right_paragraph",
-          read_more: "read_more",
+          name: "Nermina Planinčević",
+          position: "Rukovodilac komercijalnog transportnog sektora",
+          phone: "061 225 618,",
+          mail: "nermina.planincevic@asa.ba",
+        },
+        {
+          name: "Emir Dinarević",
+          position: "Rukovodilac sektora skladište",
+          phone: "061 106 589",
+          mail: "emir.dinarevic@asa.ba",
         },
       ],
     };
@@ -60,6 +51,38 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.next-view{
+  margin-top: 20px;
+  display:flex;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  height: 500px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
 .the_next {
   width: 100%;
 

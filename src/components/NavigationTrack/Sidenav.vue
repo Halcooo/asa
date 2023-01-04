@@ -6,7 +6,10 @@
     >
       <div>
         <div class="img">
-          <img alt="Forspace Solutions" src="@/assets/images/asa-sped-logo.png"/>
+          <img
+            alt="Forspace Solutions"
+            src="@/assets/images/asa-sped-logo.png"
+          />
         </div>
 
         <ul class="nav-links-vertical">
@@ -38,8 +41,8 @@ export default {
   components: {
     Links,
     ClosingButton,
-    LanguageBar
-},
+    LanguageBar,
+  },
   props: {
     routes: { type: Array },
 
@@ -109,12 +112,8 @@ export default {
   .sidenav-content {
     position: fixed;
     display: flex;
-
     justify-content: center;
     text-align: center;
-    // align-items: center;
-
-    // margin: auto;
     top: 0;
     padding-top: 25%;
     right: -28%;
