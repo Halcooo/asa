@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 30px;
+  width: 23px;
   cursor: pointer;
   &:hover {
     opacity: 0.7;

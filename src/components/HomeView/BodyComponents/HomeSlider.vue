@@ -1,10 +1,10 @@
 <template>
-  <div class="w-100 text-center bg-light">
+  <div class="w-100 text-center">
     <h1>Reference</h1>
     <div class="container">
       <BaseSlider :images="images" />
     </div>
-    <p class="mt-5 mb-5 pt-5 container">
+    <p class="mt-5 pt-5 container">
       {{ $t("reference") }}
     </p>
   </div>

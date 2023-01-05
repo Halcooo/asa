@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-container mt-5" data-aos="fade-up"  data-aos-anchor-placement="top-center"   data-aos-duration="1300">
+  <div class="widget-container " data-aos="fade-up"  data-aos-anchor-placement="top-center"   data-aos-duration="1300">
     <div class="widget-box">
       <div class="widget-frame"></div>
       <div class="widget-pic"></div>
@@ -47,6 +47,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .widget-container {
+  padding-top:2em;
   width: 70%;
   margin: auto;
   margin-bottom: 5%;
@@ -55,7 +56,6 @@ export default {
   justify-content: center;
   gap: 50px;
   margin-bottom: 350px;
-
   .widget-box {
     width: 100%;
     height: 100%;

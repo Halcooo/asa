@@ -115,15 +115,25 @@
         </div>
       </div>
       <div class="form-group d-flex gap-3">
-        <button type="submit"  @click.prevent="submitForm">{{ $t("submit")}}</button>
-        <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
-        <button type="button" @click="showMap()">
-          {{ $t("contact_form_google_map") }}
+        <button type="submit" @click.prevent="submitForm">
+          {{ $t("submit") }}
         </button>
+        <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
       </div>
     </form>
-    <TheLocationMap :showMap="showMap" />
   </div>
+  <div >
+      <iframe
+        width="1080"
+        height="480"
+        id="gmap_canvas"
+        src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        scrolling="yes"
+        marginheight="0"
+        marginwidth="0"
+      ></iframe>
+    </div>
 </template>
 <script>
 import BaseButton from "../Forms/buttons/BaseButton.vue";
@@ -152,11 +162,10 @@ export default {
       this.validateMessage();
       this.validateName();
       this.validateEmail();
-      if(!this.emailInvalid && !this.nameInvalid && !this.messageInvalid){
+      if (!this.emailInvalid && !this.nameInvalid && !this.messageInvalid) {
         this.sendEmail();
-       }
-       else{
-       }
+      } else {
+      }
     },
     sendEmail() {
       emailjs
@@ -164,14 +173,13 @@ export default {
           "service_59dlwku",
           "template_8x1dw07",
           this.$refs.form,
-          "bS_JQ-oO8aZ_UBccV",
+          "bS_JQ-oO8aZ_UBccV"
         )
         .then(
           (result) => {
-            alert('poslali smo mail');
+            alert("poslali smo mail");
           },
-          (error) => {
-          }
+          (error) => {}
         );
     },
     validateName() {

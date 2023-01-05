@@ -1,10 +1,12 @@
 @author Halid Lihovac
 <template>
-  <Widget />
-  <!-- <CompanyIcons /> -->
-  <!-- <Cube /> -->
-  <!-- <Recension /> -->
-  <HomeSlider data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
+  <div class="wrapper">
+    <Widget />
+    <!-- <CompanyIcons /> -->
+    <!-- <Cube /> -->
+    <!-- <Recension /> -->
+    <HomeSlider data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
+  </div>
 </template>
 <script>
 import Widget from "./BodyComponents/Widget.vue";
@@ -12,7 +14,6 @@ import CompanyIcons from "./BodyComponents/CompanyIcons.vue";
 import Cube from "./BodyComponents/Cube.vue";
 import Recension from "./BodyComponents/Recension.vue";
 import HomeSlider from "./BodyComponents/HomeSlider.vue";
-
 
 export default {
   name: "HomeBody",
@@ -30,4 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.wrapper{
+ background: url('@/assets/images/bg-pattern-2.png');
+}
 </style>
