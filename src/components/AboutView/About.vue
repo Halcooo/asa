@@ -1,6 +1,8 @@
 <template>
-  <div class="about-nav d-flex justify-content-center align-items-center"
-  data-aos="fade-in">
+  <div
+    class="about-nav d-flex justify-content-center align-items-center"
+    data-aos="fade-in"
+  >
     <div class="about-heading text-center">
       <div>
         <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
@@ -8,34 +10,14 @@
       </div>
     </div>
   </div>
-  <div class="container">  <h1 class="about mt-4 mb-4">About</h1></div>
-
   <div class="about-flex-grid">
-    <!-- <div class="flex-first">
-      <div class="div-1">
-        <h1>About</h1>
-      </div>
-
-      <div v-for="(card, index) in grid_1">
-        <router-link v-if="index == 1" :to="card.src">
-          <div :class="card.class">
-            <p>{{ $t(card.p) }}</p>
-            <p>
-              {{ $t(card.p2) }}
-            </p>
-          </div>
-        </router-link>
-        <router-link v-else :to="card.src">
-          <div :class="card.class">
-            <p>{{ $t(card.p) }}</p>
-          </div>
-        </router-link>
-      </div>
-    </div> -->
-
     <div class="flex-second">
       <router-link v-for="card in grid_2" :to="card.src">
-        <div :class="card.class">
+        <div
+          :class="card.class"
+          :data-aos="card.animate"
+          data-aos-duration="1000"
+        >
           <div>
             <h1>{{ $t(card.h1) }}</h1>
             <h4>{{ $t(card.h4) }}</h4>
@@ -52,21 +34,6 @@ export default {
   name: "AboutUs",
   data() {
     return {
-      grid_1: [
-        { src: "/erp-all-in-one", class: "div-2", p: "Transport" },
-        {
-          src: "/why-companies-need-dms",
-          class: "div-3",
-
-          p: "Warehouse",
-          p2: "Warehouse",
-        },
-        {
-          src: "/why-web-based",
-          class: "div-4",
-          p: "Carina",
-        },
-      ],
       grid_2: [
         {
           src: "/transport",
@@ -74,6 +41,7 @@ export default {
           h4: "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
           p: "",
           class: "card-1",
+          animate: "fade-right",
         },
         {
           src: "/signs-your-business-needs-advanced-software-solution",
@@ -81,6 +49,7 @@ export default {
           h4: "ASA ŠPED  raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora pogodnog za skladištenje svih vrsta roba.",
           p: "",
           class: "card-2",
+          animate: "fade-left",
         },
         {
           src: "/how-erp-can-help-small-business-to-grow",
@@ -88,6 +57,7 @@ export default {
           h4: "Društvo se sastoji od stručnog i obrazovnog kadra u oblasti posredovanja kod carinjenja roba",
           p: "",
           class: "card-3",
+          animate: "fade-right",
         },
         {
           src: "/how-digital-transformation-helps-accounting",
@@ -95,6 +65,7 @@ export default {
           h4: "Ostale Usluge",
           p: "Ostale Usluge",
           class: "card-4",
+          animate: "fade-left",
         },
       ],
     };
@@ -115,7 +86,7 @@ h1 {
 
 .about-nav {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: linear-gradient(
       315deg,
       rgba(43, 67, 101, 0.669),
@@ -153,9 +124,8 @@ h1 {
   }
 }
 .about-flex-grid {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  height: 56vh;
   display: flex;
   // gap: 10px;
   margin-top: 2%;
@@ -163,59 +133,17 @@ h1 {
   border-radius: 5px;
   justify-content: center;
 
-  .flex-first {
-    width: 45%;
-    height: 100%;
-    // background: rgb(188, 66, 66);
-    // padding: 10px;
-    .div-1,
-    .div-2,
-    .div-3,
-    .div-4 {
-      width: 80%;
-      margin: auto;
-      margin-bottom: 4%;
-
-      padding: 15px 0px;
-    }
-
-    .div-1,
-    .div-2,
-    .div-3,
-    .div-4 {
-      border-bottom: 2px solid rgba(16, 99, 114, 0.6);
-    }
-    .div-2,
-    .div-3,
-    .div-4 {
-      &:hover {
-        opacity: 0.8;
-        color: gray;
-      }
-    }
-    .overlay {
-      width: 80%;
-      margin: auto;
-      background-color: rgba(192, 192, 192, 0.877);
-      height: 17%;
-    }
-    h1,
-    p {
-      color: gray;
-    }
-  }
-
   .flex-second {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // gap: 10px;
+    gap: 10px;
     .card-1,
     .card-2,
     .card-3,
     .card-4 {
       width: 100%;
-      height: 100%;
+      height: 400px;
       color: white;
       overflow: hidden;
       &:hover {
@@ -235,12 +163,12 @@ h1 {
         h1 {
           font-size: 30px;
         }
-        top: 83.5%;
+        top: 90.5%;
 
         h1 {
           font-size: 30px;
         }
-        top: 83.5%;
+        top: 90.5%;
       }
 
       &:hover {
