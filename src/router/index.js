@@ -1,14 +1,9 @@
-import {
-  createRouter,
-  createWebHistory,
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-
-
 import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
 import WhyWebBased from "../components/AboutView/News/WhyWebBased";
@@ -17,8 +12,6 @@ import Warehouse from "../components/AboutView/News/Warehouse";
 import Duty from "../components/AboutView/News/Duty";
 import OtherServices from "../components/AboutView/News/OtherServices";
 import WhatsAnApi from "../components/AboutView/News/WhatsAnApi";
-
-// import store from "@/store/index.js"; // to use store in router if needed
 
 const routes = [
   {
