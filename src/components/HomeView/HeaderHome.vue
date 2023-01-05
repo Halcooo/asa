@@ -62,17 +62,21 @@ export default {
   }
 }
 .down-button {
+  margin-top: 30px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid white;
-  transform: translate(0%, 150%);
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate();
   cursor: pointer;
   font-size: 30px;
   color: white;
+  transition: 1s ease-in-out;
   &:hover {
     opacity: 0.7;
-    border: 1px solid orange;
+    border: 2px solid orange;
     color:orange;
+    transform: scale(1.1);
   }
 }
 .landing-page {

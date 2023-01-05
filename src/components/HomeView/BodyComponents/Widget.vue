@@ -1,17 +1,21 @@
 <template>
-  <div class="widget-container " data-aos="fade-up"  data-aos-anchor-placement="top-center"   data-aos-duration="1300">
-    <div class="widget-box">
+  <div class="widget-container">
+    <div class="widget-box" data-aos="fade-up-right" data-aos-duration="1300">
       <div class="widget-frame"></div>
-      <div class="widget-pic"></div>
+      <div
+        class="widget-pic"
+        data-aos="flip-left"
+        data-aos-duration="1300"
+      ></div>
     </div>
-    <div class="text">
+    <div class="text" data-aos="fade-up-left" data-aos-duration="1300">
       <small class="">{{ $t("widget_heading") }}</small>
       <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
-       {{ $t("widget_main_text") }}
+        {{ $t("widget_main_text") }}
       </p>
 
-     <small>{{ $t("widget_small_text") }}</small> 
+      <small>{{ $t("widget_small_text") }}</small>
       <p>+387 33 407-352</p>
 
       <!-- <div class="d-flex gap-2 mt-5">
@@ -30,6 +34,11 @@
       </div> -->
     </div>
   </div>
+  <div
+  data-aos="flip-left"
+  data-aos-duration="1000"> <h2>{{$t('fast_and_simple')}}</h2>
+  <div class="container truck mb-5 mt-5"><img src="@/assets/images/moving.gif" alt=""></div></div>
+ 
 </template>
 <script>
 export default {
@@ -46,16 +55,23 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+h2{
+  text-align: center;
+}
+.truck{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .widget-container {
-  padding-top:2em;
-  width: 70%;
+  padding-top: 2em;
+  width: 85%;
   margin: auto;
-  margin-bottom: 5%;
   height: 55vh;
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 350px;
+  margin-bottom: 250px;
   .widget-box {
     width: 100%;
     height: 100%;
@@ -65,7 +81,7 @@ export default {
       position: absolute;
       width: 52%;
       height: 100%;
-      border: 23px solid rgba(8, 40, 67, 0.8);
+      border: 23px solid rgba(8, 40, 67, 0.681);
       // border: 23px solid rgb(255, 97, 0);
       top: 0;
       left: 7%;
@@ -76,15 +92,19 @@ export default {
       left: 22%;
       width: 78%;
       height: 70%;
-      background: url("@/assets/images/widget-cover.jpg") no-repeat center
+      background: url("@/assets/images/logistics-1.webp") no-repeat center
         center/cover;
+      overflow: hidden;
+      &:hover {
+        background-position: top;
+      }
     }
   }
 
   .text {
     width: 100%;
     padding: 30px 60px;
-    text-align: right;
+    text-align: left;
     @media screen and (max-width: 900px) {
       width: 95%;
       margin: auto;
@@ -139,7 +159,6 @@ export default {
       .widget-pic {
         width: 74%;
       }
- 
     }
   }
 }

@@ -5,7 +5,7 @@
   </div>
   <div class="content">
     <div class="services-container mt-5">
-      <div class="heading">
+      <!-- <div class="heading">
         <h1 class="mb-5 text-center text-secondary">
           Logistics and warehouse
         </h1>
@@ -23,9 +23,11 @@
             <p>{{ $t(icon.p) }}</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="grid mb-5 main-grid">
-        <div v-for="div in divs" :key="div" class="first" :class="div.class">
+        <div v-for="div in divs" :key="div" class="first" :class="div.class"
+        :data-aos="div.animate"
+        data-aos-duration="1000">
           <div>
             <h1 class="text-center title">{{ $t(div.text) }}</h1>
             <p
@@ -62,6 +64,7 @@ export default {
           text: "Prevoz",
           p: "Brz i siguran prevoz robe",
           icon_text: "fa-solid fa-truck",
+          
         },
         {
           text: "Skladištenje",
@@ -80,24 +83,28 @@ export default {
           text: "Fast and secure",
           // p: "Transport", // todo
           to: "/transport",// todo
+          animate:"fade-down-right"
         },
         {
           class: "dms",
           text: "Warehouse",
           // p: "services_grid_div2_text",// todo
           to: "/why-companies-need-dms",// todo
+          animate:"fade-down-left"
         },
         {
           class: "wms",
           text: "Carina",
           // p: "services_grid_div3_text",// todo
           to: "/why-web-based",// todo
+          animate:"fade-up-right"
         },
         {
           class: "systemp",
           text: "Dodatne Usluge",
           // p: "services_grid_div4_text",// todo
           to: "/payment-provider",// todo
+          animate:"fade-up-left"
         },
       ],
       images: [

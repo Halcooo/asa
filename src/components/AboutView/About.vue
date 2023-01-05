@@ -62,8 +62,8 @@ export default {
         {
           src: "/how-digital-transformation-helps-accounting",
           h1: "Ostale usluge",
-          h4: "Ostale Usluge",
-          p: "Ostale Usluge",
+          h4: "",
+          p: "",
           class: "card-4",
           animate: "fade-left",
         },
@@ -124,7 +124,6 @@ h1 {
   }
 }
 .about-flex-grid {
-  background: url('@/assets/images/bg-pattern.jpg');
   width: 80%;
   margin: auto;
   display: flex;

@@ -124,7 +124,7 @@
   </div>
   <div class="map-wrapper">
     <iframe
-      width="100%"
+      width="80%"
       height="500px"
       id="gmap_canvas"
       src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -218,10 +218,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
-.map-wrapper{
-  padding:0px;
-  margin:0px;
+.map-wrapper {
+  padding: 0px;
+  margin: 0px;
   height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 .form-div {
   width: 50%;

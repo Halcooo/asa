@@ -42,10 +42,14 @@ export default {
   color: #25435b;
   width: 35px;
   height: 35px;
-  border: 1px solid #25435b;
-  &:hover{
+  border: 2px solid #25435b;
+  transition: 1s ease-in-out;
+  &:hover {
     border: 2px solid #25435b;
+    color:#25435b;
+    transform: scale(1.05);
   }
+
 }
 div {
   position: fixed;

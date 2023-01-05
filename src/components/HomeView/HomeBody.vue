@@ -32,6 +32,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
 .wrapper{
- background: url('@/assets/images/bg-pattern-2.png');
+//  background: url('@/assets/images/bg-pattern-2.png');
 }
 </style>
