@@ -1,6 +1,6 @@
 <template lang="">
-  <div class="">
-    <div class="container language display">
+  
+    <div class="container wrapper language display">
       <img
         class=""
         :src="lang.src"
@@ -11,7 +11,7 @@
       />
     </div>
     
-  </div>
+  
 </template>
 <script>
 export default {
@@ -45,12 +45,18 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 35px;
+  width: 30px;
   cursor: pointer;
   &:hover {
     opacity: 0.7;
   }
-  margin-right: 7px;
+  margin-right: 12px;
+}
+.wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 .display {
   display: flex;

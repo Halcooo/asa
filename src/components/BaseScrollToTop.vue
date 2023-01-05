@@ -38,10 +38,14 @@ export default {
   align-items: center;
   vertical-align: middle;
   border-radius: 50%;
-  background-color: rgb(59, 173, 103);
-  color: white;
+  background-color: white;
+  color: #25435b;
   width: 35px;
   height: 35px;
+  border: 1px solid #25435b;
+  &:hover{
+    border: 2px solid #25435b;
+  }
 }
 div {
   position: fixed;

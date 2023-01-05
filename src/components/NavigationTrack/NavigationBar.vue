@@ -116,6 +116,12 @@ export default {
 </script>
 <style lang="scss">
 @import "../../styles/variables.scss";
+.language{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
 .white_image {
   filter: brightness(0) invert(1);
   -webkit-transition: filter .5s ease-out;

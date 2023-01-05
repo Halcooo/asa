@@ -77,10 +77,10 @@ export default {
 }
 .landing-page {
   width: 100%;
-  height: 89vh;
+  height: 100vh;
   @media screen and (max-width: 567px) {
     padding-top: 5%;
-    height: 85vh;
+    height: 100vh;
     text-align: left;
   }
   background: linear-gradient(
