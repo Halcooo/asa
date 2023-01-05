@@ -122,18 +122,18 @@
       </div>
     </form>
   </div>
-  <div >
-      <iframe
-        width="1080"
-        height="480"
-        id="gmap_canvas"
-        src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        frameborder="0"
-        scrolling="yes"
-        marginheight="0"
-        marginwidth="0"
-      ></iframe>
-    </div>
+  <div class="map-wrapper">
+    <iframe
+      width="100%"
+      height="500px"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      frameborder="0"
+      scrolling="yes"
+      marginheight="0"
+      marginwidth="0"
+    ></iframe>
+  </div>
 </template>
 <script>
 import BaseButton from "../Forms/buttons/BaseButton.vue";
@@ -218,9 +218,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.map-wrapper{
+  padding:0px;
+  margin:0px;
+  height: 500px;
+}
 .form-div {
   width: 50%;
-  height: 60vh;
+
   margin: auto;
   padding: 25px;
   form {

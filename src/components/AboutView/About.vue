@@ -124,6 +124,7 @@ h1 {
   }
 }
 .about-flex-grid {
+  background: url('@/assets/images/bg-pattern.jpg');
   width: 80%;
   margin: auto;
   display: flex;

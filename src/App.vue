@@ -1,27 +1,5 @@
 //@author Halid Lihovac
 <template>
-  <!-- <div class="cookie">
-     <div class="cookie-flex">
-      <a href="">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
-        dolor sit amet. Lorem ipsum dolor sit.
-      </a>
-    </div> 
-  </div> -->
-  <!-- <div class="nav-contact">
-    <div class="track">
-      <ul>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-phone" size="1x" /> 123-456-789
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-mail-bulk" size="1x" />
-          info@forspace.ba
-        </li>
-      </ul>
-      </div>
-      </div> -->
-
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />
