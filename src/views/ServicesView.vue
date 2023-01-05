@@ -27,7 +27,7 @@
       <div class="grid mb-5 main-grid">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
           <div>
-            <h1 class="text-center">{{ $t(div.text) }}</h1>
+            <h1 class="text-center title">{{ $t(div.text) }}</h1>
             <p
               style="
                 width: 100px;
@@ -261,6 +261,9 @@ export default {
   }
 }
 @media screen and (max-width: 567px) {
+  .title{
+    font-size: small;
+  }
   .heading {
     width: 75%;
     margin: auto;

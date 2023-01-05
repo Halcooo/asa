@@ -71,6 +71,8 @@ export default {
   color: white;
   &:hover {
     opacity: 0.7;
+    border: 1px solid orange;
+    color:orange;
   }
 }
 .landing-page {

@@ -65,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   // padding: 7px;
-  font-size: 60px;
+  font-size: 40px;
   color: white;
   margin-bottom: 5%;
   // background-color: rgba(255, 253, 253, 0.8);
@@ -95,6 +95,13 @@ h1 {
   }
 }
 @media screen and (max-width: 600px) {
+  h1{
+    font-size: 25px;
+    
+  }
+  p{
+    font-size: 17px!important;
+  }
   .carousel__item {
     height: 40vh !important;
   }
