@@ -47,7 +47,7 @@ export default {
   &:hover {
     border: 2px solid #25435b;
     color:#25435b;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
 }
