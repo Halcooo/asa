@@ -7,8 +7,6 @@ import HomeView from "../views/HomeView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-import Wms from "../components/ServicesView/Wms.vue";
-import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
 
 
 import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
@@ -84,16 +82,6 @@ const routes = [
     path: "/contact",
     name: "contact",
     component: ContactView,
-  },
-  {
-    path: "/wms",
-    name: "wms",
-    component: Wms,
-  },
-  {
-    path: "/payment-provider",
-    name: "payment-provider",
-    component: PaymentProvider,
   },
 ];
 

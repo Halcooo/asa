@@ -59,24 +59,6 @@ import ServicesSlider from "@/components/Sliders/ServicesSlider.vue";
 export default {
   data() {
     return {
-      icons: [
-        {
-          text: "Prevoz",
-          p: "Brz i siguran prevoz robe",
-          icon_text: "fa-solid fa-truck",
-          
-        },
-        {
-          text: "Skladištenje",
-          p: "Skladištenje robe",
-          icon_text: "fa-solid fa-warehouse",
-        },
-        {
-          text: "Carina",
-          p: "Proužamo usluge posredovanje kod carinjenja roba.",
-          icon_text: "fa-solid fa-cash-register",
-        },
-      ],
       divs: [
         {
           class: "erp",
@@ -89,21 +71,21 @@ export default {
           class: "dms",
           text: "Warehouse",
           // p: "services_grid_div2_text",// todo
-          to: "/why-companies-need-dms",// todo
+          to: "/warehouse",
           animate:"fade-down-left"
         },
         {
           class: "wms",
           text: "Carina",
           // p: "services_grid_div3_text",// todo
-          to: "/why-web-based",// todo
+          to: "/duty",
           animate:"fade-up-right"
         },
         {
           class: "systemp",
           text: "Dodatne Usluge",
           // p: "services_grid_div4_text",// todo
-          to: "/payment-provider",// todo
+          to: "/other-services",// todo
           animate:"fade-up-left"
         },
       ],
