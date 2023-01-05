@@ -20,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: "SoftwareSolutions",
+  name: "Warehouse",
   data() {
     return {
       chips: [

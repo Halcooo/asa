@@ -114,25 +114,28 @@
           }}</small>
         </div>
       </div>
-      <div class="form-group d-flex gap-3">
+      <div class="form-group d-flex gap-3 submit">
         <button type="submit" @click.prevent="submitForm">
           {{ $t("submit") }}
         </button>
         <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
       </div>
     </form>
-  </div>
-  <div class="map-wrapper">
-    <iframe
-      width="80%"
-      height="500px"
-      id="gmap_canvas"
-      src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      frameborder="0"
-      scrolling="yes"
-      marginheight="0"
-      marginwidth="0"
-    ></iframe>
+    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000" >
+      <h2>{{ $t("find_us_on_map") }}</h2>
+      <div class="map-wrapper">
+        <iframe
+          width="100%"
+          height="500px"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="yes"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -218,6 +221,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.submit{
+  flex-direction: row-reverse;
+}
+h2 {
+  text-align: center;
+}
 .map-wrapper {
   padding: 0px;
   margin: 0px;
@@ -311,7 +320,6 @@ button {
 
   transition: 0.3s ease-out;
   &:hover {
-    background: white;
     color: rgb(0, 119, 128);
     border: 2px solid rgb(0, 119, 128);
   }

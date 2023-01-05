@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>{{ $t("about_us_news_right_flex_three") }}</h1>
+      <h1>{{ $t("about_us_next_overlay_left_heading") }}</h1>
     </div>
   </div>
   <div class="content-news">
@@ -10,7 +10,7 @@
     </div>
 
     <div v-for="(c, index) in content" :key="c">
-      <div v-if="index == 4">
+      <div v-if="index == 5">
         <p>
           {{ $t(c.p) }}
         </p>
@@ -26,17 +26,18 @@
 </template>
 <script>
 export default {
-  name: "HowErp",
+  name: "OtherServices",
   data() {
     return {
-      chips: [{ chip: "#erp" }],
+      chips: [{ chip: "#cloud-based" }, { chip: "#erp" }],
 
       content: [
-        { p: "HowErp_p1", h: "HowErp_h1" },
-        { p: "HowErp_p2", h: "HowErp_h2" },
-        { p: "HowErp_p3", h: "HowErp_h3" },
-        { p: "HowErp_p4", h: "HowErp_h4" },
-        { p: "HowErp_p5" },
+        { p: "why_web_based_p1", h: "why_web_based_h1" },
+        { p: "why_web_based_p2", h: "why_web_based_h2" },
+        { p: "why_web_based_p3", h: "why_web_based_h3" },
+        { p: "why_web_based_p4", h: "why_web_based_h4" },
+        { p: "why_web_based_p5", h: "why_web_based_h5" },
+        { p: "why_web_based_p6" },
       ],
     };
   },

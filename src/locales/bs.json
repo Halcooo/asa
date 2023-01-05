@@ -333,19 +333,13 @@
   "services_grid_div3_header": "WMS Sistemi",
   "services_grid_div3_text": "WMS (Warehouse Management System) je poslovni program za upravljanje skladištem koji ima za cilj da automatizuje, pojednostavi i racionalizuje radne zadatke i aktivnosti unutar skladišta, čime se povećava produktivnost i smanjuje mogućnost greške na minimum.",
   "header_text": "Mi nudimo usluge međunarodne i unutarnje špedicije, transport i skladištenje roba",
-  "header_secondary_text":"Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do ,kupaca unutar BiH.",
-  "submit":"Pošalji",
-  "carina":"Carina",
-  "transport":"Transport",
-  "widget_main_text":" Društvo ASA ŠPED d.o.o. Sarajevo je društvo čija je osnovna djelatnost međunarodna i unutarnja špedicija, transport i skladištenje roba.Društvo je organizovano u dvije poslovne jedinice (carinski terminal Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim graničnim prelazima u BiH.",
-  "reference":"U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je preko 100 međunarodnih i domaćih klijenata (ASA Prevent grupacija, Prevent Halog Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs d.o.o. i dr ). Jedna od naših referenci je i dugogodišnja, na obostrano zadovoljstvo, kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina za koje obavljamo usluge skladištenja, transportne usluge, selidbe, pakovanje, manipulaciju utovara i istovara, organizovanje prodajne aukcije u našim skladišnim prostorima, a po veoma povoljnim finansijskim uslovima.",
-  "fast_and_secure":"Brzi i sigurni!",
-  "fast_and_simple":"Brzo i jednostavno"
-
- 
-  
-  
-
-
-
+  "header_secondary_text": "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do ,kupaca unutar BiH.",
+  "submit": "Pošalji",
+  "carina": "Carina",
+  "transport": "Transport",
+  "widget_main_text": " Društvo ASA ŠPED d.o.o. Sarajevo je društvo čija je osnovna djelatnost međunarodna i unutarnja špedicija, transport i skladištenje roba.Društvo je organizovano u dvije poslovne jedinice (carinski terminal Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim graničnim prelazima u BiH.",
+  "reference": "U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je preko 100 međunarodnih i domaćih klijenata (ASA Prevent grupacija, Prevent Halog Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs d.o.o. i dr ). Jedna od naših referenci je i dugogodišnja, na obostrano zadovoljstvo, kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina za koje obavljamo usluge skladištenja, transportne usluge, selidbe, pakovanje, manipulaciju utovara i istovara, organizovanje prodajne aukcije u našim skladišnim prostorima, a po veoma povoljnim finansijskim uslovima.",
+  "fast_and_secure": "Brzi i sigurni!",
+  "fast_and_simple": "Brzo i jednostavno",
+  "find_us_on_map": "Pronađite nas na karti"
 }

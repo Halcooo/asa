@@ -30,15 +30,22 @@
                   ASA ŠPED Services
                 </h6>
               </RouterLink>
-              <p class="text-reset">
-                {{ $t("transport") }}
-              </p>
-              <p class="text-reset">
-                {{ $t("warehouse") }}
-              </p>
-              <p class="text-reset">
-                {{ $t("carina") }}
-              </p>
+              <router-link to="/transport">    <p class="text-reset">
+                  {{ $t("transport") }}
+                </p></router-link>
+            
+             
+              <router-link to="/warehouse">
+                <p class="text-reset">
+                  {{ $t("warehouse") }}
+                </p>
+              </router-link>
+
+              <router-link to="/duty">
+                <p class="text-reset">
+                  {{ $t("carina") }}
+                </p>
+              </router-link>
             </div>
             <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">
               <RouterLink to="/contact">
@@ -96,10 +103,12 @@ export default {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 * {
   color: rgb(155, 155, 155);
   animation: fadeInAnimation 1s;
@@ -109,11 +118,13 @@ img {
   width: 170px;
   filter: brightness(0) invert(1);
 }
+
 @media screen and (max-width: 700px) {
   .main {
     flex-direction: column;
   }
 }
+
 .footer {
   // height: 30vh;
   // padding-top: 2%;
@@ -121,9 +132,11 @@ img {
   background-color: rgb(5, 2, 36);
   position: relative;
   bottom: 0;
+
   @media screen and (max-width: 567px) {
     height: 100%;
   }
+
   // background: url("@/assets/images/footer.jpg") no-repeat center center/cover;
   // background: linear-gradient(
   //     to top,
@@ -144,6 +157,7 @@ img {
     right: 35%;
     transform: rotate(35deg);
   }
+
   .circle {
     width: 250px;
     height: 250px;
@@ -152,6 +166,7 @@ img {
     top: 10%;
     left: 18%;
   }
+
   .round {
     width: 50px;
     height: 50px;
@@ -161,12 +176,15 @@ img {
     top: 20%;
     left: 42%;
   }
+
   h6,
   .text-reset {
     text-transform: capitalize;
   }
 }
+
 .cursor-pointer {
+
   // text-transform: uppercase;
   &:hover {
     cursor: pointer;

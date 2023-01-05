@@ -15,10 +15,9 @@ import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
 import WhyWebBased from "../components/AboutView/News/WhyWebBased";
 import Transport from "../components/AboutView/News/Transport";
-import SoftwareSolutions from "../components/AboutView/News/SoftwareSolutions";
-import HowErp from "../components/AboutView/News/HowErp";
-import DigitalTransformation from "../components/AboutView/News/DigitalTransformation";
-import DigitalTransformationAdvantages from "../components/AboutView/News/DigitalTransformationAdvantages";
+import Warehouse from "../components/AboutView/News/Warehouse";
+import Duty from "../components/AboutView/News/Duty";
+import OtherServices from "../components/AboutView/News/OtherServices";
 import WhatsAnApi from "../components/AboutView/News/WhatsAnApi";
 
 // import store from "@/store/index.js"; // to use store in router if needed
@@ -55,25 +54,20 @@ const routes = [
     component: Transport,
   },
   {
-    path: "/signs-your-business-needs-advanced-software-solution",
-    name: "SoftwareSolutions",
-    component: SoftwareSolutions,
+    path: "/warehouse",
+    name: "Warehouse",
+    component: Warehouse,
   },
   {
-    path: "/how-erp-can-help-small-business-to-grow",
-    name: "HowErp",
-    component: HowErp,
+    path: "/duty",
+    name: "Duty",
+    component: Duty,
   },
 
   {
-    path: "/how-digital-transformation-helps-accounting",
-    name: "DigitalTransformation",
-    component: DigitalTransformation,
-  },
-  {
-    path: "/digital-transformation-advantages",
-    name: "DigitalTransformationAdvantages",
-    component: DigitalTransformationAdvantages,
+    path: "/other-services",
+    name: "OtherServices",
+    component: OtherServices,
   },
   {
     path: "/whats-an-api",
