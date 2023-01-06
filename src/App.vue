@@ -36,14 +36,8 @@ export default {
 </script>
 <style lang="scss">
 @import "./styles/variables.scss";
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-// @font-face {
-// 	font-family: 'Raleway';
-// 	src: local('Raleway'),
-// 		url('@/assets/fonts/Raleway-Medium.ttf') format('truetype');
-// }
 .show {
   display: block;
   background-color: red;
