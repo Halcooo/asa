@@ -9,19 +9,7 @@
       {{ chip.chip }}
     </div> -->
 
-    <div v-for="(c, index) in content" :key="c">
-      <div v-if="index == 4">
-        <p>
-          {{ $t(c.p) }}
-        </p>
-      </div>
-      <div v-else>
-        <p>
-          {{ $t(c.p) }}
-        </p>
-        <h3>{{ $t(c.h) }}</h3>
-      </div>
-    </div>
+    <div>Posredovanje kod carinjenja roba.</div>
   </div>
 </template>
 <script>
@@ -30,14 +18,6 @@ export default {
   data() {
     return {
       chips: [{ chip: "#erp" }],
-
-      content: [
-        { p: "HowErp_p1", h: "HowErp_h1" },
-        { p: "HowErp_p2", h: "HowErp_h2" },
-        { p: "HowErp_p3", h: "HowErp_h3" },
-        { p: "HowErp_p4", h: "HowErp_h4" },
-        { p: "HowErp_p5" },
-      ],
     };
   },
 };

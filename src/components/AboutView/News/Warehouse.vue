@@ -5,17 +5,19 @@
     </div>
   </div>
   <div class="content-news">
-    <!-- <div v-for="ch in chips" class="chip">
-      {{ ch.chip }}
-    </div> -->
-
-    <div v-for="c in content" :key="c">
-      <div>
-        <p>
-          {{ $t(c.p) }}
-        </p>
-      </div>
-    </div>
+    ASA ŠPED d.o.o. raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora
+    pogodnog za skladištenje svih vrsta roba, kao i sa cca 30000 m² asfaltirane
+    i zelene površine za perspektivni razvoj ili izgradnju potrebnih objekata.
+    Posebno ističemo savremeno izgrađeni logistički centar u Rajlovcu pogodan za
+    skladištenje svih vrsta roba. U pet skladišta čija ukupna površina iznosi
+    20000 m2, na veliko zadovoljstvo naših klijenata, pružamo kompletne
+    logističke usluge: skladištenje roba sa comparison and contrast
+    manipulacijom utovara i istovara prepakiranje robe, sortiranje, distribucija
+    na razne destinacije visoko regalno punjenje. Veliku pažnju posvećujemo
+    osiguranju i bezbjednosti objekata i roba. Svi objekti su osigurani i
+    policama osiguranja od svih mogućih rizika kao i roba koja je smještena.
+    Također, svi objekti su pokriveni video nadzorom i 24 sata fizičkim
+    obezbjeđenjem od strane certificirane ovlaštene agencije.
   </div>
 </template>
 <script>

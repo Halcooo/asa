@@ -9,18 +9,9 @@
       {{ chip.chip }}
     </div> -->
 
-    <div v-for="(c, index) in content" :key="c">
-      <div v-if="index == 5">
-        <p>
-          {{ $t(c.p) }}
-        </p>
-      </div>
-      <div v-else>
-        <p>
-          {{ $t(c.p) }}
-        </p>
-        <h3>{{ $t(c.h) }}</h3>
-      </div>
+    <div>
+      Konsultantske usluge po pitanju osiguranja, pripreme realizacije posla i
+      dr.
     </div>
   </div>
 </template>
@@ -31,14 +22,6 @@ export default {
     return {
       chips: [{ chip: "#cloud-based" }, { chip: "#erp" }],
 
-      content: [
-        { p: "why_web_based_p1", h: "why_web_based_h1" },
-        { p: "why_web_based_p2", h: "why_web_based_h2" },
-        { p: "why_web_based_p3", h: "why_web_based_h3" },
-        { p: "why_web_based_p4", h: "why_web_based_h4" },
-        { p: "why_web_based_p5", h: "why_web_based_h5" },
-        { p: "why_web_based_p6" },
-      ],
     };
   },
 };

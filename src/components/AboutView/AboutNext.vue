@@ -23,8 +23,8 @@
 
         <h2>{{ contact.name }}</h2>
         <p class="title">{{ contact.position }}</p>
-        <p>{{ contact.mail }}</p>
-        <p>{{ contact.phone }}</p>
+        <p><font-awesome-icon icon="fa-solid fa-envelope" size="1x" /> <span>{{ contact.mail }}</span> </p>
+        <p><font-awesome-icon icon="fa-solid fa-phone" size="1x" /><span>{{ contact.phone }}</span></p>
       </div>
     </div>
   </div>
@@ -62,10 +62,26 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.card{
+  span{
+    margin-left: 8px;
+  }
+}
+
+h2{
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  height: 60px;
+}
 .img-container {
   overflow: hidden;
 
   img {
+    width: 100%;
     transition: all 1.5s;
     &:hover {
       transform: scale(1.2);
@@ -75,10 +91,11 @@ export default {
 .next-view {
   margin-top: 20px;
   display: flex;
+  gap: 20px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;

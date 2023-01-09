@@ -5,18 +5,19 @@
     </div>
   </div>
   <div class="content-news">
-    <div v-for="(c, index) in content" :key="c">
-      <div v-if="index == 5">
-        <p>
-          {{ $t(c.p) }}
-        </p>
-      </div>
-      <div v-else>
-        <p>
-          {{ $t(c.p) }}
-        </p>
-        <h3>{{ $t(c.h) }}</h3>
-      </div>
+    <div>
+      Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a
+      specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.
+      Pod usluge transporta podrazumijevamo: cestovni (sve vrste cestovnog
+      transporta), <br />
+      kontejnerski, <br />
+      pomorski, <br />
+      avio transport,<br />
+      transport opasnih materija,<br />
+      transport konfekcije,<br />
+      vangabaritni transport,<br />
+      zbirni,<br />
+      door to door usluge. <br />
     </div>
   </div>
 </template>
@@ -26,15 +27,6 @@ export default {
   data() {
     return {
       chips: [{ chip: "#preduzetnistvo" }],
-
-      content: [
-        { p: "entrepeneur_p1", h: "entrepeneur_h1" },
-        { p: "entrepeneur_p2", h: "entrepeneur_h2" },
-        { p: "entrepeneur_p3", h: "entrepeneur_h3" },
-        { p: "entrepeneur_p4", h: "entrepeneur_h4" },
-        { p: "entrepeneur_p5", h: "entrepeneur_h5" },
-        { p: "entrepeneur_p6" },
-      ],
     };
   },
 };
