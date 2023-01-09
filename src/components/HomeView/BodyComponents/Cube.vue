@@ -22,13 +22,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .cube-background {
-  // background-color: rgb(248, 248, 248);
   width: 100%;
   margin: auto;
   padding: 50px 0px;
   margin-bottom: 10%;
 
-  // align-items: center;
   .cube-content {
     width: 70%;
     margin: auto;

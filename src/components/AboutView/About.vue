@@ -121,7 +121,6 @@ h1 {
   width: 80%;
   margin: auto;
   display: flex;
-  // gap: 10px;
   margin-top: 2%;
   margin-bottom: 5%;
   border-radius: 5px;

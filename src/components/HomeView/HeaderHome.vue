@@ -192,11 +192,9 @@ export default {
         height: 100%;
         li {
           padding: 20px 40px;
-          // border-radius: 2px;
           color: rgb(117, 117, 117);
           transition: 0.2s;
           &:hover {
-            // background-color: gray;
             color: white;
             cursor: pointer;
           }
@@ -259,14 +257,12 @@ export default {
   width: 450px;
   height: 500px;
   border: 20px solid rgba(255, 255, 255, 0.107);
-  // border-radius: 50%;
   position: absolute;
   top: 20%;
   left: 23%;
   @media screen and (max-width: 567px) {
     width: 90vw;
     left: 0%;
-    // border: none;
   }
 }
 </style>

@@ -65,7 +65,6 @@ export default {
 .video-frame {
   width: 100%;
   display: flex;
-  //   justify-content: center;
   align-items: center;
   height: 50vh;
   position: relative;

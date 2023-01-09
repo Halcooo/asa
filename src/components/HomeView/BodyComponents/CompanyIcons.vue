@@ -50,7 +50,6 @@ export default {
 .body {
   margin-top: 7%;
   margin-bottom: 5%;
-  // background-color: rgb(241, 241, 241);
 
   .items {
     position: relative;
@@ -62,9 +61,6 @@ export default {
       height: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      // gap: 10px;
-      // margin-left: 2%;
-      // margin-right: auto;
     }
     .square {
       width: 370px;

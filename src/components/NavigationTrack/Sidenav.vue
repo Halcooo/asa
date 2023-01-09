@@ -69,14 +69,6 @@ export default {
 
           classname: "sidenav",
         },
-        // {
-        //   to: "/",
-        //   name: "products",
-        //   isActive: false,
-        //   id: 2,
-
-        //   classname: "sidenav",
-        // },
         {
           to: "/",
           name: "services",
@@ -130,21 +122,8 @@ export default {
     }
   }
 
-  // .grid {
-  //   position: fixed;
-  //   z-index: 1;
-  //   background-color: white;
-  //   top: 0;
-  //   left: -83%;
-  //   width: 83%;
-  //   height: 100vh;
-  // }
-
-  // .active {
-  //   animation: toLeft 0.2s forwards;
-  // }
   .nav-links-vertical {
-    // width: 100%;
+
 
     display: inline-flex;
     flex-direction: column;

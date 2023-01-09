@@ -180,7 +180,6 @@ export default {
 }
 
 .heading {
-  // text-align: center;
   .w-100 {
     color: rgb(117, 117, 117);
     svg {
@@ -188,7 +187,6 @@ export default {
       height: 60px;
       margin-top: 15%;
       margin-bottom: 5%;
-      // background-color: red;
       color: rgb(42, 95, 131);
       path {
         width: 50px;
@@ -240,7 +238,6 @@ export default {
       &:hover {
         cursor: pointer;
         opacity: 0.6;
-        // transform: scale(0.9);
       }
     }
 

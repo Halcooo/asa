@@ -133,7 +133,6 @@ li {
   }
 
   .router-link-active {
-    // color: rgb(55, 165, 255);
     color: orange;
   }
   .router-link {
@@ -155,7 +154,6 @@ li {
   overflow: hidden;
   color: white;
   font-size: 20px;
-  // background-color: rgba(255, 255, 255, 0.442);
   padding: 0px 10px;
 
   &:hover {
@@ -169,7 +167,6 @@ li {
     position: absolute;
     transform: translate(0%, 5%);
     p {
-      // margin: 2px;
       padding-right: 30px;
       font-size: 17px;
       &:hover {
