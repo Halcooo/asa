@@ -3,7 +3,7 @@
     <div class="the_next_heading">
       <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
       <Line />
-      <h3 class="text-secondary mt-2">{{ $t('contact_personel') }}:</h3>
+      <h3 class="text-secondary mt-2">{{ $t("contact_personel") }}:</h3>
     </div>
     <div class="container next-view">
       <div
@@ -13,7 +13,14 @@
         data-aos-anchor-placement="top-center"
         data-aos-duration="1000"
       >
-        <img src="@/assets/images/avatar.jpg" alt="John" style="width: 100%" />
+        <div class="img-container">
+          <img
+            src="@/assets/images/avatar.jpg"
+            alt="John"
+            style="width: 100%"
+          />
+        </div>
+
         <h2>{{ contact.name }}</h2>
         <p class="title">{{ contact.position }}</p>
         <p>{{ contact.mail }}</p>
@@ -55,6 +62,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.img-container {
+  overflow: hidden;
+
+  img {
+    transition: all 1.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
 .next-view {
   margin-top: 20px;
   display: flex;

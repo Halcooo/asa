@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     scrollDown() {
-      window.scrollTo(0, 720);
+      window.scrollTo(0, 820);
     },
   },
   mounted() {
@@ -62,6 +62,8 @@ export default {
   }
 }
 .down-button {
+  z-index: 5;
+  position: relative;
   margin-top: 30px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0);
