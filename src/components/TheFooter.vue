@@ -7,7 +7,7 @@
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-between">
         <div class="d-none d-md-block">
-          <span>Get connected with us on social networks</span>
+          <span>{{ $t('connect') }}</span>
         </div>
         <TheSocialIcons></TheSocialIcons>
       </section>
@@ -43,7 +43,7 @@
 
               <router-link to="/duty">
                 <p class="text-reset">
-                  {{ $t("carina") }}
+                  {{ $t("duty") }}
                 </p>
               </router-link>
             </div>

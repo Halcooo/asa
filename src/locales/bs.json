@@ -337,9 +337,19 @@
   "submit": "Pošalji",
   "carina": "Carina",
   "transport": "Transport",
-  "widget_main_text": " Društvo ASA ŠPED d.o.o. Sarajevo je društvo čija je osnovna djelatnost međunarodna i unutarnja špedicija, transport i skladištenje roba.Društvo je organizovano u dvije poslovne jedinice (carinski terminal Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim graničnim prelazima u BiH.",
+  "widget_main_text": "ASA ŠPED  Sarajevo je društvo čija je osnovna djelatnost međunarodna i unutarnja špedicija, transport i skladištenje roba.Društvo je organizovano u dvije poslovne jedinice (carinski terminal Halilovići i Slobodna zona Visoko) ima i mrežu pod-špeditera na svim graničnim prelazima u BiH.",
   "reference": "U dosadašnjem poslovanju svoje poslovno povjerenje iskazalo nam je preko 100 međunarodnih i domaćih klijenata (ASA Prevent grupacija, Prevent Halog Slovenija, diplomatska predstavništva, KJP ZOI 84 ocs d.o.o. i dr ). Jedna od naših referenci je i dugogodišnja, na obostrano zadovoljstvo, kvalitetna poslovna saradnja sa USAID Bosna i Hercegovina za koje obavljamo usluge skladištenja, transportne usluge, selidbe, pakovanje, manipulaciju utovara i istovara, organizovanje prodajne aukcije u našim skladišnim prostorima, a po veoma povoljnim finansijskim uslovima.",
   "fast_and_secure": "Brzi i sigurni!",
   "fast_and_simple": "Brzo i jednostavno",
-  "find_us_on_map": "Pronađite nas na karti"
+  "find_us_on_map": "Pronađite nas na karti",
+  "duty":"Carina",
+  "transport_h4":"Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
+  "warehouse_h4":"ASA ŠPED  raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora pogodnog za skladištenje svih vrsta roba.",
+  "duty_h4":"Društvo se sastoji od stručnog i obrazovnog kadra u oblasti posredovanja kod carinjenja roba",
+  "other_services_h4":"Ostale usluge",
+  "contact_personel":"ASA Šped Kontakt osoblje",
+  "founded":"Osnovano",
+  "clients":"Klijenti",
+  "employees":"Zaposlenih",
+  "connect":"Povežite se sa nama"
 }

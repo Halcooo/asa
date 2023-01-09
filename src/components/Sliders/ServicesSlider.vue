@@ -44,7 +44,7 @@ export default {
     return {
       pressedMouse: false,
       currentSlide: 0,
-      imena:"",
+      imena: "",
     };
   },
   watch: {
@@ -64,13 +64,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 h1 {
-  // padding: 7px;
   font-size: 40px;
   color: white;
   margin-bottom: 5%;
-  // background-color: rgba(255, 253, 253, 0.8);
-  // border-radius: 5px;
-  // box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
 }
 .carousel__pagination {
   position: absolute;
@@ -85,7 +81,6 @@ h1 {
     }
   }
 }
-//
 .grabbed {
   cursor: grabbing !important;
 }
@@ -95,12 +90,11 @@ h1 {
   }
 }
 @media screen and (max-width: 600px) {
-  h1{
+  h1 {
     font-size: 25px;
-    
   }
-  p{
-    font-size: 17px!important;
+  p {
+    font-size: 17px !important;
   }
   .carousel__item {
     height: 40vh !important;
@@ -110,7 +104,6 @@ h1 {
   height: 80vh;
   width: 100%;
   color: white;
-  // font-size: 20px;
   border-radius: 8px;
   position: relative;
   display: flex;

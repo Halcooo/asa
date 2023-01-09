@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>{{ $t("about_us_next_overlay_left_heading") }}</h1>
+      <h1>{{ $t("other_services_h4") }}</h1>
     </div>
   </div>
   <div class="content-news">
@@ -43,4 +43,8 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  color: white;
+}
+</style>

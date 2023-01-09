@@ -21,8 +21,6 @@
           <div>
             <h1>{{ $t(card.h1) }}</h1>
             <h4>{{ $t(card.h4) }}</h4>
-
-            <p class="mobile">{{ $t(card.p) }}</p>
           </div>
         </div>
       </router-link>
@@ -37,33 +35,29 @@ export default {
       grid_2: [
         {
           src: "/transport",
-          h1: "Transport",
-          h4: "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
-          p: "",
+          h1: "transport",
+          h4: "transport_h4",
           class: "card-1",
           animate: "fade-down-right",
         },
         {
           src: "/warehouse",
-          h1: "Warehouse",
-          h4: "ASA ŠPED  raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora pogodnog za skladištenje svih vrsta roba.",
-          p: "",
+          h1: "warehouse",
+          h4: "warehouse_h4",
           class: "card-2",
           animate: "fade-down-left",
         },
         {
           src: "/duty",
-          h1: "Carina",
-          h4: "Društvo se sastoji od stručnog i obrazovnog kadra u oblasti posredovanja kod carinjenja roba",
-          p: "",
+          h1: "duty",
+          h4: "duty_h4",
           class: "card-3",
           animate: "fade-up-right",
         },
         {
           src: "/other-services",
-          h1: "Ostale usluge",
+          h1: "other_services_h4",
           h4: "",
-          p: "",
           class: "card-4",
           animate: "fade-up-left",
         },

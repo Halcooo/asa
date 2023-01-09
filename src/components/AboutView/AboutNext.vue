@@ -3,7 +3,7 @@
     <div class="the_next_heading">
       <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
       <Line />
-      <h3 class="text-secondary mt-2">ASA Šped Contact personel:</h3>
+      <h3 class="text-secondary mt-2">{{ $t('contact_personel') }}:</h3>
     </div>
     <div class="container next-view">
       <div

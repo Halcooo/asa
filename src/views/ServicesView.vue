@@ -1,6 +1,5 @@
 <template lang="">
-  <div class="wrapper"
-  data-aos="fade-in">
+  <div class="wrapper" data-aos="fade-in">
     <ServicesSlider :images="images"></ServicesSlider>
   </div>
   <div class="content">
@@ -25,9 +24,14 @@
         </div>
       </div> -->
       <div class="grid mb-5 main-grid">
-        <div v-for="div in divs" :key="div" class="first" :class="div.class"
-        :data-aos="div.animate"
-        data-aos-duration="1000">
+        <div
+          v-for="div in divs"
+          :key="div"
+          class="first"
+          :class="div.class"
+          :data-aos="div.animate"
+          data-aos-duration="1000"
+        >
           <div>
             <h1 class="text-center title">{{ $t(div.text) }}</h1>
             <p
@@ -37,14 +41,16 @@
                 background-color: tomato;
                 margin: auto;
                 margin-top: 10%;
-                margin-bottom:10%;
+                margin-bottom: 10%;
               "
             ></p>
             <!-- <p class="text-center">
               {{ $t(div.p) }}
             </p> -->
             <div class="flex">
-              <router-link :to="div.to">Read More</router-link>
+              <router-link class="read-more" :to="div.to">{{
+                $t("read_more")
+              }}</router-link>
             </div>
           </div>
         </div>
@@ -62,48 +68,48 @@ export default {
       divs: [
         {
           class: "erp",
-          text: "Fast and secure",
+          text: "fast_and_secure",
           // p: "Transport", // todo
-          to: "/transport",// todo
-          animate:"fade-down-right"
+          to: "/transport", // todo
+          animate: "fade-down-right",
         },
         {
           class: "dms",
-          text: "Warehouse",
+          text: "warehouse",
           // p: "services_grid_div2_text",// todo
           to: "/warehouse",
-          animate:"fade-down-left"
+          animate: "fade-down-left",
         },
         {
           class: "wms",
-          text: "Carina",
+          text: "duty",
           // p: "services_grid_div3_text",// todo
           to: "/duty",
-          animate:"fade-up-right"
+          animate: "fade-up-right",
         },
         {
           class: "systemp",
-          text: "Dodatne Usluge",
+          text: "other_services_h4",
           // p: "services_grid_div4_text",// todo
-          to: "/other-services",// todo
-          animate:"fade-up-left"
+          to: "/other-services", // todo
+          animate: "fade-up-left",
         },
       ],
       images: [
         {
-          name: "Fast and secure Logistics",
+          name: "fast_and_secure",
           url: require("@/assets/images/speed-truck.jpeg"),
           text: "",
         },
         {
-          name: "Skladištenje",
+          name: "warehouse",
           url: require("@/assets/images/wms-header.jpg"),
-          text: "ASA ŠPED  raspolaže sa više od 20.000 m² zatvorenog skladišnog prostora",
+          text: "warehouse_h4",
         },
         {
-          name: "Carinjenje",
+          name: "duty",
           url: require("@/assets/images/product_item_2.jpg"),
-          text: "Proužamo usluge posredovanje kod carinjenja roba.",
+          text: "duty_h4",
         },
       ],
     };
@@ -122,7 +128,43 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
-.main-grid{
+.read-more {
+  position: relative;
+  transition: all 0.5s;
+}
+.read-more::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.read-more:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.read-more::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.main-grid {
   overflow: hidden;
 }
 
@@ -249,8 +291,13 @@ export default {
     }
   }
 }
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media screen and (max-width: 567px) {
-  .title{
+  .title {
     font-size: small;
   }
   .heading {

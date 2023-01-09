@@ -329,9 +329,19 @@
   "submit": "Submit",
   "carina": "Duty",
   "transport": "Transport",
-  "widget_main_text": " ASA ŠPED d.o.o. Sarajevo is a company whose main activity is international and domestic freight forwarding, transport and storage of goods. The company is organized into two business units (customs terminal Halilovići and Free Zone Visoko) and has a network of sub-forwarders in all border crossings in Bosnia and Herzegovina.",
+  "widget_main_text": " ASA ŠPED Sarajevo is a company whose main activity is international and domestic freight forwarding, transport and storage of goods. The company is organized into two business units (customs terminal Halilovići and Free Zone Visoko) and has a network of sub-forwarders in all border crossings in Bosnia and Herzegovina.",
   "reference": "Over 100 international and domestic clients (ASA Prevent group, Prevent Halog Slovenia, diplomatic missions, KJP ZOI 84 ocs d.o.o., etc.) have expressed their business trust in us so far. One of our references is our long-term, mutually satisfactory, high-quality business cooperation with USAID Bosnia and Herzegovina, for which we provide storage services, transport services, removals, packaging, manipulation of loading and unloading, organizing sales auctions in our warehouses, and at very favorable prices. financial conditions.",
-  "fast_and_secure":"Brzi i sigurni!",
-  "fast_and_simple":"Fast and simple",
-  "find_us_on_map":"Find us on map"
+  "fast_and_secure": "Brzi i sigurni!",
+  "fast_and_simple": "Fast and simple",
+  "find_us_on_map": "Find us on map",
+  "duty": "Duty",
+  "transport_h4": "We provide international and domestic transport services to all our clients, and we also specialize in urgent distribution of goods to customers within Bosnia and Herzegovina.",
+  "warehouse_h4": "ASA ŠPED has approx. 20,000 m² of closed storage space suitable for storing all types of goods.",
+  "duty_h4": "The company consists of professional and educational personnel in the field of mediation in the customs clearance of goods",
+  "other_services_h4": "Other services",
+  "contact_personel": "ASA Šped Contact personel",
+  "founded": "Founded",
+  "clients": "Clientsi",
+  "employees": "Employees",
+  "connect": "Get connected with us on social networks"
 }

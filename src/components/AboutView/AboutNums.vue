@@ -3,9 +3,9 @@
     <h2 class="mb-4">{{ $t("about_us_nums_heading") }}</h2>
     <Line />
     <div class="heading-flex">
-      <h2>Osnovano</h2>
-      <h2>Klijenti</h2>
-      <h2>Zaposlenih</h2>
+      <h2>{{$t('founded')}}</h2>
+      <h2>{{$t('clients')}}</h2>
+      <h2>{{$t('employees')}}</h2>
     </div>
 
     <div class="num-flex">
@@ -48,7 +48,7 @@ export default {
     const roundedValcli = ref(0);
     const roundedValEmp = ref(0);
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 2100) {
+      if (document.body.scrollHeight -1700 < window.scrollY ) {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;
@@ -62,7 +62,7 @@ export default {
             employees.value += employee.value / speed.value;
             roundedValEmp.value = Math.round(employees.value);
           }
-        }, 100);
+        }, 370);
       }
     });
     return { roundedValyear, roundedValcli, roundedValEmp };

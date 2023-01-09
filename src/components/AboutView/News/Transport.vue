@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>Transport</h1>
+      <h1>{{ $t("transport") }}</h1>
     </div>
   </div>
   <div class="content-news">

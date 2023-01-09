@@ -12,7 +12,6 @@
 import Widget from "./BodyComponents/Widget.vue";
 import CompanyIcons from "./BodyComponents/CompanyIcons.vue";
 import Cube from "./BodyComponents/Cube.vue";
-import Recension from "./BodyComponents/Recension.vue";
 import HomeSlider from "./BodyComponents/HomeSlider.vue";
 
 export default {
@@ -21,7 +20,7 @@ export default {
     Widget,
     CompanyIcons,
     Cube,
-    Recension,
+
     HomeSlider,
   },
   data() {
@@ -31,7 +30,4 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
-.wrapper{
-//  background: url('@/assets/images/bg-pattern-2.png');
-}
 </style>

@@ -4,7 +4,7 @@
     data-aos="fade-up">
       <div class="inner">
         <div style="position: relative; z-index: 1">
-          <h1>Pronadjite nas na karti</h1>
+          <h1>{{ $t('find_us_on_map') }}</h1>
         </div>
         <button type="button" class="button" @click="showMap()">
           Google Maps
