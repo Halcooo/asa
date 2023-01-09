@@ -62,6 +62,9 @@ h2{
   display:flex;
   align-items: center;
   justify-content: center;
+  img{
+    max-width: 100%;
+  }
 }
 .widget-container {
   padding-top: 2em;

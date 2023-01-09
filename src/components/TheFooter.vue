@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <div class="footer" data-aos="fade-up" data-aos-duration="1300">
+  <div class="footer" data-aos="fade" data-aos-duration="1300">
     <!-- <div class="square"></div>
     <div class="circle"></div>
     <div class="round"></div> -->

@@ -4,14 +4,11 @@ import HomeView from "../views/HomeView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
-import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
-import WhyWebBased from "../components/AboutView/News/WhyWebBased";
 import Transport from "../components/AboutView/News/Transport";
 import Warehouse from "../components/AboutView/News/Warehouse";
 import Duty from "../components/AboutView/News/Duty";
 import OtherServices from "../components/AboutView/News/OtherServices";
-import WhatsAnApi from "../components/AboutView/News/WhatsAnApi";
+
 
 const routes = [
   {
@@ -24,21 +21,7 @@ const routes = [
     name: "about",
     component: AboutView,
   },
-  {
-    path: "/erp-all-in-one",
-    name: "ErpAllInOne",
-    component: ErpAllInOne,
-  },
-  {
-    path: "/why-companies-need-dms",
-    name: "WhyCompaniesNeedDms",
-    component: WhyCompaniesNeedDms,
-  },
-  {
-    path: "/why-web-based",
-    name: "WhyWebBased",
-    component: WhyWebBased,
-  },
+
   {
     path: "/transport",
     name: "Transport",
@@ -60,11 +43,7 @@ const routes = [
     name: "OtherServices",
     component: OtherServices,
   },
-  {
-    path: "/whats-an-api",
-    name: "WhatsAnApi",
-    component: WhatsAnApi,
-  },
+
 
   {
     path: "/services",

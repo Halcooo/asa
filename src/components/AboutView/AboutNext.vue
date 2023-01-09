@@ -1,14 +1,18 @@
 <template>
-  <div class="the_next"
-  data-aos="fade-right"
-  data-aos-anchor-placement="top-center">
+  <div class="the_next" data-aos="fade-in">
     <div class="the_next_heading">
       <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
       <Line />
       <h3 class="text-secondary mt-2">ASA Šped Contact personel:</h3>
     </div>
     <div class="container next-view">
-      <div v-for="contact in contacts" class="card">
+      <div
+        v-for="contact in contacts"
+        class="card"
+        data-aos="flip-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1000"
+      >
         <img src="@/assets/images/avatar.jpg" alt="John" style="width: 100%" />
         <h2>{{ contact.name }}</h2>
         <p class="title">{{ contact.position }}</p>
@@ -51,10 +55,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
-.next-view{
+.next-view {
   margin-top: 20px;
-  display:flex;
-
+  display: flex;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -63,6 +66,9 @@ export default {
   text-align: center;
   font-family: arial;
   height: 500px;
+  img {
+    width: 100px;
+  }
 }
 
 .title {
@@ -146,6 +152,14 @@ button {
         bottom: 0;
         right: 0;
       }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .next-view {
+      flex-direction: column;
+    }
+    .card {
+      margin-bottom: 25px;
     }
   }
   @media screen and (max-width: 567px) {

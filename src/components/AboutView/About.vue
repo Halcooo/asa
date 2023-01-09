@@ -41,7 +41,7 @@ export default {
           h4: "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
           p: "",
           class: "card-1",
-          animate: "fade-right",
+          animate: "fade-down-right",
         },
         {
           src: "/warehouse",
@@ -49,7 +49,7 @@ export default {
           h4: "ASA ŠPED  raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora pogodnog za skladištenje svih vrsta roba.",
           p: "",
           class: "card-2",
-          animate: "fade-left",
+          animate: "fade-down-left",
         },
         {
           src: "/duty",
@@ -57,7 +57,7 @@ export default {
           h4: "Društvo se sastoji od stručnog i obrazovnog kadra u oblasti posredovanja kod carinjenja roba",
           p: "",
           class: "card-3",
-          animate: "fade-right",
+          animate: "fade-up-right",
         },
         {
           src: "/other-services",
@@ -65,7 +65,7 @@ export default {
           h4: "",
           p: "",
           class: "card-4",
-          animate: "fade-left",
+          animate: "fade-up-left",
         },
       ],
     };
@@ -259,6 +259,11 @@ h1 {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-second {
+    grid-template-columns: 1fr !important;
   }
 }
 </style>

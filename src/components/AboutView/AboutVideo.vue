@@ -1,11 +1,16 @@
 <template>
   <div class="video-frame">
-    <div class="outer" @click="showVideo">
+    <div
+      class="outer"
+      @click="showVideo"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+    >
       <div class="play-button">
         <font-awesome-icon icon="fa-solid fa-play" />
       </div>
     </div>
-    <div class="frame-text">
+    <div class="frame-text" data-aos="fade-down-right" data-aos-duration="1000">
       <div>
         <h1>{{ $t("about_us_video_heading") }}</h1>
         <p>
@@ -13,9 +18,16 @@
         </p>
       </div>
     </div>
-    <div class="frame-video"></div>
+    <div
+      class="frame-video"
+      data-aos="fade-up-left"
+      data-aos-duration="1000"
+    ></div>
     <div class="overlay-video" :class="{ video: video }">
-      <YouTube src="https://www.youtube.com/watch?v=VXMslOYKces&ab_channel=DSVGlobalTransportandLogistics" ref="youtube" />
+      <YouTube
+        src="https://www.youtube.com/watch?v=VXMslOYKces&ab_channel=DSVGlobalTransportandLogistics"
+        ref="youtube"
+      />
       <div class="closing">
         <ClosingButton @click="closeVideo" :isMap="true" />
       </div>
@@ -59,6 +71,7 @@ export default {
   position: relative;
   margin-top: 15%;
   .outer {
+    z-index: 2;
     width: 115px;
     height: 115px;
     position: absolute;
@@ -86,8 +99,8 @@ export default {
       svg {
         margin-left: 5px;
       }
-      &:hover{
-        color:orange;
+      &:hover {
+        color: orange;
       }
     }
   }
@@ -143,6 +156,25 @@ export default {
   }
   .video {
     display: flex;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .outer {
+    top: 18% !important;
+    left: 10% !important;
+    transform: translate(0, 0) !important;
+  }
+  .video-frame {
+    flex-direction: column;
+    height: 70vh;
+  }
+  .frame-text {
+    width: 100% !important;
+    height: 30vh !important;
+  }
+  .frame-video {
+    width: 100% !important;
+    height: 300px;
   }
 }
 </style>
