@@ -5,9 +5,9 @@
     </div>
   </div>
   <div class="content-news">
-    <div v-for="ch in chips" class="chip">
+    <!-- <div v-for="ch in chips" class="chip">
       {{ ch.chip }}
-    </div>
+    </div> -->
 
     <div v-for="c in content" :key="c">
       <div>
