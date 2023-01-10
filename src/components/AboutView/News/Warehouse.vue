@@ -1,5 +1,6 @@
 <template>
-  <div class="header">
+  <div class="header"
+  data-aos="fade" data-aos-duration="1100">
     <div>
       <h1>{{ $t("warehouse") }}</h1>
     </div>
@@ -15,12 +16,12 @@
       {{ $t("warehouse_p3") }}
     </p>
     <ol>
-      <li>{{ $t("warehouse_li1") }}</li>
-      <li>{{ $t("warehouse_li2") }}</li>
-      <li>{{ $t("warehouse_li3") }}</li>
-      <li>{{ $t("warehouse_li4") }}</li>
-      <li>{{ $t("warehouse_li5") }}</li>
-      <li>{{ $t("warehouse_li6") }}</li>
+      <li data-aos="fade-right" data-aos-duration="1100">{{ $t("warehouse_li1") }}</li>
+      <li data-aos="fade-left" data-aos-duration="1100">{{ $t("warehouse_li2") }}</li>
+      <li data-aos="fade-right" data-aos-duration="1100">{{ $t("warehouse_li3") }}</li>
+      <li data-aos="fade-left" data-aos-duration="1100">{{ $t("warehouse_li4") }}</li>
+      <li data-aos="fade-right" data-aos-duration="1100">{{ $t("warehouse_li5") }}</li>
+      <li data-aos="fade-left" data-aos-duration="1100">{{ $t("warehouse_li6") }}</li>
     </ol>
     <p>{{ $t("warehouse_p4") }}</p>
     <p>{{ $t("warehouse_p5") }}</p>
