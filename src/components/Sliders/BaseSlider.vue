@@ -58,6 +58,15 @@ export default {
   .carousel__item {
     img {
       max-width: 100px;
+    
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carousel__item {
+    img {
+      max-width: 70px;
+    
     }
   }
 }
