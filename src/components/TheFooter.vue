@@ -5,7 +5,7 @@
     <div class="circle"></div>
     <div class="round"></div> -->
     <footer class="text-center text-dark text-lg-start text-muted">
-      <section class="d-flex justify-content-between">
+      <section class="d-flex justify-content-evenly">
         <div class="d-none d-md-block">
           <span>{{ $t('connect') }}</span>
         </div>

@@ -127,7 +127,7 @@ export default {
   -webkit-transition: filter .5s ease-out;
   -moz-transition: filter .5s ease-out;
   -o-transition: filter .5s ease-out;
-  transition: filter .5s ease-out;
+  transition: filter .7s ease-out;
   &:hover{
     filter: none;
   }
