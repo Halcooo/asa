@@ -9,7 +9,8 @@
       {{ chip.chip }}
     </div> -->
 
-    <div>Posredovanje kod carinjenja roba.</div>
+    <div>
+      <p>{{$t('duty_p1')}}</p></div>
   </div>
 </template>
 <script>

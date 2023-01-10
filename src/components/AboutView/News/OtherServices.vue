@@ -10,8 +10,7 @@
     </div> -->
 
     <div>
-      Konsultantske usluge po pitanju osiguranja, pripreme realizacije posla i
-      dr.
+      <p>{{ $t("other_services_p1") }}</p>
     </div>
   </div>
 </template>
@@ -21,7 +20,6 @@ export default {
   data() {
     return {
       chips: [{ chip: "#cloud-based" }, { chip: "#erp" }],
-
     };
   },
 };

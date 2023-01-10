@@ -115,13 +115,12 @@
         </div>
       </div>
       <div class="form-group d-flex gap-3 submit">
-        <button type="submit" @click.prevent="submitForm">
+        <button class="read-more" type="submit" @click.prevent="submitForm">
           {{ $t("submit") }}
         </button>
-        <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
       </div>
     </form>
-    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000" >
+    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000">
       <h2>{{ $t("find_us_on_map") }}</h2>
       <div class="map-wrapper">
         <iframe
@@ -221,7 +220,47 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
-.submit{
+.read-more {
+  position: relative;
+  transition: all 0.5s;
+  padding: 12px 40px;
+    color: rgb(2, 2, 2);
+    border: 1px solid rgb(0, 0, 0);
+  
+}
+.read-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.141);
+  transition: all 0.3s;
+}
+.read-more:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.read-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.763);
+  transform: scale(1.2, 1.2);
+}
+.read-more:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.submit {
   flex-direction: row-reverse;
 }
 h2 {
@@ -310,18 +349,6 @@ h2 {
     label {
       transform: translate(6px, 16px);
     }
-  }
-}
-button {
-  border: 2px solid rgba(8, 40, 67, 0.6);
-  color: rgba(8, 40, 67, 0.6);
-  background: transparent;
-  padding: 20px 40px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    color: rgb(0, 119, 128);
-    border: 2px solid rgb(0, 119, 128);
   }
 }
 </style>

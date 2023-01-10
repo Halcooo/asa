@@ -5,19 +5,25 @@
     </div>
   </div>
   <div class="content-news">
-    ASA ŠPED d.o.o. raspolaže sa cca 20.000 m² zatvorenog skladišnog prostora
-    pogodnog za skladištenje svih vrsta roba, kao i sa cca 30000 m² asfaltirane
-    i zelene površine za perspektivni razvoj ili izgradnju potrebnih objekata.
-    Posebno ističemo savremeno izgrađeni logistički centar u Rajlovcu pogodan za
-    skladištenje svih vrsta roba. U pet skladišta čija ukupna površina iznosi
-    20000 m2, na veliko zadovoljstvo naših klijenata, pružamo kompletne
-    logističke usluge: skladištenje roba sa comparison and contrast
-    manipulacijom utovara i istovara prepakiranje robe, sortiranje, distribucija
-    na razne destinacije visoko regalno punjenje. Veliku pažnju posvećujemo
-    osiguranju i bezbjednosti objekata i roba. Svi objekti su osigurani i
-    policama osiguranja od svih mogućih rizika kao i roba koja je smještena.
-    Također, svi objekti su pokriveni video nadzorom i 24 sata fizičkim
-    obezbjeđenjem od strane certificirane ovlaštene agencije.
+    <p>
+      {{ $t("warehouse_p1") }}
+    </p>
+    <p>
+      {{ $t("warehouse_p2") }}
+    </p>
+    <p>
+      {{ $t("warehouse_p3") }}
+    </p>
+    <ol>
+      <li>{{ $t("warehouse_li1") }}</li>
+      <li>{{ $t("warehouse_li2") }}</li>
+      <li>{{ $t("warehouse_li3") }}</li>
+      <li>{{ $t("warehouse_li4") }}</li>
+      <li>{{ $t("warehouse_li5") }}</li>
+      <li>{{ $t("warehouse_li6") }}</li>
+    </ol>
+    <p>{{ $t("warehouse_p4") }}</p>
+    <p>{{ $t("warehouse_p5") }}</p>
   </div>
 </template>
 <script>
@@ -48,5 +54,48 @@ export default {
 <style lang="scss" scoped>
 h1 {
   color: white;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: list-counter;
+  margin-bottom: 26px;
+  margin-top: 18px;
+}
+li {
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "adelle-sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #666;
+}
+ol li {
+  position: relative;
+  padding-left: 35px;
+  min-height: 24px;
+  margin-top: 14px;
+}
+ol li:before {
+  content: counter(list-counter, decimal);
+  counter-increment: list-counter;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "adelle-sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100%;
+  color: #fff;
+  background: #25435b;
 }
 </style>

@@ -160,7 +160,7 @@ export default {
   border: 1px solid rgba(255,255,255,0.5);
   transform: scale(1.2,1.2);
 }
-.btn-three:hover::after {
+.read-more:hover::after {
   opacity: 1;
   transform: scale(1,1);
 }
