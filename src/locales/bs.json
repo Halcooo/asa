@@ -42,7 +42,7 @@
   "recension_contact": "Kontaktirajte nas.",
   "about_us_heading": "O nama",
   "about_us_news_heading": "Novosti",
-  "about_us_video_heading": " Preview",
+  "about_us_video_heading": "Pregled",
   "about_us_video_paragraph": "Pogledajte naš kratki video",
   "about_us_nums_heading": "ASA Šped u brojkama",
   "about_us_nums_established": "Osnovano",
@@ -113,7 +113,7 @@
   "warehouse_li2": "manipulacijom utovara i istovara",
   "warehouse_li3": "prepakiranje robe",
   "warehouse_li4": "sortiranje",
-  "about_us_next_heading":"Sljedeće",
+  "about_us_next_heading": "Sljedeće",
   "warehouse_li5": "distribucija na razne destinacije",
   "warehouse_li6": "visoko regalno punjenje",
   "warehouse_p4": "Veliku pažnju posvećujemo osiguranju i bezbjednosti objekata i roba. Svi objekti su osigurani i policama osiguranja od svih mogućih rizika kao i roba koja je smještena.",
@@ -121,5 +121,9 @@
   "duty_p1": "Posredovanje kod carinjenja roba.",
   "other_services_p1": "Konsultantske usluge po pitanju osiguranja, pripreme realizacije posla i dr.",
   "header_text": "Mi nudimo usluge međunarodne i unutarnje špedicije, transport i skladištenje roba",
-  "header_secondary_text": "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH."
+  "header_secondary_text": "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta, a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH.",
+  "position_haris": "Rukovodilac carinskog sektora",
+  "position_nermina": "Rukovodilac komercijalnog transportnog sektora",
+  "position_emir": "Rukovodilac sektora za skladište",
+  "address":"Adresa"
 }

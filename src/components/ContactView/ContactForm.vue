@@ -7,25 +7,13 @@
       <div class="form-group">
         <div class="form-group-flex">
           <div class="flex-item">
-            <label for="name" :class="{ active: active_name }">{{
+            <label for="name" :class="{ active: activeName }">{{
               $t("contact_form_name")
             }}</label>
             <input
               @input="validateName"
-              @click="
-                () => {
-                  this.active_name = true;
-                }
-              "
-              @focusout="
-                () => {
-                  if (this.name.length > 0) {
-                    this.active_name = true;
-                  } else {
-                    this.active_name = false;
-                  }
-                }
-              "
+              @click="nameActive"
+              @focusout="nameFocusOut"
               type="text"
               v-model="name"
               id="name"
@@ -34,25 +22,13 @@
             />
           </div>
           <div class="flex-item">
-            <label for="email" :class="{ active: active_email }">{{
+            <label for="email" :class="{ active: activeEmail }">{{
               $t("contact_form_email")
             }}</label>
             <input
               @input="validateEmail"
-              @click="
-                () => {
-                  this.active_email = true;
-                }
-              "
-              @focusout="
-                () => {
-                  if (this.email.length > 0) {
-                    this.active_email = true;
-                  } else {
-                    this.active_email = false;
-                  }
-                }
-              "
+              @click="emailActive"
+              @focusout="emailFocusOut"
               type="email"
               v-model="email"
               id="email"
@@ -81,25 +57,13 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="text" :class="{ active: active_text }">{{
+        <label for="text" :class="{ active: activeMessage }">{{
           $t("contact_form_text")
         }}</label>
         <textarea
           @input="validateMessage"
-          @click="
-            () => {
-              this.active_text = true;
-            }
-          "
-          @focusout="
-            () => {
-              if (this.message.length > 0) {
-                this.active_text = true;
-              } else {
-                this.active_text = false;
-              }
-            }
-          "
+          @click="messageActive"
+          @focusout="messageFocusOut"
           name="user_message"
           id="text"
           cols="30"
@@ -122,35 +86,24 @@
     </form>
     <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000">
       <h2>{{ $t("find_us_on_map") }}</h2>
-      <div class="map-wrapper">
-        <iframe
-          width="100%"
-          height="500px"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=asa%20%C5%A1ped&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="yes"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe>
-      </div>
+      <ContactMap></ContactMap>
     </div>
   </div>
 </template>
 <script>
 import BaseButton from "../Forms/buttons/BaseButton.vue";
-import TheLocationMap from "../TheLocationMap.vue";
+import ContactMap from "@/components/ContactView/ContactMap.vue";
 import emailjs from "@emailjs/browser";
 
 export default {
   name: "ContactForm",
-  components: { BaseButton, TheLocationMap },
+  components: { BaseButton, ContactMap },
   data() {
     return {
       routes: { route: "form", name: "form" },
-      active_name: false,
-      active_email: false,
-      active_text: false,
+      activeName: false,
+      activeEmail: false,
+      activeMessage: false,
       email: "",
       name: "",
       message: "",
@@ -160,13 +113,36 @@ export default {
     };
   },
   methods: {
+    messageFocusOut() {
+      this.message.length > 0
+        ? (this.activeMessage = true)
+        : (this.activeMessage = false);
+    },
+    messageActive() {
+      this.activeMessage = true;
+    },
+    emailFocusOut() {
+      this.email.length > 0
+        ? (this.activeEmail = true)
+        : (this.activeEmail = false);
+    },
+    emailActive() {
+      this.activeEmail = true;
+    },
+    nameActive() {
+      this.activeName = true;
+    },
+    nameFocusOut() {
+      this.name.length > 0
+        ? (this.activeName = true)
+        : (this.activeName = false);
+    },
     submitForm(event) {
       this.validateMessage();
       this.validateName();
       this.validateEmail();
       if (!this.emailInvalid && !this.nameInvalid && !this.messageInvalid) {
         this.sendEmail();
-      } else {
       }
     },
     sendEmail() {
@@ -179,9 +155,11 @@ export default {
         )
         .then(
           (result) => {
-            alert("poslali smo mail");
+            console.log("poslali smo mail", result); // todo
           },
-          (error) => {}
+          (error) => {
+            console.log("error", error);
+          }
         );
     },
     validateName() {
@@ -224,9 +202,8 @@ export default {
   position: relative;
   transition: all 0.5s;
   padding: 12px 40px;
-    color: rgb(2, 2, 2);
-    border: 1px solid rgb(0, 0, 0);
-  
+  color: rgb(2, 2, 2);
+  border: 1px solid rgb(0, 0, 0);
 }
 .read-more::before {
   content: "";

@@ -365,5 +365,9 @@
   "warehouse_p4": "We pay great attention to the security and safety of facilities and goods. All facilities are insured with insurance policies against all possible risks as well as the goods that are stored.",
   "warehouse_p5": "Also, all facilities are covered by video surveillance and 24-hour physical security by a certified authorized agency.",
   "duty_p1": "Mediation in customs clearance of goods.",
-  "other_services_p1": "Consulting services regarding insurance, preparation of work implementation, etc."
+  "other_services_p1": "Consulting services regarding insurance, preparation of work implementation, etc.",
+  "position_haris": "Head of Customs Sector",
+  "position_nermina": "Head of the commercial transport sector",
+  "position_emir": "Head of the warehouse sector",
+  "address": "Address"
 }

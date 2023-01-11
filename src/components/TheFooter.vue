@@ -55,7 +55,7 @@
               </RouterLink>
               <p>
                 <font-awesome-icon icon="fa-solid fa-home" />
-                Adresa: Rajlovačka bb, Sarajevo 71000
+                {{ $t('address') }}: Rajlovačka bb, Sarajevo 71000
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-envelope" />

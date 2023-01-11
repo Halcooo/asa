@@ -6,7 +6,7 @@
         <div class="overlay">
           <div>
             <h1>{{ $t(slide.name) }}</h1>
-            <p>{{ $t(slide.text) }}</p>
+            <p class="slide-text">{{ $t(slide.text) }}</p>
           </div>
         </div>
 
@@ -80,6 +80,9 @@ h1 {
       border-radius: 50%;
     }
   }
+}
+.slide-text {
+  max-width: 800px;
 }
 .grabbed {
   cursor: grabbing !important;

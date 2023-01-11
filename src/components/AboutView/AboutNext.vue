@@ -22,7 +22,7 @@
         </div>
 
         <h2>{{ contact.name }}</h2>
-        <p class="title">{{ contact.position }}</p>
+        <p class="title">{{ $t(contact.position) }}</p>
         <p><font-awesome-icon icon="fa-solid fa-envelope" size="1x" /> <span>{{ contact.mail }}</span> </p>
         <p><font-awesome-icon icon="fa-solid fa-phone" size="1x" /><span>{{ contact.phone }}</span></p>
       </div>
@@ -39,19 +39,19 @@ export default {
       contacts: [
         {
           name: "Haris Sarajlić",
-          position: "Rukovodilac carinskog sektora",
+          position: "position_haris",
           phone: "061 109 066",
           mail: "haris.sarajlic@asa.ba",
         },
         {
           name: "Nermina Planinčević",
-          position: "Rukovodilac komercijalnog transportnog sektora",
+          position: "position_nermina",
           phone: "061 225 618,",
           mail: "nermina.planincevic@asa.ba",
         },
         {
           name: "Emir Dinarević",
-          position: "Rukovodilac sektora skladište",
+          position: "position_emir",
           phone: "061 106 589",
           mail: "emir.dinarevic@asa.ba",
         },
