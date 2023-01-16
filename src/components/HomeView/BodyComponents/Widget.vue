@@ -34,11 +34,22 @@
       </div> -->
     </div>
   </div>
-  <div
-  data-aos="flip-left"
-  data-aos-duration="1000"> <h2>{{$t('fast_and_simple')}}</h2>
-  <div class="container truck mb-5 mt-5"><img src="@/assets/images/moving.gif" alt=""></div></div>
- 
+  <div data-aos="flip-left" data-aos-duration="1000">
+    <h2>{{ $t("fast_and_simple") }}</h2>
+    <div class="container truck mb-5 mt-5">
+      <img src="@/assets/images/moving.gif" alt="" />
+    </div>
+  </div>
+  <div class="container mt-5 mb-5 d-flex justify-center iso">
+    <p>{{ $t("iso_standard") }}</p>
+    <a
+      href="https://www.iso.org/iso-9001-quality-management.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="@/assets/images/iso.png" alt="iso9001"
+    /></a>
+  </div>
 </template>
 <script>
 export default {
@@ -55,14 +66,24 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-h2{
+h2 {
   text-align: center;
 }
-.truck{
-  display:flex;
+.iso {
+  align-items: center;
+  vertical-align: middle;
+  img {
+    max-width: 400px;
+    &:hover{
+      opacity: .75;
+    }
+  }
+}
+.truck {
+  display: flex;
   align-items: center;
   justify-content: center;
-  img{
+  img {
     max-width: 100%;
   }
 }
