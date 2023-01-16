@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-container">
+  <div class="widget-container mb-4">
     <div class="widget-box" data-aos="fade-up-right" data-aos-duration="1300">
       <div class="widget-frame"></div>
       <div
@@ -74,8 +74,8 @@ h2 {
   vertical-align: middle;
   img {
     max-width: 400px;
-    &:hover{
-      opacity: .75;
+    &:hover {
+      opacity: 0.75;
     }
   }
 }
