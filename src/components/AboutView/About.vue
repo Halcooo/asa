@@ -57,7 +57,7 @@ export default {
         {
           src: "/other-services",
           h1: "other_services_h4",
-          h4: "",
+          h4: " ",
           class: "card-4",
           animate: "fade-up-left",
         },
@@ -258,5 +258,8 @@ h1 {
   .flex-second {
     grid-template-columns: 1fr !important;
   }
+}
+@media screen and (max-width:1024px){
+  .about-flex-grid{width: 100%;}
 }
 </style>

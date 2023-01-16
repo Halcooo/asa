@@ -1,17 +1,13 @@
-<template lang="">
-  
-    <div class="container wrapper language display">
-      <img
-        class=""
-        :src="lang.src"
-        :alt="lang.abr"
-        v-for="lang in languages"
-        :key="lang"
-        @click="translatePage(lang)"
-      />
-    </div>
-    
-  
+<template>
+  <div class="container wrapper language display">
+    <img
+      :src="lang.src"
+      :alt="lang.abr"
+      v-for="lang in languages"
+      :key="lang"
+      @click="translatePage(lang)"
+    />
+  </div>
 </template>
 <script>
 export default {
@@ -52,8 +48,8 @@ img {
   }
   margin-right: 12px;
 }
-.wrapper{
-  display:flex;
+.wrapper {
+  display: flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;

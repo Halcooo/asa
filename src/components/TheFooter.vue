@@ -11,12 +11,12 @@
         </div>
         <TheSocialIcons></TheSocialIcons>
       </section>
-      <section class="">
+      <section>
         <div class="container text-md-start pb-5 mt-5">
           <div class="d-flex mt-3 main">
             <div class="col-md-3 mx-auto mb-4 text-center">
               <RouterLink to="/">
-                <img src="../assets/images/asa-sped-logo.png" alt="" />
+                <img src="../assets/images/asa-sped-logo.png" alt="asa-logo" />
               </RouterLink>
 
               <h6 class="text-uppercase fw-bold mb-4"></h6>

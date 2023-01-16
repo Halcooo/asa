@@ -9,7 +9,7 @@
       ></div>
     </div>
     <div class="text" data-aos="fade-up-left" data-aos-duration="1300">
-      <small class="">{{ $t("widget_heading") }}</small>
+      <small>{{ $t("widget_heading") }}</small>
       <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
       <p class="mb-5 text-secondary">
         {{ $t("widget_main_text") }}
@@ -37,12 +37,17 @@
   <div data-aos="flip-left" data-aos-duration="1000">
     <h2>{{ $t("fast_and_simple") }}</h2>
     <div class="container truck mb-5 mt-5">
-      <img src="@/assets/images/moving.gif" alt="" />
+      <img src="@/assets/images/moving.gif" alt="truckGif" />
     </div>
   </div>
   <div class="container mt-5 mb-5 d-flex justify-center iso">
-    <p>{{ $t("iso_standard") }}</p>
+    <p
+    data-aos="fade-left"
+        data-aos-duration="1300">{{ $t("iso_standard") }}</p>
     <a
+    class="widget-pic"
+        data-aos="flip-left"
+        data-aos-duration="1300"
       href="https://www.iso.org/iso-9001-quality-management.html"
       target="_blank"
       rel="noopener noreferrer"
@@ -69,7 +74,20 @@ export default {
 h2 {
   text-align: center;
 }
+@media screen and (max-width: 900px) {
+  .iso {
+    flex-direction: column;
+    img {
+      width: 80%;
+      margin: auto;
+    }
+    a {
+      text-align: center;
+    }
+  }
+}
 .iso {
+  display: flex;
   align-items: center;
   vertical-align: middle;
   img {

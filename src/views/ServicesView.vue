@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div class="wrapper" data-aos="fade-in">
     <ServicesSlider :images="images"></ServicesSlider>
   </div>
@@ -133,22 +133,22 @@ export default {
   transition: all 0.5s;
 }
 .read-more::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.3s;
 }
 .read-more:hover::before {
-  opacity: 0 ;
-  transform: scale(0.5,0.5);
+  opacity: 0;
+  transform: scale(0.5, 0.5);
 }
 .read-more::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -157,12 +157,12 @@ export default {
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border: 1px solid rgba(255,255,255,0.5);
-  transform: scale(1.2,1.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
 }
 .read-more:hover::after {
   opacity: 1;
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 .main-grid {
   overflow: hidden;
@@ -318,6 +318,11 @@ export default {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services-container {
+    width: 90%;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 @author Halid Lihovac
-<template lang="">
+<template>
   <div class="social-icons">
     <a href="https://www.facebook.com" target="blank" class="me-4 text-reset">
       <font-awesome-icon icon="fa-brands fa-facebook" size="2x" />

@@ -1,5 +1,5 @@
 @author Halid Lihovac
-<template lang="">
+<template>
   <div class="arrow-wrap" v-if="show" @click="handleScroll">
     <font-awesome-icon icon="fa-solid fa-arrow-up" />
   </div>
@@ -46,10 +46,9 @@ export default {
   transition: 1s ease-in-out;
   &:hover {
     border: 2px solid #25435b;
-    color:#25435b;
+    color: #25435b;
     transform: scale(1.1);
   }
-
 }
 div {
   position: fixed;

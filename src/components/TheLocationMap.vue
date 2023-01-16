@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <div style="text-align: center" class="mb-5"></div>
 

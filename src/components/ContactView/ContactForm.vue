@@ -20,38 +20,36 @@
               class="form-control-custom"
               name="from_name"
             />
-          </div>
-          <div class="flex-item">
-            <label for="email" :class="{ active: activeEmail }">{{
-              $t("contact_form_email")
-            }}</label>
-            <input
-              @input="validateEmail"
-              @click="emailActive"
-              @focusout="emailFocusOut"
-              type="email"
-              v-model="email"
-              id="email"
-              class="form-control-custom"
-              name="from_email"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="form-group-flex">
-          <div class="flex-item">
-            <div class="warning" v-if="nameInvalid">
-              <small style="color: orangered">{{
-                $t("contact_form_nameInvalid")
-              }}</small>
+            <div class="form-group-flex">
+              <div class="flex-item">
+                <div class="warning" v-if="nameInvalid">
+                  <small style="color: orangered">{{
+                    $t("contact_form_nameInvalid")
+                  }}</small>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="flex-item">
-            <div class="warning" v-if="emailInvalid">
-              <small style="color: orangered">{{
-                $t("contact_form_emailInvalid")
-              }}</small>
+            <div class="flex-item">
+              <label for="email" :class="{ active: activeEmail }">{{
+                $t("contact_form_email")
+              }}</label>
+              <input
+                @input="validateEmail"
+                @click="emailActive"
+                @focusout="emailFocusOut"
+                type="email"
+                v-model="email"
+                id="email"
+                class="form-control-custom"
+                name="from_email"
+              />
+              <div class="flex-item">
+                <div class="warning" v-if="emailInvalid">
+                  <small style="color: orangered">{{
+                    $t("contact_form_emailInvalid")
+                  }}</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>

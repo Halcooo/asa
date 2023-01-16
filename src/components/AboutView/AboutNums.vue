@@ -62,7 +62,7 @@ export default {
             employees.value += employee.value / speed.value;
             roundedValEmp.value = Math.round(employees.value);
           }
-        }, 370);
+        }, 111);
       }
     });
     return { roundedValyear, roundedValcli, roundedValEmp };

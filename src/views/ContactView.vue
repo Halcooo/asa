@@ -1,6 +1,5 @@
-<template lang="">
-  <div class="wrapper"
-  data-aos="fade-in">
+<template>
+  <div class="wrapper" data-aos="fade-in">
     <div class="wrapper-div">
       <h1>{{ $t("contact") }}</h1>
     </div>
