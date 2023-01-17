@@ -14,17 +14,20 @@
         data-aos-duration="1000"
       >
         <div class="img-container">
-          <img
-            src="@/assets/images/avatar.jpg"
-            alt="John"
-            style="width: 100%"
-          />
+          <img :src="contact.image" :alt="contact.name" style="width: 100%" />
         </div>
 
         <h2>{{ contact.name }}</h2>
         <p class="title">{{ $t(contact.position) }}</p>
-        <p><font-awesome-icon icon="fa-solid fa-envelope" size="1x" /> <span>{{ contact.mail }}</span> </p>
-        <p><font-awesome-icon icon="fa-solid fa-phone" size="1x" /><span>{{ contact.phone }}</span></p>
+        <p>
+          <font-awesome-icon icon="fa-solid fa-envelope" size="1x" />
+          <span>{{ contact.mail }}</span>
+        </p>
+        <p>
+          <font-awesome-icon icon="fa-solid fa-phone" size="1x" /><span>{{
+            contact.phone
+          }}</span>
+        </p>
       </div>
     </div>
   </div>
@@ -42,18 +45,21 @@ export default {
           position: "position_haris",
           phone: "061 109 066",
           mail: "haris.sarajlic@asa.ba",
+          image: require("@/assets/images/avatar.jpg"),
         },
         {
           name: "Nermina Planinčević",
           position: "position_nermina",
           phone: "061 225 618,",
           mail: "nermina.planincevic@asa.ba",
+          image: require("@/assets/images/female-avatar.png"),
         },
         {
           name: "Emir Dinarević",
           position: "position_emir",
           phone: "061 106 589",
           mail: "emir.dinarevic@asa.ba",
+          image: require("@/assets/images/avatar.jpg"),
         },
       ],
     };
@@ -62,19 +68,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
-.card{
-  span{
+.card {
+  span {
     margin-left: 8px;
   }
 }
 
-h2{
+h2 {
   height: 71px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.title{
+.title {
   height: 60px;
 }
 .img-container {
