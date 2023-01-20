@@ -73,7 +73,6 @@ export default {
     margin-left: 8px;
   }
 }
-
 h2 {
   height: 71px;
   display: flex;
@@ -128,10 +127,8 @@ button {
   width: 100%;
   font-size: 18px;
 }
-
 .the_next {
   width: 100%;
-
   .the_next_heading {
     text-align: center;
   }
