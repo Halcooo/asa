@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 text-center">
-    <h1>Reference</h1>
+    <h3>Reference</h3>
     <div class="container">
       <BaseSlider :images="images" />
     </div>

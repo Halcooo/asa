@@ -33,7 +33,7 @@
           data-aos-duration="1000"
         >
           <div>
-            <h1 class="text-center title">{{ $t(div.text) }}</h1>
+            <h2 class="text-center title">{{ $t(div.text) }}</h2>
             <p
               style="
                 width: 100px;
@@ -68,7 +68,7 @@ export default {
       divs: [
         {
           class: "erp",
-          text: "fast_and_secure",
+          text: "transport",
           // p: "Transport", // todo
           to: "/transport", // todo
           animate: "fade-down-right",
@@ -211,8 +211,7 @@ export default {
       justify-content: center;
       align-items: center;
 
-      h1 {
-        font-size: 60px;
+      h2 {
         color: white;
       }
       p {
@@ -294,9 +293,6 @@ export default {
   }
 }
 @media screen and (max-width: 567px) {
-  .title {
-    font-size: small;
-  }
   .heading {
     width: 75%;
     margin: auto;

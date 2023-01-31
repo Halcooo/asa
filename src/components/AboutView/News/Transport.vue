@@ -1,7 +1,7 @@
 <template>
   <div class="header" data-aos="fade">
     <div>
-      <h1>{{ $t("transport") }}</h1>
+      <h3>{{ $t("transport") }}</h3>
     </div>
   </div>
   <div class="content-news">

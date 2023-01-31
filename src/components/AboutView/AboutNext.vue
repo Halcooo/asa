@@ -1,23 +1,21 @@
 <template>
   <div class="the_next" data-aos="fade-in">
     <div class="the_next_heading">
-      <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
+      <h3 class="mt-2">{{ $t("contact_personel") }}:</h3>
       <Line />
-      <h3 class="text-secondary mt-2">{{ $t("contact_personel") }}:</h3>
     </div>
     <div class="container next-view">
       <div
         v-for="contact in contacts"
-        class="card"
+        class="card mt-3"
         data-aos="flip-right"
-        data-aos-anchor-placement="top-center"
         data-aos-duration="1000"
       >
         <div class="img-container">
           <img :src="contact.image" :alt="contact.name" style="width: 100%" />
         </div>
 
-        <h2>{{ contact.name }}</h2>
+        <h3>{{ contact.name }}</h3>
         <p class="title">{{ $t(contact.position) }}</p>
         <p>
           <font-awesome-icon icon="fa-solid fa-envelope" size="1x" />
@@ -111,7 +109,6 @@ h2 {
 }
 
 .title {
-  color: grey;
   font-size: 18px;
 }
 

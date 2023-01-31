@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper" data-aos="fade-in">
     <div class="wrapper-div">
-      <h1>{{ $t("contact") }}</h1>
+      <h3>{{ $t("contact") }}</h3>
     </div>
   </div>
   <ContactForm />
@@ -32,9 +32,8 @@ export default {
   .wrapper-div {
     text-align: center;
   }
-  h1 {
+  h3 {
     color: white;
-    font-size: 70px;
   }
 }
 </style>

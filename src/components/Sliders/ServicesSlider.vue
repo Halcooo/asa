@@ -5,7 +5,6 @@
       <div class="carousel__item">
         <div class="overlay">
           <div>
-            <h1>{{ $t(slide.name) }}</h1>
             <p class="slide-text">{{ $t(slide.text) }}</p>
           </div>
         </div>
@@ -21,7 +20,8 @@
       </div>
     </Slide>
     <template #addons>
-      <Pagination />
+      <Navigation></Navigation>
+
     </template>
   </Carousel>
 </template>
@@ -61,12 +61,8 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-h1 {
-  font-size: 40px;
-  color: white;
-  margin-bottom: 5%;
-}
+<style lang="scss" >
+
 .carousel__pagination {
   position: absolute;
   bottom: 5%;
@@ -103,7 +99,7 @@ h1 {
   }
 }
 .carousel__item {
-  height: 80vh;
+  height: 40vh;
   width: 100%;
   color: white;
   border-radius: 8px;
@@ -114,7 +110,6 @@ h1 {
   .overlay {
     position: absolute;
     width: 100%;
-
     height: 100%;
     background-color: rgba(8, 40, 67, 0.422);
     top: 0;
@@ -122,7 +117,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
     div {
       p {
         font-size: 30px;
@@ -131,14 +125,15 @@ h1 {
   }
   img {
     width: 100% !important;
-    height: 100%;
     cursor: grab;
   }
 }
 
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+
+.carousel__icon{
+  fill: #fff !important;
+  color: #fff !important;
+ transform: scale(1.3);
 }
+
 </style>

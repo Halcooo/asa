@@ -1,14 +1,12 @@
 @author Halid Lihovac
 <template>
   <div class="landing-page" style="position: relative; z-index: 1">
-    <div class="circle-1"></div>
-    <div class="circle-2"></div>
     <div class="div">
       <div>
         <div class="head-1">
-          <h2>
+          <h3>
             {{ $t("header_text") }}
-          </h2>
+          </h3>
         </div>
         <div class="head-2">
           <p class="text-warning">ASA Šped</p>
@@ -106,16 +104,17 @@ export default {
   .div {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     text-align: center;
     gap: 200px;
     height: 100%;
     margin: auto;
     padding-top: 15%;
 
-    h2 {
+    h3 {
       font-size: 30px;
       color: white;
+      margin-top:5vh;
       margin: 0;
       padding: 0;
     }

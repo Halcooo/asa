@@ -12,7 +12,7 @@
     </div>
     <div class="frame-text" data-aos="fade-down-right" data-aos-duration="1000">
       <div>
-        <h1>{{ $t("about_us_video_heading") }}</h1>
+        <h3>{{ $t("about_us_video_heading") }}</h3>
         <p>
           {{ $t("about_us_video_paragraph") }}
         </p>
@@ -63,7 +63,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .video-frame {
-  width: 100%;
+  text-align: center;
+  margin: auto;
+  width: 90%;
   display: flex;
   align-items: center;
   height: 50vh;
@@ -115,6 +117,7 @@ export default {
       margin-right: 5%;
       color: white;
       h1 {
+        color: white;
         font-size: 50px;
       }
       p {

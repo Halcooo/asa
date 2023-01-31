@@ -5,13 +5,12 @@
   >
     <div class="about-heading text-center">
       <div>
-        <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
         <p class="text-light"></p>
       </div>
     </div>
   </div>
   <div class="about-flex-grid">
-    <div class="flex-second">
+    <!-- <div class="flex-second">
       <router-link v-for="card in grid_2" :to="card.src">
         <div
           :class="card.class"
@@ -24,7 +23,7 @@
           </div>
         </div>
       </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -35,28 +34,28 @@ export default {
       grid_2: [
         {
           src: "/transport",
-          h1: "transport",
+          h3: "transport",
           h4: "transport_h4",
           class: "card-1",
           animate: "fade-down-right",
         },
         {
           src: "/warehouse",
-          h1: "warehouse",
+          h3: "warehouse",
           h4: "warehouse_h4",
           class: "card-2",
           animate: "fade-down-left",
         },
         {
           src: "/duty",
-          h1: "duty",
+          h3: "duty",
           h4: "duty_h4",
           class: "card-3",
           animate: "fade-up-right",
         },
         {
           src: "/other-services",
-          h1: "other_services_h4",
+          h3: "other_services_h4",
           h4: " ",
           class: "card-4",
           animate: "fade-up-left",
@@ -80,7 +79,7 @@ h1 {
 
 .about-nav {
   width: 100%;
-  height: 70vh;
+  height: 35vh;
   background: linear-gradient(
       315deg,
       rgba(43, 67, 101, 0.669),

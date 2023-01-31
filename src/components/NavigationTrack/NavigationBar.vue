@@ -55,15 +55,6 @@ export default {
           name: "home",
           isActive: true,
           id: 0,
-
-          classname: "nav",
-        },
-        {
-          to: "/about",
-          name: "about",
-          isActive: false,
-          id: 1,
-
           classname: "nav",
         },
         {
@@ -71,9 +62,16 @@ export default {
           name: "services",
           isActive: false,
           id: 3,
-
           classname: "nav",
         },
+        {
+          to: "/about",
+          name: "about",
+          isActive: false,
+          id: 1,
+          classname: "nav",
+        },
+
         {
           to: "/contact",
           name: "contact",

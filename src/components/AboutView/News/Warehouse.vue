@@ -2,7 +2,7 @@
   <div class="header"
   data-aos="fade" data-aos-duration="1100">
     <div>
-      <h1>{{ $t("warehouse") }}</h1>
+      <h3>{{ $t("warehouse") }}</h3>
     </div>
   </div>
   <div class="content-news">

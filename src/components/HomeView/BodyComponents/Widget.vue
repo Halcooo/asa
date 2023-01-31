@@ -1,7 +1,6 @@
 <template>
   <div class="widget-container mb-4">
     <div class="widget-box" data-aos="fade-up-right" data-aos-duration="1300">
-      <div class="widget-frame"></div>
       <div
         class="widget-pic"
         data-aos="flip-left"
@@ -10,7 +9,7 @@
     </div>
     <div class="text" data-aos="fade-up-left" data-aos-duration="1300">
       <small>{{ $t("widget_heading") }}</small>
-      <h1 class="mb-5 text-secondary">ASA ŠPED</h1>
+      <h3 class="mb-5 text-secondary">ASA ŠPED</h3>
       <p class="mb-5 text-secondary">
         {{ $t("widget_main_text") }}
       </p>
@@ -41,13 +40,13 @@
     </div>
   </div>
   <div class="container mt-5 mb-5 d-flex justify-center iso">
-    <p
-    data-aos="fade-left"
-        data-aos-duration="1300">{{ $t("iso_standard") }}</p>
+    <p data-aos="fade-left" data-aos-duration="1300">
+      {{ $t("iso_standard") }}
+    </p>
     <a
-    class="widget-pic"
-        data-aos="flip-left"
-        data-aos-duration="1300"
+      class="widget-pic"
+      data-aos="flip-left"
+      data-aos-duration="1300"
       href="https://www.iso.org/iso-9001-quality-management.html"
       target="_blank"
       rel="noopener noreferrer"
@@ -119,14 +118,6 @@ h2 {
     height: 100%;
     position: relative;
 
-    .widget-frame {
-      position: absolute;
-      width: 52%;
-      height: 100%;
-      border: 23px solid rgba(8, 40, 67, 0.838);
-      top: 0;
-      left: 7%;
-    }
     .widget-pic {
       position: absolute;
       top: 15%;
@@ -158,25 +149,21 @@ h2 {
         margin: auto;
         width: 30px;
         height: 30px;
-        color: gray;
       }
       small {
         font-size: 30px;
       }
       p {
-        color: gray;
       }
     }
 
     small {
       font-size: 20px;
-      color: rgb(55, 165, 255);
       margin-bottom: 4%;
     }
     h1 {
       font-size: 50px;
       letter-spacing: 0.1rem;
-      color: rgb(37, 37, 37);
     }
     p {
       font-size: 20px;

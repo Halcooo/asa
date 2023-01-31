@@ -2,7 +2,7 @@
   <div class="body bg-light text-center pt-5">
     <div class="items container text-center pb-5">
       <div class="square">
-        <h1>{{ $t("home_icon_square") }}</h1>
+        <h3>{{ $t("home_icon_square") }}</h3>
       </div>
       <div class="square-2"></div>
       <div class="items-container">

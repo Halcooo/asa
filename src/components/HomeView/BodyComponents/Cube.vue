@@ -2,9 +2,9 @@
   <div class="cube-background">
     <div class="cube-content">
       <div class="erp-text mt-5">
-        <h1 class="erp-main-text text-secondary mt-2">
+        <h3 class="erp-main-text text-secondary mt-2">
           {{ $t("home_forspace_erp_accounting") }}
-        </h1>
+        </h3>
         <p class="erp-secondary-text">
           {{ $t("home_forspace_erp_accounting_text") }}
         </p>

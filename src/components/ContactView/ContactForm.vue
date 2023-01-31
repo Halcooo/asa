@@ -1,6 +1,10 @@
 @author Halid Lihovac
 <template>
   <div class="form-div">
+    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000">
+      <h3>{{ $t("find_us_on_map") }}</h3>
+      <ContactMap></ContactMap>
+    </div>
     <h3>{{ $t("contact_header") }}</h3>
 
     <form ref="form">
@@ -82,10 +86,6 @@
         </button>
       </div>
     </form>
-    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000">
-      <h2>{{ $t("find_us_on_map") }}</h2>
-      <ContactMap></ContactMap>
-    </div>
   </div>
 </template>
 <script>
@@ -268,7 +268,6 @@ h2 {
     transition: transform 0.2s ease-out, color 0.2s ease-out;
   }
   h3 {
-    color: gray;
     border-radius: 5px;
   }
   .form-group {

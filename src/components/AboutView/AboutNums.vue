@@ -3,26 +3,26 @@
     <h2 class="mb-4">{{ $t("about_us_nums_heading") }}</h2>
     <Line />
     <div class="heading-flex">
-      <h2>{{$t('founded')}}</h2>
-      <h2>{{$t('clients')}}</h2>
-      <h2>{{$t('employees')}}</h2>
+      <h2>{{ $t("founded") }}</h2>
+      <h2>{{ $t("clients") }}</h2>
+      <h2>{{ $t("employees") }}</h2>
     </div>
 
     <div class="num-flex">
       <div class="label">
-        <h2>{{ $t("about_us_nums_established") }}</h2>
+        <h3>{{ $t("about_us_nums_established") }}</h3>
       </div>
       <div class="year">
         <div>{{ roundedValyear }}y</div>
       </div>
       <div class="label">
-        <h2>{{ $t("about_us_nums_clients") }}</h2>
+        <h3>{{ $t("about_us_nums_clients") }}</h3>
       </div>
       <div class="client">
         <div>{{ roundedValcli }}+</div>
       </div>
       <div class="label">
-        <h2>{{ $t("about_us_nums_employed") }}</h2>
+        <h3>{{ $t("about_us_nums_employed") }}</h3>
       </div>
       <div class="emp">
         <div>{{ roundedValEmp }}+</div>
@@ -48,7 +48,7 @@ export default {
     const roundedValcli = ref(0);
     const roundedValEmp = ref(0);
     window.addEventListener("scroll", () => {
-      if (document.body.scrollHeight -1700 < window.scrollY ) {
+      if (document.body.scrollHeight - 1700 < window.scrollY) {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;
@@ -105,10 +105,9 @@ export default {
     width: 60%;
     margin: 5% auto;
 
-    > h2 {
+    > h3 {
       width: 100%;
-      display: block;
-      color: gray;
+      display: block
     }
   }
   .label {
