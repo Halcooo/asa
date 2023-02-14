@@ -345,6 +345,7 @@
   "employees": "Employees",
   "connect": "Get connected with us on social networks",
   "transport_heading": "We provide international and domestic transport services to all our clients,and we also specialize in urgent distribution of goods to customers within Bosnia and Herzegovina. By transport services we mean: road (all types of road transport)",
+  "road_transport":"Road (all types of road transport)",
   "container": "Container",
   "maritime": "Maritime",
   "air_transport": "Air transport",
@@ -370,5 +371,6 @@
   "position_nermina": "Head of the commercial transport sector",
   "position_emir": "Head of the warehouse sector",
   "address": "Address",
+  "gallery": "Gallery",
   "iso_standard": "ASA ŠPED has an international quality certificate ISO 9001:2000 for the performance of activities in the field of domestic and international forwarding and storage, which we have been successfully maintaining for 12 years."
 }

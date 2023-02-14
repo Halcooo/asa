@@ -153,10 +153,12 @@ export default {
         )
         .then(
           (result) => {
-            console.log("poslali smo mail", result); // todo
+            console.log("poslali smo mail", result);
+            (this.email = ""), (this.name = ""), (this.message = "");
           },
           (error) => {
             console.log("error", error);
+            alert(error);
           }
         );
     },
@@ -302,7 +304,7 @@ h2 {
     }
 
     .active {
-      transform: translate(0px, -22px) scale(0.8);
+      transform: translate(0px, -13px) scale(0.8);
       color: gray;
       transition: transform 0.2s ease-out, color 0.2s ease-out;
     }
@@ -317,11 +319,14 @@ h2 {
     .form-group {
       margin: 0;
       .form-control-custom {
-        margin: 5px 0px 10px 0px;
+        margin: 15px 0px 10px 0px;
       }
     }
     label {
-      transform: translate(6px, 16px);
+      transform: translate(6px, 27px);
+    }
+    .active {
+      transform: translate(0px, -11px) scale(0.8)!important;
     }
   }
 }

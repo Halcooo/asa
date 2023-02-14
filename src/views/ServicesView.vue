@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" data-aos="fade-in">
-    <ServicesSlider :images="images"></ServicesSlider>
+    <!-- <ServicesSlider :images="images"></ServicesSlider> -->
   </div>
   <div class="content">
     <div class="services-container mt-5">
@@ -128,6 +128,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.wrapper {
+  width: 100%;
+  height: 35vh;
+  background: linear-gradient(
+      315deg,
+      rgba(43, 67, 101, 0.369),
+      rgba(66, 70, 120, 0.645),
+      rgba(225, 173, 1, 0.29)
+    ),
+    url("@/assets/images/speed-truck.jpeg") no-repeat center center/cover;
+}
 .read-more {
   position: relative;
   transition: all 0.5s;

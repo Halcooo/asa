@@ -71,13 +71,18 @@ export default {
           id: 1,
           classname: "nav",
         },
-
+        {
+          to: "/gallery",
+          name: "gallery",
+          isActive: false,
+          id: 6,
+          classname: "nav",
+        },
         {
           to: "/contact",
           name: "contact",
           isActive: false,
           id: 5,
-
           classname: "nav",
         },
       ],

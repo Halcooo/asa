@@ -8,7 +8,7 @@ import Transport from "../components/AboutView/News/Transport";
 import Warehouse from "../components/AboutView/News/Warehouse";
 import Duty from "../components/AboutView/News/Duty";
 import OtherServices from "../components/AboutView/News/OtherServices";
-
+import GalleryView from "@/views/GalleryView.vue"
 
 const routes = [
   {
@@ -44,7 +44,6 @@ const routes = [
     component: OtherServices,
   },
 
-
   {
     path: "/services",
     name: "services",
@@ -54,6 +53,11 @@ const routes = [
     path: "/contact",
     name: "contact",
     component: ContactView,
+  },
+  {
+    path: "/gallery",
+    name: "gallery",
+    component: GalleryView,
   },
 ];
 

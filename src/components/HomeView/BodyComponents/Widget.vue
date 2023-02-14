@@ -185,7 +185,9 @@ h2 {
         left: 5%;
       }
       .widget-pic {
-        width: 74%;
+        width: 80%;
+        top:20%;
+        left:10%
       }
     }
   }

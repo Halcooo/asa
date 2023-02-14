@@ -12,6 +12,9 @@
 
       <hr />
       <ol>
+        <li data-aos="fade-left" data-aos-duration="1100">
+          {{ $t("road_transport") }}
+        </li>
         <li data-aos="fade-right" data-aos-duration="1100">
           {{ $t("container") }}
         </li>
@@ -51,6 +54,18 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.header {
+  background: linear-gradient(19deg, #1530365d 0%, #0003179d 100%),
+    url("@/assets/images/wms-header.jpg") no-repeat center center/cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 567px) {
+    background: linear-gradient(19deg, #1530365d 0%, #0003179d 100%),
+      url("@/assets/images/wms-header.jpg") no-repeat center center/cover;
+  }
+}
 h3 {
   color: white;
 }

@@ -69,7 +69,7 @@ export default {
   border-radius: 50%;
   transform: translate();
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   transition: 1s ease-in-out;
   &:hover {

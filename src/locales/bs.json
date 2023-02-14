@@ -97,7 +97,8 @@
   "clients": "Klijenti",
   "employees": "Zaposlenih",
   "connect": "Povežite se sa nama",
-  "transport_heading": "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta,a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH. Pod usluge transporta podrazumijevamo: cestovni (sve vrste cestovnog transporta)",
+  "transport_heading": "Svim našim klijentima pružamo usluge međunarodnog i domaćeg transporta,a specijalizirali smo se i u hitnoj distribuciji robe do kupaca unutar BiH. Pod usluge transporta podrazumijevamo: ",
+  "road_transport":"Cestovni (sve vrste cestovnog transporta)",
   "container": "Kontenjerski",
   "maritime": "Pomorski",
   "air_transport": "Avio transport",
@@ -126,5 +127,6 @@
   "position_nermina": "Rukovodilac komercijalnog transportnog sektora",
   "position_emir": "Rukovodilac sektora za skladište",
   "address": "Adresa",
+  "gallery": "Galerija",
   "iso_standard": "ASA ŠPED posjeduje međunarodni certifikat kvaliteta ISO 9001:2000 za obavljanje djelatnosti iz sfere domaće i međunarodne špedicije i skladištenja, koji uspješno održavamo već 12 godina."
 }
