@@ -74,22 +74,7 @@ export default {
 .grabbed {
   cursor: grabbing !important;
 }
-@media screen and (max-width: 850px) {
-  .carousel__item {
-    height: 50vh !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 17px !important;
-  }
-  .carousel__item {
-    height: 40vh !important;
-  }
-}
+
 .carousel__item {
   max-height: 80vh;
   width: 100%;
