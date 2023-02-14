@@ -63,7 +63,7 @@ export default {
   z-index: 5;
   position: relative;
   margin-top: 30px;
-  padding: 20px;
+  padding: 11px;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   border-radius: 50%;
@@ -138,6 +138,7 @@ export default {
       padding-top: 10%;
     }
     @media screen and (max-width: 567px) {
+ 
       width: 100%;
       justify-content: center;
 

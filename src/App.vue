@@ -68,6 +68,9 @@ h1 {
   color: $primary-color;
 }
 @media screen and (max-width: 560px) {
+  .logo{
+      transform:scale(.8)
+    }
 }
 .carousel__pagination-button::after {
   display: block;
