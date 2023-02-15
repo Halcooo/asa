@@ -112,7 +112,7 @@ li {
     &:hover {
       opacity: 0.8;
       .underline {
-        background-color:orange;
+        background-color:white;
         width: 100%;
         transition: width 0.3s ease-out;
       }
