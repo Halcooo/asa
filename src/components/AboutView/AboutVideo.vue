@@ -22,12 +22,10 @@
       class="frame-video"
       data-aos="fade-up-left"
       data-aos-duration="1000"
-    ></div>
+    >
+   </div>
     <div class="overlay-video" :class="{ video: video }">
-      <YouTube
-        src="https://www.youtube.com/watch?v=VXMslOYKces&ab_channel=DSVGlobalTransportandLogistics"
-        ref="youtube"
-      />
+      <video class="video" ref="video"  controls src="@/assets/video/Asa-prezent.mp4"></video>
       <div class="closing">
         <ClosingButton @click="closeVideo" :isMap="true" />
       </div>
@@ -50,18 +48,22 @@ export default {
     closeVideo() {
       if (this.video) {
         this.video = false;
-        this.$refs.youtube.stopVideo();
+        this.$refs.video.pause();
       }
     },
     showVideo() {
       if (!this.video) {
         this.video = true;
+        this.$refs.video.play();
       }
     },
   },
 };
 </script>
 <style lang="scss" scoped>
+.video{
+  width:80%;
+}
 .video-frame {
   text-align: center;
   margin: auto;

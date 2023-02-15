@@ -7,7 +7,7 @@
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-evenly">
         <div class="d-none d-md-block">
-          <span>{{ $t('connect') }}</span>
+          <span>{{ $t("connect") }}</span>
         </div>
         <TheSocialIcons></TheSocialIcons>
       </section>
@@ -30,22 +30,26 @@
                   ASA ŠPED Services
                 </h6>
               </RouterLink>
-              <router-link to="/transport">    <p class="text-reset">
+              <router-link to="/transport">
+                <p class="text-reset">
                   {{ $t("transport") }}
-                </p></router-link>
-            
-             
+                </p></router-link
+              >
               <router-link to="/warehouse">
                 <p class="text-reset">
                   {{ $t("warehouse") }}
                 </p>
               </router-link>
-
               <router-link to="/duty">
                 <p class="text-reset">
                   {{ $t("duty") }}
                 </p>
               </router-link>
+              <router-link to="/gallery">
+                <p class="text-reset">
+                  {{ $t("gallery") }}
+                </p></router-link
+              >
             </div>
             <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">
               <RouterLink to="/contact">
@@ -55,7 +59,7 @@
               </RouterLink>
               <p>
                 <font-awesome-icon icon="fa-solid fa-home" />
-                {{ $t('address') }}: Rajlovačka bb, Sarajevo 71000
+                {{ $t("address") }}: Rajlovačka bb, Sarajevo 71000
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-envelope" />
@@ -99,6 +103,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.router-link-active{
+  color:orange;
+}
+a:hover{
+  color:orange;
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -184,7 +194,6 @@ img {
 }
 
 .cursor-pointer {
-
   // text-transform: uppercase;
   &:hover {
     cursor: pointer;

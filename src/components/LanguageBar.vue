@@ -26,6 +26,11 @@ export default {
           abr: "en",
           src: require("@/assets/svg/gb.svg"),
         },
+        {
+          language: "Njemački",
+          abr: "de",
+          src: require("@/assets/svg/de.svg"),
+        },
       ],
     };
   },

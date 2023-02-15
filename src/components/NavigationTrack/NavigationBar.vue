@@ -6,7 +6,7 @@
         <router-link to="/">
           <img
             alt="Forspace Solutions"
-            :class="{ white_image: !white_wrapper }"
+            :class="{ white_image: !isHome }"
             src="@/assets/images/asa-sped-logo.png"
         /></router-link>
       </div>
@@ -48,6 +48,8 @@ export default {
       mobile: false,
       none: false,
       navy: false,
+      whiteLogo: true,
+      currentRoute: "",
 
       routes: [
         {
@@ -100,6 +102,12 @@ export default {
       }
     },
   },
+  computed: {
+    isHome() {
+      return this.$route.name == "home" ? true : false;
+    },
+  },
+
   mounted() {
     window.addEventListener("scroll", (e) => {
       if (window.scrollY > 30) {
@@ -119,19 +127,19 @@ export default {
 </script>
 <style lang="scss">
 @import "../../styles/variables.scss";
-.language{
-  display:flex;
+.language {
+  display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
 }
 .white_image {
   filter: brightness(0) invert(1);
-  -webkit-transition: filter .5s ease-out;
-  -moz-transition: filter .5s ease-out;
-  -o-transition: filter .5s ease-out;
-  transition: filter .7s ease-out;
-  &:hover{
+  -webkit-transition: filter 0.5s ease-out;
+  -moz-transition: filter 0.5s ease-out;
+  -o-transition: filter 0.5s ease-out;
+  transition: filter 0.7s ease-out;
+  &:hover {
     filter: none;
   }
 }
