@@ -153,8 +153,6 @@ h2 {
       small {
         font-size: 30px;
       }
-      p {
-      }
     }
 
     small {
