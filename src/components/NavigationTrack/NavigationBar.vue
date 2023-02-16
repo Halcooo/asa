@@ -165,7 +165,7 @@ export default {
   }
   .nav-wrapper-flex {
     display: flex;
-    width: 70%;
+    width: 84%;
     margin: auto;
     justify-content: space-between;
     align-items: center;

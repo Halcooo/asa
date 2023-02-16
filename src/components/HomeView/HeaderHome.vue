@@ -2,7 +2,7 @@
 <template>
   <div class="landing-page" style="position: relative; z-index: 1">
     <div class="div">
-      <div>
+      <div class="header-text">
         <div class="head-1">
           <h3>
             {{ $t("header_text") }}
@@ -15,7 +15,6 @@
             {{ $t("header_secondary_text") }}
           </small>
         </div>
-
         <div
           class="d-inline-flex justify-content-center align-items-center down-button"
           @click="scrollDown()"
@@ -51,6 +50,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.header-text{
+  margin-top:10vh;
+}
 @keyframes backgroundFade {
   from {
     opacity: 0;

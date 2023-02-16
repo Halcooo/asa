@@ -74,7 +74,7 @@ export default {
   position: relative;
   margin-top: 15%;
   .outer {
-    z-index: 2;
+    z-index: 1;
     width: 115px;
     height: 115px;
     position: absolute;
