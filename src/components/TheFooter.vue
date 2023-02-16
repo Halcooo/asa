@@ -103,11 +103,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.router-link-active{
-  color:orange;
+.router-link-active {
+  color: orange;
 }
-a:hover{
-  color:orange;
+.router-link-active {
+  h6 {
+    color: orange!important;
+  }
+}
+a:hover {
+  color: orange;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -145,19 +150,7 @@ img {
 
   @media screen and (max-width: 567px) {
     height: 100%;
-  }
-
-  // background: url("@/assets/images/footer.jpg") no-repeat center center/cover;
-  // background: linear-gradient(
-  //     to top,
-  //     rgba(75, 108, 218, 0.363),
-  //     rgba(48, 48, 199, 0.411),
-  //     rgba(0, 0, 255, 0.363)
-  //   ),
-  //   url("@/assets/images/footer2.png") no-repeat center center/cover;
-  // background-image: url("@/assets/images/bg-pattern-2.png");
-  // background: url("@/assets/images/leaf.jpg") no-repeat center center/cover;
-  .square {
+  }  .square {
     width: 50px;
     height: 50px;
 

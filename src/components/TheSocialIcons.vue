@@ -27,7 +27,7 @@ a {
     width: 20px;
 
     &:hover {
-      color: rgb(36, 64, 139);
+      color: orange;
       opacity: 0.9;
     }
   }
