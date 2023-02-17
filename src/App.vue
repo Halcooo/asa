@@ -28,7 +28,6 @@ export default {
       this.$router.push({ path: "/" });
     },
   },
-  mounted() {},
 };
 </script>
 <style lang="scss">
