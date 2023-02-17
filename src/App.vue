@@ -49,7 +49,6 @@ body {
   padding: 0;
 }
 #app {
-  //font-family: "Oswald", sans-serif;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden !important;
   color: $primary-color;
@@ -100,14 +99,12 @@ h1 {
 
   @media screen and (max-width: 567px) {
     font-size: 12px;
-    // padding: 0px 5px;
     height: 50px;
   }
 }
 
 .nav-contact {
   background-color: rgb(70, 70, 70);
-  // background-color: rgb(55, 165, 255);
   color: white;
   .track {
     width: 70%;
