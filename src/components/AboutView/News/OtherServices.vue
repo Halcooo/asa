@@ -5,10 +5,6 @@
     </div>
   </div>
   <div class="content-news">
-    <!-- <div v-for="chip in chips" class="chip">
-      {{ chip.chip }}
-    </div> -->
-
     <div>
       <p>{{ $t("other_services_p1") }}</p>
     </div>

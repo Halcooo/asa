@@ -1,28 +1,8 @@
 <template>
   <div class="wrapper" data-aos="fade-in">
-    <!-- <ServicesSlider :images="images"></ServicesSlider> -->
   </div>
   <div class="content">
     <div class="services-container mt-5">
-      <!-- <div class="heading">
-        <h1 class="mb-5 text-center text-secondary">
-          Logistics and warehouse
-        </h1>
-        <Line />
-        <div
-          class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto mt-5"
-        >
-          <div
-            v-for="icon in icons"
-            :key="icon"
-            class="bg-light text-center card-body w-100 p-2"
-          >
-            <font-awesome-icon :icon="icon.icon_text" />
-            <h3>{{ $t(icon.text) }}</h3>
-            <p>{{ $t(icon.p) }}</p>
-          </div>
-        </div>
-      </div> -->
       <div class="grid mb-5 main-grid">
         <div
           v-for="div in divs"
@@ -44,9 +24,6 @@
                 margin-bottom: 10%;
               "
             ></p>
-            <!-- <p class="text-center">
-              {{ $t(div.p) }}
-            </p> -->
             <div class="flex">
               <router-link class="read-more" :to="div.to">{{
                 $t("read_more")

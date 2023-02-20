@@ -10,20 +10,6 @@
     </div>
   </div>
   <div class="about-flex-grid">
-    <!-- <div class="flex-second">
-      <router-link v-for="card in grid_2" :to="card.src">
-        <div
-          :class="card.class"
-          :data-aos="card.animate"
-          data-aos-duration="1000"
-        >
-          <div>
-            <h1>{{ $t(card.h1) }}</h1>
-            <h4>{{ $t(card.h4) }}</h4>
-          </div>
-        </div>
-      </router-link>
-    </div> -->
   </div>
 </template>
 <script>

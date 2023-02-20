@@ -1,9 +1,6 @@
 @author Halid Lihovac
 <template>
   <div class="footer" data-aos="fade" data-aos-duration="1300">
-    <!-- <div class="square"></div>
-    <div class="circle"></div>
-    <div class="round"></div> -->
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-evenly">
         <div class="d-none d-md-block">

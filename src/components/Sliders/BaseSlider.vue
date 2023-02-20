@@ -7,7 +7,6 @@
       </div>
     </Slide>
     <template #addons>
-      <!-- <Pagination /> -->
     </template>
   </Carousel>
 </template>

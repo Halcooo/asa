@@ -2,9 +2,6 @@
 <template>
   <div class="wrapper">
     <Widget />
-    <!-- <CompanyIcons /> -->
-    <!-- <Cube /> -->
-    <!-- <Recension /> -->
     <HomeSlider data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
   </div>
 </template>

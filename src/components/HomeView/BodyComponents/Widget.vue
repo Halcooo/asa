@@ -16,21 +16,6 @@
 
       <small>{{ $t("widget_small_text") }}</small>
       <p>+387 33 407-352</p>
-
-      <!-- <div class="d-flex gap-2 mt-5">
-        <div
-          v-for="(widget, index) in widgets"
-          class="w-100 bg-light text-center p-3"
-        >
-          <font-awesome-icon icon="fa-solid fa-rocket " v-if="index == 0" />
-          <font-awesome-icon icon="fa-solid fa-gem " v-if="index == 1" />
-          <font-awesome-icon icon="fa-solid fa-check " v-if="index == 2" />
-          <small>
-            {{ $t(widget.small) }}
-          </small>
-          <p>{{ $t(widget.p) }}</p>
-        </div>
-      </div> -->
     </div>
   </div>
   <div data-aos="flip-left" data-aos-duration="1000">
