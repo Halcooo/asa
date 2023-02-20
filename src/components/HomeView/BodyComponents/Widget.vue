@@ -21,7 +21,7 @@
   <div data-aos="flip-left" data-aos-duration="1000">
     <h2>{{ $t("fast_and_simple") }}</h2>
     <div class="container truck mb-5 mt-5">
-      <img src="@/assets/images/moving.gif" alt="truckGif" />
+      <img class="truck" src="@/assets/images/moving.gif" alt="truckGif" />
     </div>
   </div>
   <div class="container mt-5 mb-5 d-flex justify-center iso">
@@ -55,6 +55,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.truck {
+  filter: hue-rotate(92deg);
+}
 h2 {
   text-align: center;
 }
@@ -169,8 +172,8 @@ h2 {
       }
       .widget-pic {
         width: 80%;
-        top:20%;
-        left:10%
+        top: 20%;
+        left: 10%;
       }
     }
   }

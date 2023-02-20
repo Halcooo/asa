@@ -141,6 +141,8 @@ export default {
       this.validateEmail();
       if (!this.emailInvalid && !this.nameInvalid && !this.messageInvalid) {
         this.sendEmail();
+      }else{
+        this.$toast.error(`Please fill the form`);
       }
     },
     sendEmail() {
@@ -154,11 +156,13 @@ export default {
         .then(
           (result) => {
             console.log("poslali smo mail", result);
+            this.$toast.success(`Email sent sucessfully`);
             (this.email = ""), (this.name = ""), (this.message = "");
           },
           (error) => {
             console.log("error", error);
             alert(error);
+            this.$toast.error(`Error!`);
           }
         );
     },

@@ -20,8 +20,6 @@
       </div>
     </Slide>
     <template #addons>
-
-
     </template>
   </Carousel>
 </template>

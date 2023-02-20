@@ -51,7 +51,8 @@ img {
   &:hover {
     opacity: 0.7;
   }
-  margin-right: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 .wrapper {
   display: flex;
