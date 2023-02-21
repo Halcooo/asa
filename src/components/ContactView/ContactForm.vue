@@ -142,7 +142,7 @@ export default {
       if (!this.emailInvalid && !this.nameInvalid && !this.messageInvalid) {
         this.sendEmail();
       }else{
-        this.$toast.error(`Please fill the form`);
+        this.$toast.error(this.$t('fill_the_form'));
       }
     },
     sendEmail() {
@@ -156,13 +156,13 @@ export default {
         .then(
           (result) => {
             console.log("poslali smo mail", result);
-            this.$toast.success(`Email sent sucessfully`);
+            this.$toast.success(this.$t('email_sent'));
             (this.email = ""), (this.name = ""), (this.message = "");
           },
           (error) => {
             console.log("error", error);
             alert(error);
-            this.$toast.error(`Error!`);
+            this.$toast.error(this.$t('error'));
           }
         );
     },

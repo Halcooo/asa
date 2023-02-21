@@ -7,7 +7,7 @@
       @click="showSideNav"
       @mouseover="giveindex(index)"
     >
-      <div>
+      <div class="link-title">
         {{ $t(navItem.name) }}
       </div>
       <div class="underline"></div>

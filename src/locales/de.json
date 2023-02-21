@@ -300,7 +300,6 @@
   "appointment_schedule": "Vereinbaren Sie einen Termin",
   "appointment_heading": "Wenn Sie eine Präsentation der Software wünschen, hinterlassen Sie Ihre Daten und wir werden Sie kontaktieren.",
   "appointment_text": "Vereinbaren Sie einen Termin mit unserem Team, um weitere Informationen über unsere Produkte oder über Prozesse in Ihrem Unternehmen zu erhalten, die eine Softwarelösung und Beratung erfordern. Vielleicht haben wir die perfekte Lösung für Sie, basierend auf unseren Best Practices und Erfahrungen.",
-  "Begriff": "Weiter zum Formular",
   "header_text": "Wir bieten internationale und nationale Speditionsdienstleistungen, Transport und Lagerung von Waren",
   "header_secondary_text": "Wir bieten internationale und nationale Dienstleistungen für alle unsere Kunden zu transportieren, und wir sind auch spezialisiert auf dringende Verteilung von Waren bis zu den Kunden in Bosnien und Herzegowina.",
   "submit": "Einreichent",
@@ -349,5 +348,8 @@
   "position_emir": "Leiter des Sektors Lager",
   "address": "Adresse",
   "gallery": "Galerie",
+  "error": "Es ist ein Fehler aufgetreten",
+  "email_sent": "E-Mail wurde erfolgreich versendet",
+  "fill_the_form": "Bitte füllen Sie das Formular aus",
   "iso_standard": "ASA ŠPED verfügt über ein internationales Qualitätszertifikat ISO 9001:2000 für die Durchführung von Tätigkeiten im Bereich der nationalen und internationalen Spedition und Lagerung, das wir seit 12 Jahren erfolgreich aufrechterhalten."
 }

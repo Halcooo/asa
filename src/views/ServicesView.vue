@@ -1,6 +1,5 @@
 <template>
-  <div class="wrapper" data-aos="fade-in">
-  </div>
+  <div class="wrapper" data-aos="fade-in"></div>
   <div class="content">
     <div class="services-container mt-5">
       <div class="grid mb-5 main-grid">
@@ -14,16 +13,7 @@
         >
           <div>
             <h2 class="text-center title">{{ $t(div.text) }}</h2>
-            <p
-              style="
-                width: 100px;
-                padding: 3px;
-                background-color: tomato;
-                margin: auto;
-                margin-top: 10%;
-                margin-bottom: 10%;
-              "
-            ></p>
+            <p class="orange-line"></p>
             <div class="flex">
               <router-link class="read-more" :to="div.to">{{
                 $t("read_more")
@@ -105,6 +95,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.orange-line {
+  width: 100px;
+  padding: 3px;
+  background-color: tomato;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 .wrapper {
   width: 100%;
   height: 35vh;
