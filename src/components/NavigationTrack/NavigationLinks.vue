@@ -89,6 +89,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.link-title {
+  white-space: nowrap;
+}
 
 li {
   list-style: none;
@@ -112,7 +115,7 @@ li {
     &:hover {
       opacity: 0.8;
       .underline {
-        background-color:white;
+        background-color: white;
         width: 100%;
         transition: width 0.3s ease-out;
       }
