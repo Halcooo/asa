@@ -40,7 +40,7 @@ export default {
     const years = ref(0);
     const clients = ref(0);
     const employees = ref(0);
-    const year = ref(2020);
+    const year = ref(2011);
     const client = ref(80000);
     const employee = ref(30);
     const speed = ref(100);
@@ -52,7 +52,11 @@ export default {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;
-            roundedValyear.value = Math.round(years.value);
+            if (years.value > year.value) {
+              roundedValyear.value = year.value;
+            } else {
+              roundedValyear.value = Math.round(years.value);
+            }
           }
           if (clients.value < client.value) {
             clients.value += client.value / speed.value;
@@ -107,7 +111,7 @@ export default {
 
     > h3 {
       width: 100%;
-      display: block
+      display: block;
     }
   }
   .label {
