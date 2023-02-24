@@ -60,7 +60,7 @@
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-envelope" />
-                asa@nekimail.com
+                info@asa-sped.com
               </p>
               <p>
                 <font-awesome-icon icon="fa-solid fa-phone" />
